@@ -58,6 +58,15 @@ body {
     border: 1px solid black !important;
 }
 
+/* .dropdown-menu:hover {
+    background-color: #2A5DDF;
+} */
+
+.nav-link:hover,
+.nav-link:active {
+    color: #2A5DDF;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -79,5 +88,28 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .header-container {
+        padding-top: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding-top: 100px;
+        padding-right: 60px;
+    }
+}
+
+
+@media only screen and (min-width: 450px) {
+    .header-container {
+        padding-top: 50px;
+        padding-right: 50px;
     }
 }
