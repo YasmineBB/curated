@@ -58,9 +58,9 @@ body {
     border: 1px solid black !important;
 }
 
-/* .dropdown-menu:hover {
-    background-color: #2A5DDF;
-} */
+.dropdown-menu:hover {
+    color: #2A5DDF;
+}
 
 .nav-link:hover,
 .nav-link:active {
