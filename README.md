@@ -63,7 +63,6 @@ I created the following table of opportunities for the project to determine the 
 | Error Pages |
 | Toasts |
 
-
 ### Structure Plane
 
 #### User Stories
@@ -84,7 +83,29 @@ I have chosen to use an overall muted colour scheme with a bold blue feature col
 
 #### Font
 
+I used [Font Joy](https://fontjoy.com/) to generate font pairings so that I could see the font choices together and if they worked well. I sourced the fonts from [Google Fonts](https://fonts.google.com/selection).
+
+![Font-Joy](/static/readme_images/fontjoy.png)
+
 ## Agile Development
+
+I used agile development to help me plan and manage my time more effectively. This was the second time applying it, my previous fourth project being the first, and I feel as though I utilised it in a much more effective way.
+
+I used GitHub projects to build the board. I created issues for the user stories and each issue was given a Milestone and Labels to help.
+
+![GitHub-projects-board-start](/static/readme_images/projects-board-start.png)
+
+I had 7 Epics, and split the user stories across these epics.
+
+I used the MoSCoW method for prioritisation, using the following labels:
+
+- must-have
+- should-have
+- could-have
+- wont-have
+- future-implementation
+
+The project was divided into four sprints, each sprint having a two-week timeframe. These sprints were under the Milestones heading.
 
 ## Features
 
