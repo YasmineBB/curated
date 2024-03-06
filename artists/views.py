@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from products.models import Artist
+from products.models import Artist, Product
 
 # Create your views here.
 
@@ -12,4 +12,4 @@ def all_artists(request):
         'artists': artists,
     }
 
-    return render(request, 'artists/artists.html')
+    return render(request, 'artists/artists.html', context)
