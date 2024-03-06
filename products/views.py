@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Artist
 
 # Create your views here.
 
@@ -11,6 +11,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    # artists = None
     sort = None
     direction = None
 
@@ -21,7 +22,10 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lowername'
                 products = products.annotate(lower_name=Lower('name'))
-
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            # if sortkey == 'artist':
+            #     sortkey = 'artist__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -32,6 +36,11 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+        
+        # if 'artist' in request.GET:
+        #     artists = request.GET['artist'].split(',')
+        #     products = products.filter(artist__name__in=artists)
+        #     artists = Artist.objects.filter(name__in=artists)
 
         if 'q' in request.GET:
             query = request.GET['q']

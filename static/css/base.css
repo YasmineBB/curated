@@ -77,6 +77,13 @@ body {
     z-index: -1;
 }
 
+/* a.category-badge>span.badge-blue:hover {
+    background-color: #D39822;
+    font-family: 'kanit';
+    color: #D39822;
+} */
+
+
 /* .card-img-top-all {
     width: 100%;
     height: 40vh;
