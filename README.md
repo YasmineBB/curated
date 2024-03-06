@@ -79,13 +79,16 @@ Wireframes for this project were created in Balsamiq.
 
 #### Colour Scheme
 
-I have chosen to use an overall muted colour scheme with a bold blue feature colour. The reason for this is so that the artworks are the main focus for the user, and the site provides a clean base for the works.
+I have chosen to use an overall muted colour scheme with a bold blue feature colour. The reason for this is so that the artworks are the main focus for the user, and the site provides a clean base for the works. The name of the site is a bold blue, and most of the text on the site is in black, to contrast against the white background. When an item in the navigation bar is hovered over, it's highlighted in a golden yellow colour to make it clear to users the page they will be selecting.
 
+Below is the colour scheme which was created in [Coolers](https://coolors.co/000000-2a5ddf-d39822-ffffff).
+
+![coolers](/documentation/readme/coolers.png)
 #### Font
 
 I used [Font Joy](https://fontjoy.com/) to generate font pairings so that I could see the font choices together and if they worked well. I sourced the fonts from [Google Fonts](https://fonts.google.com/selection).
 
-![Font-Joy](/static/readme_images/fontjoy.png)
+![Font-Joy](/documentation/readme/fontjoy.png)
 
 ## Agile Development
 
@@ -93,7 +96,9 @@ I used agile development to help me plan and manage my time more effectively. Th
 
 I used GitHub projects to build the board. I created issues for the user stories and each issue was given a Milestone and Labels to help.
 
-![GitHub-projects-board-start](/static/readme_images/projects-board-start.png)
+This is my projects board around the start of my project.
+
+![GitHub-projects-board-start](/documentation/readme/projects-board-start.png)
 
 I had 7 Epics, and split the user stories across these epics.
 
@@ -110,6 +115,46 @@ The project was divided into four sprints, each sprint having a two-week timefra
 ## Features
 
 ### Current Features
+
+#### Navigation
+
+The navigation bar includes a search bar where users can search for terms that are included in the product name, category, description as well as the artist name.
+
+Also included is a profile link where users can log in and out, and a shopping bag icon that displays the contents if the user has added any items.
+
+Below that are navigation links to the products, categories and artists.
+
+Under Products, the user can select to sort by:
+
+- Price
+- Category
+- Artist
+
+Or they can select to view All Products.
+
+Under the Ceramics and Paintings options, the user can select to view all from those two categories.
+
+Under the Artists option, the user can select to view all artists.
+
+#### Homepage
+
+#### Products Page
+
+#### Product Detail Page
+
+#### Shopping Basket Page
+
+#### Checkout Page
+
+#### Artists Page
+
+The Artist's page displays a selection of all the artists who have their work listed on the site. Included is the artists image, name, location and bio.
+
+#### Artist Detail Page
+
+When a user selects an artist, they are taken to the artist detail page which gives the full set of information, including the artists social media links, if they have them.
+
+The links to socials only take the user to each sites homepage for the purpose of this project, but if this site was developed in the future, of course this would be accurate.
 
 ### Future Features
 
