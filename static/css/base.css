@@ -77,6 +77,12 @@ body {
     z-index: -1;
 }
 
+/* .card-img-top-all {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+} */
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
