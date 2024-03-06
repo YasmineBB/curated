@@ -46,7 +46,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #2A5DDF;
+    background: #D39822;
     color: white;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .nav-link:hover,
 .nav-link:active {
-    color: #2A5DDF;
+    color: #D39822 !important;
 }
 
 .overlay {
@@ -89,6 +89,18 @@ body {
     height: 40vh;
     object-fit: cover;
 } */
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 
 /* -------------------------------- Media Queries */
 
