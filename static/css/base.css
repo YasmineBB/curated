@@ -77,58 +77,106 @@ body {
     z-index: -1;
 }
 
-/* a.category-badge>span.badge-blue:hover {
+/* Artists display */
+
+.artist-heading {
+    font-family: 'syncopate';
+    color: #D39822;
+}
+
+.container {
+    position: relative;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #D39822;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-family: 'syncopate';
+
+
+    /* a.category-badge>span.badge-blue:hover {
     background-color: #D39822;
     font-family: 'kanit';
     color: #D39822;
 } */
 
 
-/* .card-img-top-all {
+    /* .card-img-top-all {
     width: 100%;
     height: 40vh;
     object-fit: cover;
 } */
 
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.btt-link {
-    cursor: pointer;
-}
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
-
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
+    .btt-button {
+        height: 42px;
+        width: 42px;
         position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
+        bottom: 10px;
+        right: 10px;
     }
 
-    .header-container {
-        padding-top: 164px;
+    .btt-link {
+        cursor: pointer;
     }
-}
 
-/* pad the top a bit when navbar is collapsed on mobile */
-/* @media (max-width: 991px) {
+    /* -------------------------------- Media Queries */
+
+    /* Slightly larger container on xl screens */
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 80%;
+        }
+
+    }
+
+    /* fixed top navbar only on medium and up */
+    @media (min-width: 992px) {
+        .fixed-top-desktop-only {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+
+        .header-container {
+            padding-top: 164px;
+        }
+    }
+
+    /* pad the top a bit when navbar is collapsed on mobile */
+    /* @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
@@ -139,24 +187,24 @@ body {
 } */
 
 
-@media only screen and (max-width: 900px) {
-    .header-container {
-        padding-top: 100px;
+    @media only screen and (max-width: 900px) {
+        .header-container {
+            padding-top: 100px;
+        }
     }
-}
 
 
-@media only screen and (max-width: 600px) {
-    .header-container {
-        padding-top: 100px;
-        padding-right: 60px;
+    @media only screen and (max-width: 600px) {
+        .header-container {
+            padding-top: 100px;
+            padding-right: 60px;
+        }
     }
-}
 
 
-@media only screen and (min-width: 450px) {
-    .header-container {
-        padding-top: 50px;
-        padding-right: 50px;
+    @media only screen and (min-width: 450px) {
+        .header-container {
+            padding-top: 50px;
+            padding-right: 50px;
+        }
     }
-}
