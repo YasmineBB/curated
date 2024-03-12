@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'kanit';
+    font-family: 'antic slab';
 }
 
 /* from Bulma */
@@ -23,6 +23,11 @@ body {
     /* text-transform: uppercase; */
     font-family: 'syncopate';
     color: #2A5DDF;
+}
+
+.heading-font {
+    font-family: 'syncopate';
+    color: #D39822;
 }
 
 .main-logo-link {
@@ -77,18 +82,23 @@ body {
     z-index: -1;
 }
 
+a.category-tag:hover {
+    color: #D39822;
+}
+
 /* Artists display */
 
 .artist-heading {
     font-family: 'syncopate';
-    color: #D39822;
+    color: #2A5DDF;
 }
 
 .container {
     position: relative;
+    cursor: default;
 }
 
-.image {
+.artist-image {
     opacity: 1;
     display: block;
     width: 100%;
@@ -97,7 +107,7 @@ body {
     backface-visibility: hidden;
 }
 
-.middle {
+.artist-img-middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -108,75 +118,86 @@ body {
     text-align: center;
 }
 
-.container:hover .image {
+.container:hover .artist-image {
     opacity: 0.3;
 }
 
-.container:hover .middle {
+.container:hover .artist-img-middle {
     opacity: 1;
 }
 
-.text {
-    background-color: #D39822;
-    color: white;
+.artist-text {
+    color: #D39822;
+    /* color: white; */
     font-size: 16px;
-    padding: 16px 32px;
-    border-radius: 50px;
+    /* padding: 8px 16px;
+    border-radius: 50px; */
     font-family: 'syncopate';
 
+}
 
-    /* a.category-badge>span.badge-blue:hover {
+.artist-bio {
+    font-family: 'syncopate';
+    color: #000;
+    text-decoration: none;
+}
+
+/* a.category-badge>span.badge-blue:hover {
     background-color: #D39822;
     font-family: 'kanit';
     color: #D39822;
 } */
 
 
-    /* .card-img-top-all {
+/* .card-img-top-all {
     width: 100%;
     height: 40vh;
     object-fit: cover;
 } */
 
-    .btt-button {
-        height: 42px;
-        width: 42px;
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+.auth-card {
+    opacity: 0.8;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
         position: fixed;
-        bottom: 10px;
-        right: 10px;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
 
-    .btt-link {
-        cursor: pointer;
+    .header-container {
+        padding-top: 164px;
     }
+}
 
-    /* -------------------------------- Media Queries */
-
-    /* Slightly larger container on xl screens */
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 80%;
-        }
-
-    }
-
-    /* fixed top navbar only on medium and up */
-    @media (min-width: 992px) {
-        .fixed-top-desktop-only {
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            z-index: 1030;
-        }
-
-        .header-container {
-            padding-top: 164px;
-        }
-    }
-
-    /* pad the top a bit when navbar is collapsed on mobile */
-    /* @media (max-width: 991px) {
+/* pad the top a bit when navbar is collapsed on mobile */
+/* @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
@@ -187,24 +208,24 @@ body {
 } */
 
 
-    @media only screen and (max-width: 900px) {
-        .header-container {
-            padding-top: 100px;
-        }
+@media only screen and (max-width: 900px) {
+    .header-container {
+        padding-top: 100px;
     }
+}
 
 
-    @media only screen and (max-width: 600px) {
-        .header-container {
-            padding-top: 100px;
-            padding-right: 60px;
-        }
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding-top: 100px;
+        padding-right: 60px;
     }
+}
 
 
-    @media only screen and (min-width: 450px) {
-        .header-container {
-            padding-top: 50px;
-            padding-right: 50px;
-        }
+@media only screen and (min-width: 450px) {
+    .header-container {
+        padding-top: 50px;
+        padding-right: 50px;
     }
+}

@@ -17,7 +17,7 @@
 <div class="container-fluid">
     <div class="row mt-5">
         <div class="col text-center mt-5">
-            <h2 class="logo-font mt-5">Artists</h2>
+            <h2 class="heading-font">Artists</h2>
             <hr class="w-50 mb-1">
         </div>
     </div>
@@ -25,30 +25,37 @@
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="col text-center mt-3">
-                <h2 class="artist-heading">We represent a diverse range of artists. Find out more about them
-                    below.</h2>
+                <h2 class="display-5 text-black m-3">We are proud to represent a diverse pool of talented artists across
+                    a range of mediums.
+                </h2>
+                <h3 class=" text-black"><em>Meet them
+                        below!</em></h3>
                 <hr class="w-50 mb-1">
             </div>
             <div class="row mt-1 mb-2"></div>
             <div class="row">
                 {% for artist in artists %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
                     <div class="card h-100 border-0">
                         <div class="container">
                             {% if artist.image %}
-                            <a href="">
-                                <img class="text-center image" src="{{ artist.image.url }}" alt="{{ artist.name }}">
-                                <div class="middle">
-                                    <div class="text">{{ artist.name }}</div>
-                                    <div class="">{{ artist.bio }}</div>
-                                    <small><i class="fa-solid fa-arrow-right"></i></small>
-                                </div>
+                            <img class="text-center artist-image" src="{{ artist.image.url }}" alt="{{ artist.name }}">
+                            <div class="artist-img-middle">
+                                <!-- <p class="artist-text "><strong>{{ artist.name }}</strong></p> -->
+                                <p class="artist-bio mt-3">{{ artist.bio|slice:'100' }} ...</p>
+                                <a href="">
+                                    <small><button type="button" class="btn small rounded-pill">Read
+                                            More <i class="fa-solid fa-arrow-right"></i></button></small>
+                                </a>
+                            </div>
                             </a>
                             {% else %}
                             <a href="">
                                 <img class="text-center image" src="{{ MEDIA_URL }}noimage.png" alt="{{ artist.name }}">
                             </a>
                             {% endif %}
+                            <p class="artist-text mt-3"><strong>{{ artist.name }}</strong></p><a href=""><small><i
+                                        class="fa-solid fa-arrow-right text-black"></i></small></a>
                             <!-- <div class="card-body pb-0">
                                 <p class="lead mb-1">{{ artist.name }}</p>
                                 <p class="small mt-1 mb-0"><i class="fa-solid fa-location-pin"></i>
