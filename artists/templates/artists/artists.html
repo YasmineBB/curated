@@ -43,18 +43,19 @@
                             <div class="artist-img-middle">
                                 <!-- <p class="artist-text "><strong>{{ artist.name }}</strong></p> -->
                                 <p class="artist-bio mt-3">{{ artist.bio|slice:'100' }} ...</p>
-                                <a href="">
+                                <a href="{% url 'artist_detail' artist.id %}">
                                     <small><button type="button" class="btn small rounded-pill">Read
                                             More <i class="fa-solid fa-arrow-right"></i></button></small>
                                 </a>
                             </div>
                             </a>
                             {% else %}
-                            <a href="">
+                            <a href="{% url 'artist_detail' artist.id %}">
                                 <img class="text-center image" src="{{ MEDIA_URL }}noimage.png" alt="{{ artist.name }}">
                             </a>
                             {% endif %}
-                            <p class="artist-text mt-3"><strong>{{ artist.name }}</strong></p><a href=""><small><i
+                            <p class="artist-text lead mt-3"><strong>{{ artist.name }}</strong></p><a
+                                href="{% url 'artist_detail' artist.id %}"><small><i
                                         class="fa-solid fa-arrow-right text-black"></i></small></a>
                             <!-- <div class="card-body pb-0">
                                 <p class="lead mb-1">{{ artist.name }}</p>
