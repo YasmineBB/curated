@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-odx_g&8)2x%g1bgq64ur(3$mfbd4b2513u3mpd+gs^@kt2pe#k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-yasminebb-curated-vqag6c5ylki.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['8000-yasminebb-curated-vqag6c5ylki.ws-eu110.gitpod.io']
 
 
 # Application definition
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'artists',
+    'basket',
     'crispy_forms',
 ]
 
