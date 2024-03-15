@@ -32,10 +32,9 @@ I created the following table of opportunities for the project to determine the 
 
 | **User Type** | **Feature** | **Importance** | **Viability** | **MVP** | **Delivered** |
 | ---------| ----------- | -------------- | ------------- | ------- | ------------- |
-| User | Register for and account | 5 | 5 | MVP |
+| User | Register for an account | 5 | 5 | MVP |
 | User | Log In | 5 | 5 | MVP |
 | User | Password recovery | 5 | 5 | MVP |
-| User | Profile | 4 | 5 | MVP |
 | User/Guest | Social media sign up | 2 | 4 | |
 | User | Save/update personal & billing details | 5 | 5 | MVP |
 | | | | | |
@@ -112,6 +111,22 @@ I used the MoSCoW method for prioritisation, using the following labels:
 
 The project was divided into four sprints, each sprint having a two-week timeframe. These sprints were under the Milestones heading.
 
+## SEO and Web Marketing
+
+### SEO
+
+## Web Marketing
+
+I created a mock-up of a Facebook business page from the template provided by Code Institute, as well as a mock-up of an Instagram business page.
+
+- Facebook Page
+
+![Facebook-page](/documentation/readme/facebook-wireframe.png)
+
+- Instagram Page
+
+![Instagram-page](/documentation/readme/instagram-mockup.png)
+
 ## Features
 
 ### Current Features
@@ -140,7 +155,18 @@ Under the Artists option, the user can select to view all artists.
 
 #### Products Page
 
+The products page displays all the pieces that are available to purchase. They are listed with the following:
+
+- Product image
+- Name
+- Category tag (e.g. ceramics or paintings)
+- Artists name
+- Price
+- Product description
+
 #### Product Detail Page
+
+Once a product is selected, the user is taken to the product detail page which lists all the same information, as well as the option of adding the item to the basket.
 
 #### Shopping Basket Page
 
@@ -148,7 +174,7 @@ Under the Artists option, the user can select to view all artists.
 
 #### Artists Page
 
-The Artist's page displays a selection of all the artists who have their work listed on the site. Included is the artists image, name, location and bio.
+The Artist's page displays a selection of all the artists who have their work listed on the site. The artist is represented by their photo and name, and when hovered over, the user can see a preview of the artists' bio with a link to read more.
 
 #### Artist Detail Page
 
