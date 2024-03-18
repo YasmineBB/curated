@@ -186,6 +186,31 @@ a.category-tag:hover {
     opacity: 0.8;
 }
 
+/* Bootstrap Toasts */
+
+.message-container {
+    padding: 2rem;
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+    overflow: visible;
+}
+
+.custom-toast {
+    background-color: coral;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: visible;
+    font-size: x-large;
+}
+
+.toast-capper {
+    height: 2px;
+    overflow: visible
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
