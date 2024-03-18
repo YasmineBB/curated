@@ -52,6 +52,14 @@
                         <td class="py-3">
                             <p class="my-0">${{ item.product.price }}</p>
                         </td>
+                        <td class="py-3 w-25">
+                            <!-- <form class="form update-form" method="POST" action="">
+                                {% csrf_token %}
+                                <div class="form-group">
+                            </form> -->
+                            <a class="my-0 remove-item float-right btn btn-danger rounded-pill"
+                                id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small></a>
+                        </td>
                     </tr>
                     {% endfor %}
                     <tr>
@@ -97,4 +105,25 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script type="text/javascript">
+    // Remove item and reload on click
+    $('.remove-item').click(function (e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/basket/remove/${itemId}/`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken
+        };
+
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    })
+</script>
 {% endblock %}
