@@ -9,9 +9,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Yasmine Bourhabi">
+    <meta name="copyright" content="Curated">
+    <meta name="description" content="Online platform showcasing unique, one off art pieces from independent artists.">
+    <meta name="keywords"
+        content="art, unique art, one-off pieces, one of a kind art, ceramics, paintings, independent artists">
     {% endblock %}
 
     {% block extra_meta %}
+    {% endblock %}
+
+    {% block favicon %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'site-images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'site-images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'site-images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site-images/site.webmanifest' %}">
     {% endblock %}
 
     {% block corecss %}
@@ -38,7 +50,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>curated {% block extra_title %}{% endblock %}</title>
+    <title>curated - find unique pieces from independent artists {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
