@@ -228,14 +228,12 @@ ul>li {
     overflow: visible;
 }
 
-.custom-toast {
-    background-color: coral;
+/* .custom-toast {
     width: 200px;
     height: 65px;
     border: 1px solid;
     overflow: visible;
-    font-size: x-large;
-}
+} */
 
 .toast-capper {
     height: 2px;
