@@ -189,7 +189,7 @@ a.category-tag:hover {
 /* Footer */
 
 .footer-container {
-    background: #fff;
+    background: #D39822;
 }
 
 .footer-header {
@@ -198,8 +198,14 @@ a.category-tag:hover {
     font-size: 20px;
 }
 
+.footer-text {
+    font-family: 'Kanit';
+    font-size: 15px;
+    font-weight: 100;
+}
+
 .fa-brands {
-    color: #D39822;
+    color: #2A5DDF;
 }
 
 ul {
