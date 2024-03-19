@@ -12,7 +12,7 @@ This project was created for my fifth and final project for my Diploma in Full S
 
 ### Strategy Plane
 
-#### Project Goals
+#### Project Goals and Business Model
 
 Curated is a Business to Consumer e-commerce site (B2C) and its target audience are people who want to browse and buy unique, one off art pieces by independent artists for their homes.
 
@@ -115,17 +115,30 @@ The project was divided into four sprints, each sprint having a two-week timefra
 
 ### SEO
 
-## Web Marketing
+- Descriptive meta tags including description, keywords as well as a title tag were added in the base.html file, extending across all pages. Meta tags are important for SEO as they help search engines understand what the web pages are about and how it appears in search results. They are also important in terms of accessibility, being used by screen readers to describe the web pages to users.
+- REL ATTR
+- SITEMAP.XML
+- ROBOTS.TXT
 
-I created a mock-up of a Facebook business page from the template provided by Code Institute, as well as a mock-up of an Instagram business page.
+### Web Marketing
+
+I created a mock-up of a Facebook business page from the template provided by Code Institute, as well as a mock-up of an Instagram business page. These are important in helping the business to reach a wider audience, and would be used beyond the purpose of this project.
 
 - Facebook Page
 
-![Facebook-page](/documentation/readme/facebook-wireframe.png)
+![Facebook-page](/documentation/readme/facebook-mockup.png)
 
 - Instagram Page
 
 ![Instagram-page](/documentation/readme/instagram-mockup.png)
+
+Future implementation of web marketing strategies for Curated would include building community in the form of blog posts or ‘insights’ of art pieces bought by customers in their new homes. Customers would be invited to share photos of their pieces, tagging Curated, on social media, with the chance to be featured in a longer blog post.
+
+In addition to this would be the potential for artists whose work is platformed on the site, to show a preview into their process, or a behind the scenes look in the form of short videos or a Q&A like format. This would attract and engage potential customers by bringing them into the artists world, invoking an emotional response and forming the start of a relationship that would hopefully turn into sales which would benefit both the artist and Curated.
+
+This would also improve the chances of other potential artists wanting to be involved in being platformed on the site.
+
+These strategies would be tied closely with organic social media marketing, with content being used across several platforms, as well as email marketing which would complement each other nicely.
 
 ## Features
 
@@ -209,5 +222,9 @@ The links to socials only take the user to each sites homepage for the purpose o
 ### Content
 
 ### Media
+
+All product and artist images used on the site were taken from:
+- [Unsplash](https://unsplash.com/photos/multicolored-abstract-painting--zASKXkwkIY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- [Freepik](https://www.freepik.com/free-ai-image/elegant-modern-vase-design_47992970.htm#query=largevase&position=8&from_view=search&track=ais_ai_generated&uuid=56c5256d-d10d-4c5c-8604-e9c6e1b0cb9b)
 
 ### Acknowledgements
