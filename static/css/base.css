@@ -186,6 +186,31 @@ a.category-tag:hover {
     opacity: 0.8;
 }
 
+/* Footer */
+
+.footer-container {
+    background: #fff;
+}
+
+.footer-header {
+    font-family: 'Syncopate';
+    color: #2A5DDF;
+    font-size: 20px;
+}
+
+.fa-brands {
+    color: #D39822;
+}
+
+ul {
+    padding: 0;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+
 /* Bootstrap Toasts */
 
 .message-container {
