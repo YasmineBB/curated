@@ -24,3 +24,8 @@
 .stripe-style-input::placeholder {
     color: #aab7c4;
 }
+
+.order-heading {
+    color: #2A5DDF;
+    font-family: 'Syncopate';
+}
