@@ -82,12 +82,12 @@
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
                     {{ order_form.phone_number }}
-                    {{ order_form.country }}
-                    {{ order_form.postcode }}
-                    {{ order_form.town_or_city }}
                     {{ order_form.street_address1 }}
                     {{ order_form.street_address2 }}
+                    {{ order_form.town_or_city }}
                     {{ order_form.county }}
+                    {{ order_form.postcode }}
+                    {{ order_form.country }}
                     <div class="form-check form-check-inline float-right mr-0">
                         {% if user.is_authenticated %}
                         <label class="form-check-label" for="id-save-info">Save this delivery information to my
