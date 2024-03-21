@@ -16,48 +16,51 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row mt-5">
-        <div class="col text-center mt-5">
+        <!-- <div class="col text-center mt-5">
             <h2 class="heading-font">Artists</h2>
             <hr class="w-50 mb-1">
         </div>
-    </div>
+    </div> -->
 
-    <div class="row">
-        <div class="product-container col-10 offset-1">
-            <div class="col text-center mt-3">
-                <h2 class="display-5 text-black m-3">We are proud to represent a diverse pool of talented artists across
-                    a range of mediums.
-                </h2>
-                <h3 class=" text-black"><em>Meet them
-                        below!</em></h3>
-                <hr class="w-50 mb-1">
-            </div>
-            <div class="row mt-1 mb-2"></div>
-            <div class="row">
-                {% for artist in artists %}
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                    <div class="card h-100 border-0">
-                        <div class="container">
-                            {% if artist.image %}
-                            <img class="text-center artist-image" src="{{ artist.image.url }}" alt="{{ artist.name }}">
-                            <div class="artist-img-middle">
-                                <!-- <p class="artist-text "><strong>{{ artist.name }}</strong></p> -->
-                                <p class="artist-bio mt-3">{{ artist.bio|slice:'100' }} ...</p>
-                                <a href="{% url 'artist_detail' artist.id %}">
-                                    <small><button type="button" class="btn small rounded-pill">Read
-                                            More <i class="fa-solid fa-arrow-right"></i></button></small>
+        <div class="row">
+            <div class="product-container col-10 offset-1">
+                <div class="col text-center mt-3">
+                    <h2 class="logo-font display-5 text-black m-3 mt-5">Get to know the <span
+                            class="heading-font">Artists</span>
+                    </h2>
+                    <h6 class="text-black"><em>We are proud to represent a diverse pool of talented artists across a
+                            range
+                            of mediums.</em></h6>
+                    <hr class="w-90 mb-1">
+                </div>
+                <div class="row mt-2 mb-3"></div>
+                <div class="row">
+                    {% for artist in artists %}
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="card border-0">
+                            <div class="container">
+                                {% if artist.image %}
+                                <img class="text-center artist-image" src="{{ artist.image.url }}"
+                                    alt="{{ artist.name }}">
+                                <div class="artist-img-middle">
+                                    <p class="artist-bio mt-3">{{ artist.bio|slice:'100' }} ...</p>
+                                    <a href="{% url 'artist_detail' artist.id %}">
+                                        <small><button type="button" class="btn small rounded-pill">Read
+                                                More <i class="fa-solid fa-arrow-right"></i></button></small>
+                                    </a>
+                                </div>
                                 </a>
-                            </div>
-                            </a>
-                            {% else %}
-                            <a href="{% url 'artist_detail' artist.id %}">
-                                <img class="text-center image" src="{{ MEDIA_URL }}noimage.png" alt="{{ artist.name }}">
-                            </a>
-                            {% endif %}
-                            <p class="artist-text lead mt-3"><strong>{{ artist.name }}</strong></p><a
-                                href="{% url 'artist_detail' artist.id %}"><small><i
-                                        class="fa-solid fa-arrow-right text-black"></i></small></a>
-                            <!-- <div class="card-body pb-0">
+                                {% else %}
+                                <a href="{% url 'artist_detail' artist.id %}">
+                                    <img class="text-center image" src="{{ MEDIA_URL }}noimage.png"
+                                        alt="{{ artist.name }}">
+                                </a>
+                                {% endif %}
+                                <a href="{% url 'artist_detail' artist.id %}">
+                                    <p class="artist-text font-weight-bold lead mt-3"> {{ artist.name }} <span><i
+                                                class="fa-solid fa-arrow-right text-black text-small"></i></span></p>
+                                </a>
+                                <!-- <div class="card-body pb-0">
                                 <p class="lead mb-1">{{ artist.name }}</p>
                                 <p class="small mt-1 mb-0"><i class="fa-solid fa-location-pin"></i>
                                     {{ artist.location }}
@@ -70,32 +73,32 @@
                                     </div>
                                 </div>
                             </div> -->
+                            </div>
                         </div>
                     </div>
+                    {% if forloop.counter|divisibleby:1 %}
+                    <div class="col-12 d-sm-none mb-5">
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:2 %}
+                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:3 %}
+                    <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:4 %}
+                    <div class="col-12 d-none d-xl-block mb-5">
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
                 </div>
-                {% if forloop.counter|divisibleby:1 %}
-                <div class="col-12 d-sm-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:2 %}
-                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:3 %}
-                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:4 %}
-                <div class="col-12 d-none d-xl-block mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% endfor %}
             </div>
         </div>
     </div>
-</div>
-{% endblock %}
+    {% endblock %}
