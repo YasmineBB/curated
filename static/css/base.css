@@ -143,10 +143,11 @@ a.category-tag:hover {
 .artist-text {
     color: #D39822;
     /* color: white; */
-    font-size: 16px;
+    /* font-size: 16px; */
     /* padding: 8px 16px;
     border-radius: 50px; */
     font-family: 'syncopate';
+    text-decoration: none;
 
 }
 
@@ -204,7 +205,8 @@ a.category-tag:hover {
     font-weight: 100;
 }
 
-.fa-brands {
+.fa-brands,
+    {
     color: #2A5DDF;
 }
 
