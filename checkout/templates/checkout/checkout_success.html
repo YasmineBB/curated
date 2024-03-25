@@ -192,12 +192,21 @@
             </div>
             <div class="row">
                 <div class="col-12 col-lg-7 text-left mt-2">
+                    {% if from_profile %}
+                    <a href="{% url 'profile' %}" class="btn btn-black rounded-pill my-2">
+                        <span class="icon mr-2">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <span class="text-uppercase pr-3">Back to Profile</span>
+                    </a>
+                    {% else %}
                     <a href="{% url 'products' %}" class="btn btn-black rounded-pill my-2">
                         <span class="icon mr-2">
                             <i class="fa-solid fa-angle-left"></i>
                         </span>
                         <span class="text-uppercase pr-3">Browse more artwork</span>
                     </a>
+                    {% endif %}
                 </div>
             </div>
         </div>
