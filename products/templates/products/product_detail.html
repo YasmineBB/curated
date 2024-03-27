@@ -13,7 +13,7 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row mt-5">
-        <div class="col-12 mol-md-6 col-lg-4 offset-lg-2">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
                 <a href="{{ product.img.url }}" target="_blank">
@@ -27,7 +27,7 @@
                 {% endif %}
             </div>
         </div>
-        <div class="col-12 mol-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="lead mb-1">{{ product.name }}</p>
                 {% if product.artist %}
@@ -57,32 +57,33 @@
                             </div>
                         </div>
 
-                        <div class="col-6 border-black p-2">
-                            {% if request.user.is_superuser %}
-                            <p class="p-2">Manage this product</p>
-                            <small class="mb-0 text-left p-2">
-                                <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                            </small>
-                            {% endif %}
-                        </div>
 
-
-                        <div class="col-12">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
-                                </span>
-                                <span class="text-uppercase">Keep Shopping</span>
-                            </a>
-                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
-                                value="Add to Basket">
-                        </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        {% if request.user.is_superuser %}
+                        <div class="col-6 border-black p-2"></div>
+                        <p class="p-2">Manage this product</p>
+                        <small class="mb-0 text-left p-2">
+                            <a href="{% url 'edit_product' product.id %}">Edit</a>
+                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                        </small>
+                        {% endif %}
                     </div>
-                </form>
+
+
+                    <div class="col-12 p-0">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-pill mt-5">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping</span>
+                        </a>
+                        <input type="submit" class="btn btn-black text-uppercase rounded-pill mt-5 px-4"
+                            value="Add to Basket">
+                    </div>
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </div>
+            </form>
         </div>
     </div>
+</div>
 </div>
 {% endblock %}

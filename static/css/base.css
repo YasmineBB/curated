@@ -100,12 +100,16 @@ a.category-tag:hover {
     color: #D39822;
 }
 
+.delivery-banner {
+    background-color: #2A5DDF;
+}
+
 /* Artists display */
 
-.artist-heading {
+/* .artist-heading {
     font-family: 'syncopate';
     color: #2A5DDF;
-}
+} */
 
 .container {
     position: relative;
@@ -284,6 +288,10 @@ ul>li {
         max-width: 80%;
     }
 
+    .artist-heading {
+        margin-top: 5rem;
+    }
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -296,8 +304,16 @@ ul>li {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
+    .heading-font {
+        margin-top: 4rem;
+    }
+
+    .artist-heading {
+        margin-top: 6rem;
+    }
+
+    .container {
+        margin-top: 3rem !important;
     }
 }
 
@@ -313,24 +329,73 @@ ul>li {
 } */
 
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
     .header-container {
         padding-top: 100px;
     }
-}
+} */
 
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .header-container {
         padding-top: 100px;
         padding-right: 60px;
     }
-}
+} */
 
 
 @media only screen and (min-width: 450px) {
-    .header-container {
+    /* .container {
         padding-top: 50px;
         padding-right: 50px;
+    /* } */
+    */
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+
+    .container {
+        margin-top: 3rem !important;
     }
+
+    .display-5.logo-font.text-black,
+    .display-4 {
+        font-size: 1.5rem;
+    }
+
+    .delivery-banner {
+        font-size: 1rem;
+        background-color: #2A5DDF;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-pill,
+    .view-all-button.btn-lg {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-pill.btn-lg,
+    .view-all-button {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    /* .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    } */
+
+    /* body {
+        height: calc(100vh - 116px);
+    } */
 }
