@@ -285,6 +285,23 @@ ul>li {
     border-radius: 0;
 }
 
+/* Mailchimp */
+
+#mc_embed_signup {
+    background: #2A5DDF;
+    color: #fff;
+    clear: left;
+    font-family: 'Syncopate';
+    width: px;
+}
+
+#mc_embed_signup_scroll h2 {
+    font-weight: bold;
+    padding-top: 2rem;
+    margin: 15px 0;
+    font-size: 1.4em;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
