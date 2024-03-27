@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% load crispy_forms_tags %}
+<!-- {% load crispy_forms_tags %} -->
 
 {% block content %}
 
@@ -17,6 +17,7 @@
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
           <h1 class="logo-font display-4 mb-5">{% trans "Sign Up" %}</h1>
+
           <p>{% blocktrans %}Already have an account with us? Then please <a href="{{ login_url }}">sign
               in</a>.{% endblocktrans %}
           </p>
@@ -35,7 +36,7 @@
             {% endif %}
             <div class="mt-3">
               <button type="submit" class="btn btn-primary mb-4">
-                Sign up
+                {% trans "Sign Up" %}
               </button>
             </div>
           </form>
