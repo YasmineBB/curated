@@ -4,15 +4,19 @@
     <div class="row">
         <div class="col-sm-12 col-md-4 pb-3">
             <h2 class="footer-header font-weight-bold">About</h2>
-            <p class="footer-text text-justify text-black pr-3">We think that art is important, and that everyone should
-                have the opportunity to
-                incorporate it into their lives, fitting their own unique style. We platform the artist as much as the
-                artwork. </p>
+            <div>
+                <p class="footer-text text-justify text-black pr-3">We think that art is important, and that everyone
+                    should
+                    have the opportunity to
+                    incorporate it into their lives, fitting their own unique style. We platform the artist as much as
+                    the
+                    artwork. </p>
+            </div>
         </div>
         <div class="col-sm-12 col-md-3 pb-3">
             <h3 class="footer-header font-weight-bold">Links</h3>
             <ul>
-                <li><a class="footer-text text-black" href="">Contact Us</a></li>
+                <li><a class="footer-text text-black" href="{% url 'contact' %}">Contact Us</a></li>
                 <li><a class="footer-text text-black" href="{% url 'privacy' %}">Privacy
                         Policy</a></li>
 
