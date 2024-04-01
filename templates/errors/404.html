@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container h-100 mt-5">
+    <div class="row h-100">
+        <div class="col-12 mt-0 my-auto">
+            <h1 class="display-5 logo-font text-black m-3">
+                Oops! The page you are looking for isn't currently available. It may have been moved or no longer
+                exists! Use
+                the navigation bar to find what you're looking for or click the button below to take you back to
+                browsing unique pieces.
+            </h1>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}"
+                        class="view-all-button btn btn-lg rounded-pill text-uppercase py-3">Return to Shop</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
