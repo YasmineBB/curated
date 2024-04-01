@@ -204,8 +204,9 @@ a.category-tag:hover {
 
 .footer-text {
     font-family: 'Kanit';
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 100;
+    word-wrap: break-word;
 }
 
 .fa-brands {
@@ -282,11 +283,10 @@ ul>li {
 /* Mailchimp */
 
 #mc_embed_signup {
-    /* background: #2A5DDF; */
     color: #fff;
     clear: left;
     font-family: 'Syncopate';
-    width: px;
+    font-size: 12px;
 }
 
 #mc_embed_signup_scroll h2 {
@@ -338,6 +338,10 @@ ul>li {
     .product-detail-cont {
         margin-top: 7rem !important;
     }
+
+    /* .container {
+        margin-top: 7rem !important;
+    } */
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -371,7 +375,7 @@ ul>li {
     /* .container {
         padding-top: 50px;
         padding-right: 50px;
-    /* } */
+    /* }
     */
 }
 
