@@ -251,6 +251,11 @@ ul>li {
     overflow-y: auto;
 }
 
+.toast-header {
+    font-family: 'syncopate';
+    font-weight: 100;
+}
+
 
 /* Product Form */
 
