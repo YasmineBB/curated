@@ -10,6 +10,18 @@ This project was created for my fifth and final project for my Diploma in Full S
 
 ## Business Model
 
+Curated is a Business to Consumer e-commerce site (B2C) and its target audience are people who want to browse and buy unique, one off art pieces by independent artists to display in their homes.
+
+They will be people who enjoy and appreciate art, the work that goes into the pieces and the story behind them.
+
+According to [Artsy](https://www.artsy.net/article/artsy-editorial-drives-art-buyers), the top two reasons for buying unique art pieces were *“to decorate their homes and to provide a source of inspiration in their daily lives.”*
+
+In interviews, *“collectors indicated that a work’s aesthetic appeal is frequently the gateway to a deeper exploration of the artist and their career.”*
+
+Curated platforms the artists as well as the art, giving potential buyers the opportunity to explore and understand the artist and their work. This will help to build more of a connection between the artist and the user, or potential buyer, which will help to encourage more purchases on the site.
+
+The site is designed in a way that the user can navigate easily and smoothly across the site.
+
 ### SEO and Web Marketing
 
 #### SEO
@@ -43,17 +55,7 @@ These strategies would be tied closely with organic social media marketing, with
 
 ### Strategy Plane
 
-#### Project Goals and Business Model
-
-Curated is a Business to Consumer e-commerce site (B2C) and its target audience are people who want to browse and buy unique, one off art pieces by independent artists for their homes.
-
-They will be people who enjoy and appreciate art, the work that goes into the pieces and the story behind them.
-
-According to [Artsy](https://www.artsy.net/article/artsy-editorial-drives-art-buyers), the top two reasons for buying unique art pieces were *“to decorate their homes and to provide a source of inspiration in their daily lives.”*
-
-In interviews, *“collectors indicated that a work’s aesthetic appeal is frequently the gateway to a deeper exploration of the artist and their career.”*
-
-Curated platforms the artists as well as the art, giving potential buyers the opportunity to explore and understand the artist and their work.
+#### Project Goals
 
 ### Scope Plane
 
@@ -66,7 +68,7 @@ I created the following table of opportunities for the project to determine the 
 | User | Register for an account | 5 | 5 | MVP |
 | User | Log In | 5 | 5 | MVP |
 | User | Password recovery | 5 | 5 | MVP |
-| User/Guest | Social media sign up | 2 | 4 | |
+| User/Guest | Social media sign up | 2 | 4 ||
 | User | Save/update personal & billing details | 5 | 5 | MVP |
 | | | | | |
 | User | View products | 5 | 5 | MVP |
@@ -75,11 +77,11 @@ I created the following table of opportunities for the project to determine the 
 | User | Make a purchase | 5 | 5 | MVP |
 |User | Email confirmation | 5 | 5 | MVP |
 | User | Order History | 4 | 5 | MVP |
-| User | Wishlist | 2 | 3 | |
+| User | Wishlist | 2 | 3 ||
 | | | | | |
 | User | View artist profiles | 5 | 5 | MVP |
-| User | Add artist to favourites | 2 | 4 | |
-| User | Alerted to favourited artist new product | 2 | 4 | |
+| User | Add artist to favourites | 2 | 4 ||
+| User | Alerted to favourited artist new product | 2 | 4 ||
 | | | | | |
 | Admin | Add new product | 5 | 5 | MVP |
 | Admin | Update/edit product | 5 | 5 | MVP |
@@ -113,7 +115,8 @@ I have chosen to use an overall muted colour scheme with a bold blue feature col
 
 Below is the colour scheme which was created in [Coolers](https://coolors.co/000000-2a5ddf-d39822-ffffff).
 
-![coolers](/documentation/readme/coolers.png)
+![Coolers](/documentation/readme/coolers.png)
+
 #### Font
 
 I used [Font Joy](https://fontjoy.com/) to generate font pairings so that I could see the font choices together and if they worked well. I sourced the fonts from [Google Fonts](https://fonts.google.com/selection).
@@ -126,11 +129,23 @@ I used agile development to help me plan and manage my time more effectively. Th
 
 I used GitHub projects to build the board. I created issues for the user stories and each issue was given a Milestone and Labels to help.
 
-This is my projects board around the start of my project.
+This is my projects board around the start of my project:
 
 ![GitHub-projects-board-start](/documentation/readme/projects-board-start.png)
 
+This is my projects board around midway through my project:
+
+![GitHub-projects-board-mid](/documentation/readme/projects-board-mid.png)
+
 I had 7 Epics, and split the user stories across these epics.
+
+- User Registration and Profile
+- Product Viewing and Navigation
+- Shopping Basket
+- Purchasing
+- Artist Profile
+- Testimonials
+- Contact
 
 I used the MoSCoW method for prioritisation, using the following labels:
 
@@ -141,6 +156,10 @@ I used the MoSCoW method for prioritisation, using the following labels:
 - future-implementation
 
 The project was divided into four sprints, each sprint having a two-week timeframe. These sprints were under the Milestones heading.
+
+Here is an example of the use of labelling and milestones on one of my issues:
+
+![moscow-labelling-example](/documentation/readme/moscow-labeling-example.png)
 
 ## Features
 
@@ -170,14 +189,14 @@ Under the Artists option, the user can select to view all artists.
 
 #### Products Page
 
-The products page displays all the pieces that are available to purchase. They are listed with the following:
+The Products' page displays all the pieces that are available to purchase. They are listed with the following:
 
-- Product image
+- Product Image
 - Name
 - Category tag (e.g. ceramics or paintings)
-- Artists name
+- Artists Name
 - Price
-- Product description
+- Product Description
 
 #### Product Detail Page
 
@@ -185,7 +204,7 @@ Once a product is selected, the user is taken to the product detail page which l
 
 #### Shopping Basket Page
 
-In the shopping basket page, the user is presented with all the items in their basket. Here, they are able to delete any items if they wish, and are able to then proceed to checkout.
+In the shopping basket page, the user is presented with all the items in their basket. Here, they are able to delete any items if they wish, and are able to then proceed to checkout, or continue shopping.
 
 #### Checkout Page
 
@@ -197,13 +216,17 @@ The Artist's page displays a selection of all the artists who have their work li
 
 When a user selects an artist, they are taken to the artist detail page which gives the full set of information, including the artists social media links, if they have them.
 
-The links to socials only take the user to each sites homepage for the purpose of this project, but if this site was developed in the future, of course this would be accurate.
+The links to socials only take the user to each sites' homepage for the purpose of this project, but if this site was developed in the future, of course this would be accurate.
 
 ### Future Features
 
 ### Accessibility
 
 ## Issues & Bugs
+
+### Bug #1 - Sign Up
+
+I had an issue when testing user sign up on the site. After entering all the information and clicking the Sign-Up button, the page was stuck on loading and wouldn't take the user to the intended next step, which was sending the confirmation link and displaying the page explaining so. The user was, however, added to the database, after checking in the Django admin. When signing up using the same information, assuming it hadn't been successful, the user was alerted that a user with that information already existed in the database. After spending time troubleshooting, I contacted tutor Support who assisted me and discovered the fix was that Heroku wasn't using the correct version of Python, and the fix was to create a runtime.txt file and that solved the issue.
 
 ## Technologies Used
 
@@ -218,9 +241,40 @@ Languages used in this project include:
 
 ### Database Used
 
+- sqlite3 was used for development.
+- ElephantSQL was used for deployment.
+
 ### Frameworks & Libraries Used
 
+#### Frameworks
+
+- Django - Python framework that encourages rapid development and clean, pragmatic design.
+- Bootstrap4 - CSS framework used to develop a responsive and mobile-first site.
+
+#### Libraries & Packages
+
+- Font Awesome - Used for the icons used across the site.
+- Favicon - Used to create the favicon.
+- Balsamiq - Used to create the wireframes.
+- DrawSQL - Used to create the database schema.
+- Google Developer Tools - Used for testing for example responsiveness and troubleshooting.
+- jQuery - JavaScript library to simplify tasks and event handling.
+- pillow - Python library to deal with images.
+- gunicorn - Python WSGI server.
+- boto3- Used to integrate Python with AWS S3 bucket.
+- Django Allauth - Used for accounts, authentication and registration.
+- django-countries - Used to provide country choices in forms on the site.
+- django-crispy-forms - Used to render forms on the site.
+django-storages - Used for storage backends.
+- psycopg2 - Used to allow connection with a postgres database.
+
 ### Stripe
+
+Stripe has been used to implement the payment processing system in the project.
+
+In developer mode, endpoints have been set up to allow the sending of Webhooks in developer mode and the deployed site.
+
+When testing payments I have used the testing cards that Stripe has listed on its website.
 
 ## Testing
 
@@ -230,12 +284,19 @@ Languages used in this project include:
 
 ### Code
 
+I followed along with the Code Institute walkthrough project, Boutique Ado, which has been greatly helpful, and a lot of the code in this project has been used and adapted from that.
+
+Content on the site has been written by myself.
+
 ### Content
 
 ### Media
 
 All product and artist images used on the site were taken from:
+
 - [Unsplash](https://unsplash.com/photos/multicolored-abstract-painting--zASKXkwkIY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - [Freepik](https://www.freepik.com/free-ai-image/elegant-modern-vase-design_47992970.htm#query=largevase&position=8&from_view=search&track=ais_ai_generated&uuid=56c5256d-d10d-4c5c-8604-e9c6e1b0cb9b)
 
 ### Acknowledgements
+
+I would like to give a huge thanks to my Code Institute mentor Richard Wells who has been of great support during this project. I would also like to thank the Code Institute Mentors who have assisted me in solving problems and bugs along the way.
