@@ -8,6 +8,37 @@ Curated is a full stack e-commerce website built using HTML, CSS, JavaScript, Py
 
 This project was created for my fifth and final project for my Diploma in Full Stack Software Development with Code Institute.
 
+## Business Model
+
+### SEO and Web Marketing
+
+#### SEO
+
+- Descriptive meta tags including description, keywords as well as a title tag were added in the base.html file, extending across all pages. Meta tags are important for SEO as they help search engines understand what the web pages are about and how it appears in search results. They are also important in terms of accessibility, being used by screen readers to describe the web pages to users.
+- REL ATTR
+- SITEMAP.XML
+- ROBOTS.TXT
+
+#### Web Marketing
+
+I created a mock-up of a Facebook business page from the template provided by Code Institute, as well as a mock-up of an Instagram business page. These are important in helping the business to reach a wider audience, and would be used beyond the purpose of this project.
+
+- Facebook Page
+
+![Facebook-page](/documentation/readme/facebook-mockup.png)
+
+- Instagram Page
+
+![Instagram-page](/documentation/readme/instagram-mockup.png)
+
+Future implementation of web marketing strategies for Curated would include building community in the form of blog posts or ‘insights’ of art pieces bought by customers in their new homes. Customers would be invited to share photos of their pieces, tagging Curated, on social media, with the chance to be featured in a longer blog post.
+
+In addition to this would be the potential for artists whose work is platformed on the site, to show a preview into their process, or a behind the scenes look in the form of short videos or a Q&A like format. This would attract and engage potential customers by bringing them into the artists world, invoking an emotional response and forming the start of a relationship that would hopefully turn into sales which would benefit both the artist and Curated.
+
+This would also improve the chances of other potential artists wanting to be involved in being platformed on the site.
+
+These strategies would be tied closely with organic social media marketing, with content being used across several platforms, as well as email marketing which would complement each other nicely.
+
 ## User Experience
 
 ### Strategy Plane
@@ -111,35 +142,6 @@ I used the MoSCoW method for prioritisation, using the following labels:
 
 The project was divided into four sprints, each sprint having a two-week timeframe. These sprints were under the Milestones heading.
 
-## SEO and Web Marketing
-
-### SEO
-
-- Descriptive meta tags including description, keywords as well as a title tag were added in the base.html file, extending across all pages. Meta tags are important for SEO as they help search engines understand what the web pages are about and how it appears in search results. They are also important in terms of accessibility, being used by screen readers to describe the web pages to users.
-- REL ATTR
-- SITEMAP.XML
-- ROBOTS.TXT
-
-### Web Marketing
-
-I created a mock-up of a Facebook business page from the template provided by Code Institute, as well as a mock-up of an Instagram business page. These are important in helping the business to reach a wider audience, and would be used beyond the purpose of this project.
-
-- Facebook Page
-
-![Facebook-page](/documentation/readme/facebook-mockup.png)
-
-- Instagram Page
-
-![Instagram-page](/documentation/readme/instagram-mockup.png)
-
-Future implementation of web marketing strategies for Curated would include building community in the form of blog posts or ‘insights’ of art pieces bought by customers in their new homes. Customers would be invited to share photos of their pieces, tagging Curated, on social media, with the chance to be featured in a longer blog post.
-
-In addition to this would be the potential for artists whose work is platformed on the site, to show a preview into their process, or a behind the scenes look in the form of short videos or a Q&A like format. This would attract and engage potential customers by bringing them into the artists world, invoking an emotional response and forming the start of a relationship that would hopefully turn into sales which would benefit both the artist and Curated.
-
-This would also improve the chances of other potential artists wanting to be involved in being platformed on the site.
-
-These strategies would be tied closely with organic social media marketing, with content being used across several platforms, as well as email marketing which would complement each other nicely.
-
 ## Features
 
 ### Current Features
@@ -179,9 +181,11 @@ The products page displays all the pieces that are available to purchase. They a
 
 #### Product Detail Page
 
-Once a product is selected, the user is taken to the product detail page which lists all the same information, as well as the option of adding the item to the basket.
+Once a product is selected, the user is taken to the product detail page which lists all the same information, as well as the option of adding the item to the basket. As the pieces are one off, there is only one quantity of each item. If a user already has the product in their basket, and they try to add it again, they receive a message alert stating 'there is only one of these, and you have it in your basket. They are also unable to adjust the quantity box.
 
 #### Shopping Basket Page
+
+In the shopping basket page, the user is presented with all the items in their basket. Here, they are able to delete any items if they wish, and are able to then proceed to checkout.
 
 #### Checkout Page
 
@@ -204,6 +208,13 @@ The links to socials only take the user to each sites homepage for the purpose o
 ## Technologies Used
 
 ### Languages Used
+
+Languages used in this project include:
+
+- HTML
+- CSS
+- JavaScript
+- Python
 
 ### Database Used
 
