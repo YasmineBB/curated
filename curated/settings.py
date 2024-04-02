@@ -35,8 +35,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEBUG' in os.environ
 
 
-
-
 ALLOWED_HOSTS = ['curated-1a2337d3b0f9.herokuapp.com', '8000-yasminebb-curated-vqag6c5ylki.ws-eu110.gitpod.io']
 
 
@@ -60,6 +58,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'contact',
+    'testimonials',
     'crispy_forms',
     'storages',
 ]
