@@ -32,7 +32,7 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="lead mb-1">{{ product.name }}</p>
                     {% if product.artist %}
-                    <em>{{ product.artist }}</em>
+                    <em><a href="{% url 'artists' %}{{ product.artist.id }}">{{ product.artist }}</a></em>
                     {% else %}
                     <em class="text-muted">Anonymous</em>
                     {% endif %}
@@ -61,12 +61,13 @@
 
 
                             {% if request.user.is_superuser %}
-                            <div class="col-6 border border-info p-2"></div>
-                            <p class="p-2 text-black">Manage this product</p>
-                            <small class="mb-0 text-left p-2">
-                                <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                            </small>
+                            <div class="col-6 border border-info p-2">
+                                <p class="p-2 text-black">Manage this product</p>
+                                <small class="mb-0 text-left p-2">
+                                    <a href="{% url 'edit_product' product.id %}">Edit</a>
+                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                </small>
+                            </div>
                             {% endif %}
                         </div>
 
