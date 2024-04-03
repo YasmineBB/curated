@@ -84,8 +84,7 @@ body {
     color: #2A5DDF;
 }
 
-.nav-link:hover,
-.nav-link:active {
+.nav-link:hover {
     color: #D39822 !important;
 }
 
@@ -99,9 +98,9 @@ body {
     z-index: -1;
 }
 
-a.category-tag:hover {
+/* a.category-tag:hover {
     color: #D39822;
-}
+} */
 
 .delivery-banner {
     background-color: #2A5DDF;
@@ -154,12 +153,6 @@ a.category-tag:hover {
     color: #000;
     text-decoration: none;
 }
-
-/* a.category-badge>span.badge-blue:hover {
-    background-color: #D39822;
-    font-family: 'kanit';
-    color: #D39822;
-} */
 
 
 /* .card-img-top-all {
