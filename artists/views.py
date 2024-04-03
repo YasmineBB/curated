@@ -45,7 +45,7 @@ def add_artist(request):
         form = ArtistForm(request.POST, request.FILES)
         if form.is_valid():
             artist = form.save()
-            messages.success(request, 'Success! The artist was added to the database.')
+            messages.success(request, f'Success! You added {artist.name} to the database.')
             return redirect(reverse('artists'))
         else:
             messages.error(request, 'Failed to add artist. Please ensure the form is valid.')
