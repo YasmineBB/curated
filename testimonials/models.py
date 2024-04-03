@@ -9,6 +9,3 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return self.buyer_name
-    
-    def __str__(self):
-        return self.artist.name
