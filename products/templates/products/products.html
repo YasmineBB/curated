@@ -82,7 +82,7 @@
                         <div class="card-body pb-0">
                             <p class="lead mb-1"><strong>{{ product.name }}</strong></p>
                             {% if product.artist %}
-                            <p><em>{{ product.artist }}</em></p>
+                            <em><a href="{% url 'artists' %}{{ product.artist.id }}">{{ product.artist }}</a></em>
                             {% else %}
                             <p><em class="text-muted">Anonymous</em></p>
                             {% endif %}
