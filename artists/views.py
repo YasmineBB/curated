@@ -58,3 +58,32 @@ def add_artist(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_artist(request, artist_id):
+    """ Make changes to an artist in the database """
+    if not request.user.is_superuser:
+        messages.error(request, 'Ooops! Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    artist = get_object_or_404(Artist, pk=artist_id)
+    if request.method == 'POST':
+        form = ArtistForm(request.POST, request.FILES, instance=artist)
+        if form.is_valid():
+            form.save()
+            messages.success(request, f'Success! You have updated the profile of {artist.name}.')
+            return redirect(reverse('artist_detail', args=[artist.id]))
+        else:
+            messages.error(request, 'Failed to update artist. Please ensure the form is valid.')
+    else:
+        form = ArtistForm(instance=artist)
+        messages.info(request, f'You are editing the profile of {artist.name}')
+
+    template = 'artists/edit_artist.html'
+    context = {
+        'form': form,
+        'artist': artist,
+    }
+
+    return render(request, template, context)
