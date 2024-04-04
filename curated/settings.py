@@ -16,9 +16,6 @@ from pathlib import Path
 if os.path.isfile('env.py'):
     import env
 
-# from pathlib import Path
-# if path.exists('env.py'):
-#     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,7 +28,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = 'DEBUG' in os.environ
 
 
@@ -127,7 +123,7 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'curated.wsgi.application'
 
 
- # Database
+# Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
