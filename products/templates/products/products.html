@@ -17,7 +17,7 @@
             <h2 class="heading-font">Products</h2>
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                <span class="p-2 mt-2 badge rounded-pill border text-black">{{ c.friendly_name }}</span>
+                <span class="p-2 mt-2 badge rounded-pill border-black">{{ c.friendly_name }}</span>
             </a>
             {% endfor %}
             <hr class="w-50 mb-1">
@@ -56,7 +56,7 @@
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left text-black">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small text-black logo-font"><a href="{% url 'products' %}">Products Home</a> |
+                        <span><a class=" logo-font text-black small" href="{% url 'products' %}">Products Home</a> |
                         </span>
                         {% endif %}
                         {{ products|length }} Products{% if search_term %} found for
