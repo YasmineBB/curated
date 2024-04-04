@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay-about"></div>
+<div class="container-fluid" style="height:100vh">
+    <div class="row mt-5">
+        <div class="col text-center mt-5">
+            <h2 class="logo-font display-5 text-black mt-5">About <span class="logo-font">curated</span>
+            </h2>
+            <hr class="w-50 mb-1">
+            <h6 class="text-black mt-3"></h6>
+            <p class="text-black pt-2"> Want to be featured? <a class="logo-font font-weight-bold text-decoration-none"
+                    href="{% url 'contact' %}">Get in touch!</a>
+            </p>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row mt-4">
+    </div>
+</div>
+{% endblock %}
