@@ -8,7 +8,6 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Artist
 from .forms import ProductForm
 
-# Create your views here.
 
 def all_products(request):
     """ A view to display all products, including sorting and search queries """
@@ -16,7 +15,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
-    # artists = None
+    artists = None
     sort = None
     direction = None
 
@@ -29,8 +28,8 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
-            # if sortkey == 'artist':
-            #     sortkey = 'artist__name'
+            if sortkey == 'artist':
+                sortkey = 'artist__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -42,10 +41,10 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
         
-        # if 'artist' in request.GET:
-        #     artists = request.GET['artist'].split(',')
-        #     products = products.filter(artist__name__in=artists)
-        #     artists = Artist.objects.filter(name__in=artists)
+        if 'artist' in request.GET:
+            artists = request.GET['artist'].split(',')
+            products = products.filter(artist__name__in=artists)
+            artists = Artist.objects.filter(name__in=artists)
 
         if 'q' in request.GET:
             query = request.GET['q']
