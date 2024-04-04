@@ -59,8 +59,9 @@
                                 </div>
                             </div>
                             {% if request.user.is_superuser %}
-                            <div class="col-6 border border-info p-2 mt-4">
+                            <div class="col-6 border border-info rounded p-2 mt-4">
                                 <p class="p-2 text-black logo-font">Manage this product</p>
+                                <hr class="w-100 mb-2">
                                 <small class="mb-0 text-left p-2">
                                     <a href="{% url 'edit_product' product.id %}">Edit</a>
                                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
