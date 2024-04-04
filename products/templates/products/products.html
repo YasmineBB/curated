@@ -97,11 +97,14 @@
                             <div class="row">
                                 <div class="col">
                                     <p class="lead mb-0 text-left">£{{ product.price }}</p>
-                                    <small class="mb-0 text-left">{{ product.description }}</small>
+                                    <a href="{% url 'product_detail' product.id %}" class="text-decoration-none">
+                                        <p class="mb-0 text-left pt-2">
+                                            {{ product.description|slice:'50' }} ...</p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
+                                <div class="col py-2">
                                     {% if request.user.is_superuser %}
                                     <small class="mb-0 text-left">
                                         <a href="{% url 'edit_product' product.id %}">Edit</a>
@@ -111,14 +114,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="card-footer bg-white pt-0 border-0 text-left">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="lead mb-0 text-left">£{{ product.price }}</p>
-                                    <small class="mb-0 text-left">{{ product.description }}</small>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:1 %}
