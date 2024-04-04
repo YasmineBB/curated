@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+<div class="overlay"></div>
 <div class="container mt-5 bg-white text-justify p-5">
     <h1 class="logo-font mt-5">Privacy Policy</h1>
     <p>Last updated: March 28, 2024</p>
@@ -315,10 +316,7 @@
     <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy
         Policy are effective when they are posted on this page.</p>
     <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-    <ul>
-        <li>By email: curated@example.com</li>
-    </ul>
+    <p>If you have any questions about this Privacy Policy, you can <a href="{% url 'contact' %}">contact us</a></p>
 
 </div>
 {% endblock %}
