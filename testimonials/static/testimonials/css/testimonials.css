@@ -1,3 +1,7 @@
 .feature-sub-heading {
     font-family: 'syncopate';
 }
+
+.review-text {
+    line-height: 2;
+}
