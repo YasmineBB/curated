@@ -12,17 +12,14 @@
 
   <div class="p-5 mt-5 bg-image"></div>
 
-  <div id="auth-card" class="auth-card card mx-4 mx-md-5 shadow-5-strong" style="opacity: 0.8;">
+  <div id="auth-card" class="auth-card card mx-4 mx-md-5 shadow-5-strong">
     <div class="card-body py-5 px-md-5">
-
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
-          <h1 class="logo-font display-4 mb-5">{% trans "Log In" %}</h1>
-
-          <p>{% blocktrans %}If you have not created an account with us yet, then please
+          <h1 class="logo-font display-4">{% trans "Log In" %}</h1>
+          <hr class="w-50 mb-1">
+          <p class="my-4">{% blocktrans %}If you have not created an account with us yet, then please
             <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-
-
           <form class="login" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
             {{ form | crispy }}
@@ -32,18 +29,10 @@
             <a class="button secondaryAction"
               href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
             <div class="mt-3">
-              <button class="btn btn-primary mb-4 rounded-pill" type="submit">{% trans "Sign In" %}</button>
+              <button class="btn btn-primary mb-4 rounded" type="submit">{% trans "Sign In" %}</button>
             </div>
           </form>
         </div>
-      </div>
-      <div class="col-12 col-lg-7 text-left mt-2">
-        <a href="{% url 'products' %}" class="btn btn-black rounded-pill my-2">
-          <span class="icon mr-2">
-            <i class="fa-solid fa-angle-left"></i>
-          </span>
-          <span class="text-uppercase pr-3">Homepage</span>
-        </a>
       </div>
     </div>
   </div>
