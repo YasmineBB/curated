@@ -32,7 +32,8 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="lead mb-1">{{ product.name }}</p>
                     {% if product.artist %}
-                    <em><a href="{% url 'artists' %}{{ product.artist.id }}">{{ product.artist }}</a></em>
+                    <em><a class="text-black logo-font"
+                            href="{% url 'artists' %}{{ product.artist.id }}">{{ product.artist }}</a></em>
                     {% else %}
                     <em class="text-muted">Anonymous</em>
                     {% endif %}
@@ -49,7 +50,7 @@
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
-                                <p class="mt-3"><strong>Quantity:</strong></p>
+                                <!-- <p class="mt-3"><strong>Quantity:</strong></p> -->
                                 <div class="form-group w-50">
                                     <div class="input-group">
                                         <input class="form-control qty_input" type="number" name="quantity" value="1"
