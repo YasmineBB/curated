@@ -17,8 +17,7 @@
             <h2 class="heading-font">Products</h2>
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                <span class="p-2 mt-2 badge badge-blue text-white rounded-pill border"
-                    style="background-color: #D39822; font-family: 'kanit'; letter-spacing: 3px; font-weight: 200">{{ c.friendly_name }}</span>
+                <span class="p-2 mt-2 badge rounded-pill border text-black">{{ c.friendly_name }}</span>
             </a>
             {% endfor %}
             <hr class="w-50 mb-1">
@@ -55,9 +54,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-md-first">
-                    <p class="text-muted mt-3 text-center text-md-left">
+                    <p class="text-muted mt-3 text-center text-md-left text-black">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                        <span class="small text-black logo-font"><a href="{% url 'products' %}">Products Home</a> |
+                        </span>
                         {% endif %}
                         {{ products|length }} Products{% if search_term %} found for
                         <strong>"{{ search_term }}"</strong>{% endif %}
@@ -82,7 +82,8 @@
                         <div class="card-body pb-0">
                             <p class="lead mb-1"><strong>{{ product.name }}</strong></p>
                             {% if product.artist %}
-                            <em><a href="{% url 'artists' %}{{ product.artist.id }}">{{ product.artist }}</a></em>
+                            <em><a href="{% url 'artists' %}{{ product.artist.id }}"
+                                    class="logo-font text-black">{{ product.artist }}</a></em>
                             {% else %}
                             <p><em class="text-muted">Anonymous</em></p>
                             {% endif %}
@@ -98,7 +99,7 @@
                                 <div class="col">
                                     <p class="lead mb-0 text-left">£{{ product.price }}</p>
                                     <a href="{% url 'product_detail' product.id %}" class="text-decoration-none">
-                                        <p class="mb-0 text-left pt-2">
+                                        <p class="mb-0 text-left pt-2 text-black">
                                             {{ product.description|slice:'50' }} ...</p>
                                     </a>
                                 </div>
