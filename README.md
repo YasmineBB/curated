@@ -1,5 +1,7 @@
 # Curated
 
+A link to the deployed site can be found [here](https://curated-1a2337d3b0f9.herokuapp.com/)
+
 ## Table of Contents
 
 ## Introduction
@@ -65,39 +67,117 @@ I created the following table of opportunities for the project to determine the 
 
 | **User Type** | **Feature** | **Importance** | **Viability** | **MVP** | **Delivered** |
 | ---------| ----------- | -------------- | ------------- | ------- | ------------- |
-| User | Register for an account | 5 | 5 | MVP |
-| User | Log In | 5 | 5 | MVP |
-| User | Password recovery | 5 | 5 | MVP |
+| User | Register for an account | 5 | 5 | MVP | ✅ |
+| User | Log In | 5 | 5 | MVP | ✅ |
+| User | Password recovery | 5 | 5 | MVP | 
 | User/Guest | Social media sign up | 2 | 4 ||
-| User | Save/update personal & billing details | 5 | 5 | MVP |
+| User | Save/update personal & billing details | 5 | 5 | MVP | ✅ |
 | | | | | |
-| User | View products | 5 | 5 | MVP |
-| User | Add items to basket | 5 | 5 | MVP |
-| User | Edit basket | 5 | 5 | MVP |
-| User | Make a purchase | 5 | 5 | MVP |
-|User | Email confirmation | 5 | 5 | MVP |
-| User | Order History | 4 | 5 | MVP |
+| User | View products | 5 | 5 | MVP | ✅ |
+| User | Add items to basket | 5 | 5 | MVP | ✅ |
+| User | Edit basket | 5 | 5 | MVP | ✅ |
+| User | Make a purchase | 5 | 5 | MVP | ✅ |
+|User | Email confirmation of purchase | 5 | 5 | MVP | ✅ |
+| User | Order History | 4 | 5 | MVP | ✅ |
 | User | Wishlist | 2 | 3 ||
 | | | | | |
-| User | View artist profiles | 5 | 5 | MVP |
+| User | View artist profiles | 5 | 5 | MVP | ✅ |
 | User | Add artist to favourites | 2 | 4 ||
 | User | Alerted to favourited artist new product | 2 | 4 ||
 | | | | | |
-| Admin | Add new product | 5 | 5 | MVP |
-| Admin | Update/edit product | 5 | 5 | MVP |
-| Admin | Delete product | 5 | 5 | MVP |
+| User | Contact Form | 5 | 5 | MVP | ✅ |
+| User | Subscribe to newsletter | 5 | 5 | MVP | ✅ |
+| User | View Privacy Policy | 5 | 5 | MVP | ✅ |
+| User | Error pages (404/500) | 5 | 5 | MVP | ✅ |
+| User | Receives message alerts (toasts) | 5 | 5 | MVP | ✅ |
 | | | | | |
-| User | Contact Form | 5 | 5 | MVP |
-| Testimonial |
-| Newsletter |
-| Terms and Conditions |
-| Privacy Policy |
-| Error Pages |
-| Toasts |
+| Admin | Add new product | 5 | 5 | MVP | ✅ |
+| Admin | Update/edit product | 5 | 5 | MVP | ✅ |
+| Admin | Delete product | 5 | 5 | MVP | ✅ |
+| | | | | |
+| Admin | Add new artist | 5 | 5 | MVP | ✅ |
+| Admin | Update/edit artist profile | 5 | 5 | MVP | ✅ |
+| Admin | Delete artist profile | 5 | 5 | MVP | ✅ |
+| | | | | |
+| Admin | Add feature/testimonial | 5 | 5 | MVP | ✅ |
 
 ### Structure Plane
 
 #### User Stories
+
+I created user stories in a Google sheets document in my planning stage which helped me to organise tasks. Each user story had an issue created, and this documentation can be found in my projects board and is explained in the [Agile Development](#Agile-Development) section.
+
+I have created user stories for all users of the site which are:
+
+- Site User
+- Site Admin
+
+##### User Registration and Profile
+
+As a Site User:
+
+- I want to be able to register for an account so that I can have an account and a profile on the site.
+- I want to be able to log in and out so that I can keep my information secure.
+- I want to be able to reset my password so that I can recover and access my account if I forget the password.
+- I can view my profile so that I can save my shipping details and see my order history.
+
+##### Product Viewing and Navigation
+
+As a Site User:
+- I want to be able to view the details of a product so that I can decide whether I want to make a purchase
+- I want to be able to search keywords so that I can quickly find what I am looking for.
+- I want to be able to sort and filter my search so that I can quickly find what I am looking for
+- I want to be able to easily navigate from one page to another so that I can have a pleasant shopping experience.
+- I want to be able to easily view unique pieces so that I can decide whether I want to add to my basket.
+
+As a Site Admin:
+
+- I want to be able to add products to the site so that users are able to browse and buy.
+- I want to be able to make updates to products on the site so that any changes are reflected on the site.
+- I want to be able to delete products on the site so that any changes are reflected on the site.
+
+##### Shopping Basket
+
+As a Site User:
+
+- I want to be able to view my basket so that I can review the contents before purchasing.
+- I want to be able to add items to my basket so that I can make a purchase.
+- I want to be able to delete items from my basket so that I can decide on my final purchase.
+
+##### Purchasing
+
+As a Site User:
+
+- I want to be able to make a purchase on the site so that I can buy and enjoy the items I had in my basket.
+- I want to receive an email confirmation so that I can make sure my purchase was successful.
+
+##### Artist Profile
+
+As a Site User:
+
+- I want to be able to view a profile of an artist so that can find out more about the artist whose work I am interested in and make a more informed decision on purchasing.
+
+As a Site Admin:
+
+- I want to be able to add artists to the database so that users can find out more about the artists whose pieces they are interested in.
+- I want to be able to edit artist profiles on the database so that artists can have their most up-to-date information on the site.
+- I want to be able to delete artists from the database so that only the artists whose work is listed appears on the site.
+
+##### Features/Testimonials
+
+As a Site User:
+
+- I want to be able to view features/testimonials showing other customers purchases in their homes so that I can make an informed decision on using the site and purchasing.
+
+As a Site Admin:
+
+- I want to be able to add a testimonial so that users can view them and are encouraged to use the platform and make purchases.
+
+##### Contact
+
+As a Site User:
+
+- I want to be able to submit a contact form so that I can communicate with Curated.
 
 #### Database Schema
 
@@ -105,7 +185,7 @@ I created the following table of opportunities for the project to determine the 
 
 #### Wireframes
 
-Wireframes for this project were created in Balsamiq.
+[Wireframes](./wireframes.md) for this project were created in Balsamiq.
 
 ### Surface Plane
 
@@ -125,9 +205,9 @@ I used [Font Joy](https://fontjoy.com/) to generate font pairings so that I coul
 
 ## Agile Development
 
-I used agile development to help me plan and manage my time more effectively. This was the second time applying it, my previous fourth project being the first, and I feel as though I utilised it in a much more effective way.
+I used agile development methodology to help me plan and manage my time more effectively and to ensure that I delivered the tasks I needed to in each sprint. This was the second time applying it, my previous fourth project being the first, and I feel as though I utilised it in a much more effective way.
 
-I used GitHub projects to build the board. I created issues for the user stories and each issue was given a Milestone and Labels to help.
+I used GitHub projects to build the kanban board. I created issues for the user stories and each issue was given a Milestone and Labels to help.
 
 This is my projects board around the start of my project:
 
@@ -278,7 +358,115 @@ When testing payments I have used the testing cards that Stripe has listed on it
 
 ## Testing
 
+[Testing](./testing.md) can be found here.
+
 ## Deployment
+
+### Deploying to Heroku UPDATE!!!
+
+To deploy the site from the GitHub repository to Heroku, the following steps were taken:
+
+1. Go to the [Heroku](https://id.heroku.com/login) website and log in or sign up if you don't have an account already.
+2. Create the Heroku App:
+   - Click the 'New' button on the Heroku dashboard.
+   - Click 'Create New App':
+3. Give the app a unique name:
+   - I gave this project the name curated
+4. Select the region:
+   - In my case I selected Europe.
+5. Add the database:
+   - Click on the Resources tab
+   - In the 'Add-ons' box search for 'Heroku Postgres' and click it to add it to the project.
+   - Select 'Hobby Dev - free' from the 'plan name' dropdown and click 'Submit Order Form'.
+6. Prepare the environment:
+   - Click on the Settings tab.
+   - Click 'Reveal Config Vars' to display the DATABASE_URL.
+   - Copy the url next to DATABASE_URL.
+   - Return to the GitPod workspace.
+   - Create a file called env.py in the main directory.
+   - In the env.py file, set the following environment variables:
+     - Set the DATABASE_URL by pasting in the url copied from Heroku.
+     - Set the SECRET_KEY to your chosen value.
+   - Add the SECRET_KEY value to Config Vars in Heroku.
+7. Set up settings.py:
+   - At the top of the file, add the following:
+     - ```import os```
+     - ```import dj_database_url```
+     - ```if os.path.isfile('env.py'):import env```
+   - In the SECRET_KEY section, remove the insecure key and add in the environment variable:
+     - ```SECRET_KEY = os.environ.get('SECRET_KEY')```
+   - Set up the Postgres database:
+     - Delete the value from the DATABASES section and replace it with the following:
+     - ```DATABASES = { 'default': dj_database_url.parse(os.environ.get('DATABASE_URL) }```
+   - Add Cloudinary libraries into INSTALLED_APPS section:
+     - ```INSTALLED_APPS = [ 'cloudinary_storage', 'django.contrib.staticfiles', 'cloudinary' ]```
+   - From the Cloudinary dashboard, copy the API Environment Variable by selecting 'copy to clipboard'.
+   - In the env.py file, set the CLOUDINARY_URL to the value copied from the clipboard. (Note: Remember to remove the CLOUDINARY_URL= part from the beginning of the copied value.)
+   - In your Heroku dashboard, add CLOUDINARY_URL to the Config Vars and paste the value copied from the clipboard.
+   - At the end of the settings.py file add the following:
+     - ```STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'```
+     - ```STATICFILES_DIRS = [os.path.join.(BASE_DIR, 'static')]```
+     - ```STATIC_ROOT = os.path..join(BASE_DIR, 'staticfiles')```
+     - ```MEDIA_URL = '/media/'```
+     - ```DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'```
+   - Let Django know where templates will be stored by adding the following to the top of the file, under BASE_DIR:
+     - ```TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')```
+   - In the TEMPLATES setting, change the DIRS key to the following:
+      - ```'DIRS': [TEMPLATES_DIR]',```
+   - Add Heroku host name into ALLOWED_HOSTS:
+      - ```ALLOWED_HOSTS = ['appname.herokuapp.com', 'localhost']```
+   - Create the following three folders in the main directory:
+     - media
+     - static
+     - templates
+   - Create a file named 'Procfile' in the main directory and enter the following in the file:
+     - ```web: gunicorn appname.wsgi```
+8. Commit and deploy to Heroku:
+   - Make an initial commit and push to the GitHub repository:
+     - ```git add .```
+     - ```git commit -m 'Initial deployment'```
+     - ```git push```
+   - Return to your Heroku dashboard.
+   - Click on the Deploy tab.
+   - Select GitHub for deployment method. (note: Connect your GitHub account if it isn't already connected.)
+   - In the Connect to GitHub section, search for your repository.
+   - Click connect.
+   - Scroll down to Manual Deploy.
+   - Click 'Deploy Branch'.
+   - Once the app has been deployed successfully, you can click 'Open App' to view. You should see a screen with the message 'The install worked successfully! Congratulations!'.
+
+### Forking the Repository
+
+In order to fork the project, the following steps are to be followed:
+
+1. Log in to GitHub.
+2. Navigate to the repository.
+3. Find the 'Fork' button to the top right of the page.
+4. Once you click this button the fork will be in your repositories.
+
+### Cloning the Repository
+
+In order to run this project locally, the following steps are to be followed:
+
+1. Install the Gitpod Browser Extension for Chrome.
+2. After installation, restart the browser.
+3. Log into GitHub or create an account.
+4. Locate the GitHub Repository.
+5. Click the green 'Gitpod' button in the top right corner of the repository. This will trigger a new Gitpod workspace to be created from the code in GitHub where you can work locally.
+
+How to run this project within a local IDE, such as VSCode:
+
+1. Log into GitHub or create an account.
+2. Locate the GitHub Repository.
+3. Under the repository name, click "Clone or download".
+4. In the Clone with HTTPs section, copy the clone URL for the repository.
+5. In your local IDE open the terminal.
+6. Change the current working directory to the location where you want the cloned directory to be made.
+7. Type 'git clone', and then paste the URL you copied in Step 3.
+```git clone https://github.com/USERNAME/REPOSITORY```
+8. Press Enter. Your local clone will be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub here
 
 ## Credits
 
@@ -289,6 +477,8 @@ I followed along with the Code Institute walkthrough project, Boutique Ado, whic
 Content on the site has been written by myself.
 
 ### Content
+
+Content for some of the artist profiles and product descriptions were used and adapted from [Print Club London](https://printclublondon.com/).
 
 ### Media
 
