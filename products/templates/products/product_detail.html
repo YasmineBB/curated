@@ -58,11 +58,9 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             {% if request.user.is_superuser %}
-                            <div class="col-6 border border-info p-2">
-                                <p class="p-2 text-black">Manage this product</p>
+                            <div class="col-6 border border-info p-2 mt-4">
+                                <p class="p-2 text-black logo-font">Manage this product</p>
                                 <small class="mb-0 text-left p-2">
                                     <a href="{% url 'edit_product' product.id %}">Edit</a>
                                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
@@ -70,8 +68,6 @@
                             </div>
                             {% endif %}
                         </div>
-
-
                         <div class="col-12 p-0">
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-pill mt-5">
                                 <span class="icon">
