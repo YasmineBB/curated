@@ -33,6 +33,14 @@ body {
     width: fit-content;
 }
 
+.badge>span {
+    background-color: #D39822;
+}
+
+.category-badge.badge {
+    background-color: #D39822;
+}
+
 /*Buttons*/
 
 .view-all-button {
@@ -96,6 +104,17 @@ body {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+.overlay-about {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+    opacity: 0.3;
 }
 
 .delivery-banner {
@@ -181,7 +200,8 @@ body {
 /* Footer */
 
 .footer-container {
-    background: #D39822;
+    background: #fff;
+    border: 15px solid #D39822;
 }
 
 .footer-header {
@@ -192,13 +212,11 @@ body {
 
 .footer-text {
     font-family: 'kanit';
-    font-size: 12px;
     font-weight: 100;
-    word-wrap: break-word;
 }
 
 .fa-brands {
-    color: #2A5DDF;
+    color: #000;
 }
 
 ul {
@@ -220,13 +238,6 @@ ul>li {
     z-index: 99999999999;
     overflow: visible;
 }
-
-/* .custom-toast {
-    width: 200px;
-    height: 65px;
-    border: 1px solid;
-    overflow: visible;
-} */
 
 .toast-capper {
     height: 2px;
@@ -287,6 +298,10 @@ ul>li {
     padding-top: 2rem;
     margin: 15px 0;
     font-size: 1.4em;
+}
+
+.mailchimp-text {
+    color: #000;
 }
 
 /* Media Queries */
@@ -428,6 +443,10 @@ ul>li {
     .btn.btn-black.rounded {
         padding: .375rem .375rem;
         font-size: .75rem;
+    }
+
+    .footer-text {
+        font-size: 15px;
     }
 
     /* body {
