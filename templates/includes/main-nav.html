@@ -12,35 +12,16 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="ceramics-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Ceramics
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="ceramics-link">
-                <a href="{% url 'products' %}?category=ceramics" class="dropdown-item">All Ceramics</a>
-            </div>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5"
+                href="{% url 'products' %}?category=ceramics">Ceramics</a>
         </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="paintings-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Paintings
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="paintings-link">
-                <a href="{% url 'products' %}?category=paintings" class="dropdown-item">All Paintings</a>
-            </div>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5"
+                href="{% url 'products' %}?category=paintings">Paintings</a>
         </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="artists-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Artists
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="artists-link">
-                <a href="{% url 'artists' %}" class="dropdown-item">All Artists</a>
-            </div>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'artists' %}">Artists</a>
         </li>
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'testimonials' %}">Featured</a>
