@@ -1,8 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Testimonial
+from .forms import TestimonialForm
+
 
 def testimonials(request):
-    """ A view to display testimonials """
+    """ A view to display testimonials/features """
 
     testimonials = Testimonial.objects.all()
 
@@ -11,3 +15,28 @@ def testimonials(request):
     }
 
     return render(request, 'testimonials/testimonials.html', context)
+
+@login_required
+def add_testimonial(request):
+    """ Add a testimonial/feature to the database """
+    if not request.user.is_superuser and request.user.is_anonymous:
+        messages.error(request, 'Ooops! Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = TestimonialForm(request.POST, request.FILES)
+        if form.is_valid():
+            testimonial = form.save()
+            messages.success(request, f'Success! You added a feature of {testimonial.buyer_name} to the database.')
+            return redirect(reverse('testimonials'))
+        else:
+            messages.error(request, 'Failed to add feature. Please ensure the form is valid.')
+    else:
+        form = TestimonialForm()
+        
+    template = 'testimonials/add_testimonial.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
