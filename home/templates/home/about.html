@@ -11,20 +11,43 @@
 
 {% block content %}
 <div class="overlay-about"></div>
-<div class="container-fluid" style="height:100vh">
+<div class="container-fluid">
     <div class="row mt-5">
-        <div class="col text-center mt-5">
-            <h2 class="logo-font display-5 text-black mt-5">About <span class="logo-font">curated</span>
-            </h2>
+        <div class="col-12 text-center mt-5 about-section">
+            <h1 class="logo-font display-5 text-black mt-5">About <span class="logo-font">curated</span>
+            </h1>
             <hr class="w-50 mb-1">
             <h6 class="text-black mt-3"></h6>
-            <p class="text-black pt-2"> Want to be featured? <a class="logo-font font-weight-bold text-decoration-none"
-                    href="{% url 'contact' %}">Get in touch!</a>
-            </p>
+            <h2 class="logo-font pt-2"> Who are we?
+            </h2>
             <hr class="w-50 mb-1">
+            <p class="text-black pt-2 text-center about-text">We are curated. We love art, we love artists. And we want
+                everyone
+                to enjoy the
+                beautiful work of
+                talented artists as much as we do.</p>
+            <p class="text-black pt-2 text-center about-text">Our mission is to provide the platform to connect
+                customers with
+                artists.</p>
+            <p class="text-black pt-2 text-center about-text">We think that art is important, and that everyone should
+                have the
+                opportunity to
+                incorporate it into their lives, fitting their own unique style. We platform the artist as much as the
+                artwork.</p>
+            <h2 class="logo-font mt-4">Calling all artists!</h2>
+            <p class="text-black pt-2 text-center about-text">Are you an artist who would like to work with us and have
+                your work
+                showcased on
+                our
+                platform?
+                <h4><a class="logo-font font-weight-bold text-decoration-none" href="{% url 'contact' %}"> Get in
+                        touch!</a></h4>
+                <p class="text-black pt-2 text-center about-text">We'd love to hear from you! We want everyone to be
+                    able to have beautiful, unique pieces
+                    that match their style, and we
+                    can't
+                    do that without you!</p>
         </div>
-    </div>
-    <div class="row mt-4">
     </div>
 </div>
 {% endblock %}
