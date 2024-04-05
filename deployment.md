@@ -79,8 +79,8 @@ Open up your Gitpod tab and follow the steps below:
 10. Create a superuser for your new database
 
         python3 manage.py createsuperuser
-    - 🛈 Follow the steps to create a your superuser username and password. The email address can be left blank.
-11. Finally, to prevent exposing our database when we push to GitHub, we will delete it again from our settings.py - we’ll set it up again using an environment variable in the next heroku section - and reconnect to our local sqlite database. For now, your DATABASE setting in the settings.py file should look like this
+    - 🛈 Follow the steps to create your superuser username and password. The email address can be left blank.
+11. Finally, to prevent exposing our database when we push to GitHub, we will delete it again from our settings.py - we’ll set it up again using an environment variable in the next Heroku section - and reconnect to our local sqlite database. For now, your DATABASE setting in the settings.py file should look like this
 
         DATABASES = {
             'default': {
@@ -95,7 +95,7 @@ With that done, a good idea is to check the migrations on ElephantSQL. Let’s t
 
 Let’s confirm that the data in your database on ElephantSQL has been created.
 
-1. On the ElephantSQL page for your database, in the left side navigation, select **'BROWSER'**
+1. On the ElephantSQL page for your database, on the left side navigation, select **'BROWSER'**
 2. Click the **Table queries** button, select **auth_user**
 3. When you click **'Execute'**, you should see your newly created superuser details displayed. This confirms your tables have been created and you can add data to your database. Success!
 
@@ -124,26 +124,26 @@ Let’s confirm that the data in your database on ElephantSQL has been created.
 4. Now we can create our **Procfile** to tell Heroku to create a web dyno. In our root directory lets create a file named 'Procfile' and inside insert the code: 
 
         web: gunicorn **project_name_here**.wsgi:application
-5. Then, in heroku, navigate to **settings / config vars** and 'Add' new entry: **DISABLE_COLLECTSTATIC** with the value of **1**.
-This is to stop heroku from collecting any static files when we deploy.
+5. Then, in Heroku, navigate to **settings / config vars** and 'Add' new entry: **DISABLE_COLLECTSTATIC** with the value of **1**.
+This is to stop Heroku from collecting any static files when we deploy.
 6. We'll need to add the **hostname** of our Heroku app to ALLOWED_HOSTS in **settings.py**. We'll also add **localhost** in here so that Gitpod can work too.
 
 
         ALLOWED_HOSTS = ['project-name.herokuapp.com', 'localhost']
-7. Now lets **add, commit and push** these changes to Github, and then **deploy** to Heroku, either manually or trough CLI with commands:
+7. Then **add, commit and push** these changes to GitHub, and then **deploy** to Heroku, either manually or trough CLI with commands:
 
         git add .
         git commit -m "Your commit"
         git push
         git push heroku main
 
-   - NOTE: If you want your project to be automatically deployed to heroku when pushing your work to github you can. To do so, In heroku go to the deploy tab, and in the 'deployment method' section connect it to github. You will need to search for your repository and once found click 'connect'. Then scroll down and click 'Enable automatic deploys'. Now when you push to github your code will automatically deploy to Heroku as well.
+   - NOTE: If you want your project to be automatically deployed to Heroku when pushing your work to GitHub you can. To do so, In Heroku go to the 'deploy' tab, and in the 'deployment method' section connect it to GitHub. You will need to search for your repository and once found click 'connect'. Then scroll down and click 'Enable automatic deploys'. Now when you push to GitHub your code will automatically deploy to Heroku as well.
 
 - Your app will now be deployed, albeit without any static files, but this will be fixed when setting up AWS, documented below.
 8. Lastly, generate new Django SECRET_KEY and add it to **Config Vars** in Heroku.
    - 🛈 Just google django secret key generator to find one  
 
-   And then in **settings.py** replace the secret key setting with the call to get it from the enviroment and use an empty string as a default.
+   And then in **settings.py** replace the secret key setting with the call to get it from the environment and use an empty string as a default.
 
         SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
@@ -151,11 +151,11 @@ This is to stop heroku from collecting any static files when we deploy.
 
 If you haven't, please create free [AWS account](https://portal.aws.amazon.com/billing/signup#/start/email) and enter billing information (you will not be charged for the purposes of this project).
 
-1. Once you have created an account and logged in, under the All Services>Storage menu, click the link that says S3.
+1. Once you have created an account and logged in, under All Services>Storage menu, click the link that says S3.
 2. On the S3 page you will need to create a new bucket. To do this click the orange button that says 'Create Bucket'.
 3. Name the bucket and select the closest region to you. To keep things simple I recommend naming the bucket after your project's name.
-4. Under 'Object Ownership' select 'ACLs enabled' and leave the Object Ownership as Bucket owner preferred. 
-5. Uncheck the 'Block all public access' checkbox and check the warning box to acknowledge that the bucket will be made public, then click create bucket. 
+4. Under 'Object Ownership' select 'ACLs enabled' and leave the Object Ownership as Bucket owner preferred.
+5. Uncheck the 'Block all public access' checkbox and check the warning box to acknowledge that the bucket will be made public, then click create bucket.
 6. Once created, click the bucket's name and navigate to the properties tab. Scroll to the bottom and under 'Static website hosting' click 'edit' and change the Static website hosting option to 'enabled'. Copy the default values for the index and error documents and click 'save changes'.
 7. Now navigate to the permissions tab, scroll down to the Cross-origin resource sharing (CORS) section, click edit and paste in the following code:
 
@@ -184,7 +184,7 @@ If you haven't, please create free [AWS account](https://portal.aws.amazon.com/b
 ## Creating AWS Groups, Policies and Users
 
 1. Now that our bucket is ready we need to create a user to access it. In the search bar at the top of the window, search for IAM and select it.
-2. Once on the IAM page, click 'User Groups' from the side bar, then click 'Create group'.
+2. Once on the IAM page, click 'User Groups' from the sidebar, then click 'Create group'.
 3. Name the group 'manage-*your-project-name*' and click 'Create group' at the bottom of the page. 
 4. Then from the sidebar click 'Policies', then 'Create policy'.
 5. Go to the JSON tab and click 'import managed policy'. Search for 'S3' and select 'AmazonS3FullAccess' and click import.
@@ -207,18 +207,18 @@ If you haven't, please create free [AWS account](https://portal.aws.amazon.com/b
                 ]
         }
 
-7. Click 'Next: Tags', 'Next: Review', and on this page give the policy a name. This could be something as simple as the project name followed by the word policy, and then a short description eg: Access to S3 bucket for 'YOUR PROJECT' static files. Then click 'Create policy'. 
+7. Click 'Next: Tags', 'Next: Review', and on this page give the policy a name. This could be something as simple as the project name followed by the word policy, and then a short description eg: Access to S3 bucket for 'YOUR PROJECT' static files. Then click 'Create policy'.
 8. This will take you back to the policy page where you should be able to see your newly created policy. Now we need to attach it to the group we created.  
-9. Click 'User groups', and click the group you created earlier. Go to the permissions tab and click 'Add permission' and from the dropdown click 'Attach policies'. 
+9. Click 'User groups', and click the group you created earlier. Go to the permissions tab and click 'Add permission' and from the dropdown click 'Attach policies'.
 10. Find the policy you just created, select it and click 'Add permissions'.
-11. Finally you need to create a user to put in the group. Select users from the sidebar and click 'Add user'.  
-12. Give your user a user name, check 'Programmatic Access', then click 'Next: Permissions'. 
+11. Finally, you need to create a user to put in the group. Select users from the sidebar and click 'Add user'.  
+12. Give your user a username, check 'Programmatic Access', then click 'Next: Permissions'.
 13. Select your group that has the policy attached and click 'Next: Tags', 'Next: Review', then 'Create user'.
-14. On the next page, download the CSV file. This contains the user's access key and secret access key which you will need later. 
+14. On the next page, download the CSV file. This contains the user's access key and secret access key which you will need later.
 
 ## Connecting Django to S3
 
-Now that we have created a S3 bucket with its user group attached, we need to connect it to django.
+Now that we have created a S3 bucket with its user group attached, we need to connect it to Django.
 
 1. First we will need to install two packages. Boto3 and Django storages. Do this by running these commands:  
 
@@ -230,8 +230,8 @@ Now that we have created a S3 bucket with its user group attached, we need to co
         pip3 freeze > requirements.txt
 
 2. You will then need to add 'storages' to your installed apps section inside your settings.py file. Do that now. 
-3. Next, we will need to add some additional settings to the same file to let django know what bucket it's communicating with. 
-4. Somewhere near the bottom of the file you should write an if statement to check if there is an environment variable called USE_AWS. This variable does not exist yet but we will add it later. Inside the if statement, write the following settings so it looks like this:
+3. Next, we will need to add some additional settings to the same file to let Django know what bucket it's communicating with. 
+4. Somewhere near the bottom of the file you should write an if statement to check if there is an environment variable called USE_AWS. This variable does not exist yet, but we will add it later. Inside the if statement, write the following settings, so it looks like this:
 
         if 'USE_AWS' in os.environ:
                 AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
@@ -239,15 +239,15 @@ Now that we have created a S3 bucket with its user group attached, we need to co
                 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
                 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
-5. Next, hop back to heroku and in the settings tab, under config vars, you will need to add some keys with values that were downloaded earlier in the CSV file.
+5. Next, hop back to Heroku and in the settings tab, under config vars, you will need to add some keys with values that were downloaded earlier in the CSV file.
 6. Add the key, AWS_ACCESS_KEY_ID with the value that was generated in the CSV file earlier. Then add the key AWS_SECRET_ACCESS_KEY, and again add the value that was generated in the CSV file. Once they have both been added, add the key USE_AWS, and set the value to True.
 7. You can now also remove the DISABLE_COLLECTSTAIC variable, since django should now collect static files automatically and upload them to S3.
-8. Now head back to the settings.py file in your django project and head back to the if statement we wrote earlier and inside the statement add this line setting:  
+8. Now head back to the settings.py file in your Django project and head back to the if statement we wrote earlier and inside the statement add this line setting:  
 
         AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    This is to tell django where our static files will be coming from in production.
-9. Next we need to create a file to tell django that we want to use S3 to store our static files whenever someone runs collectstatic and also that we want any uploaded product images to go there also.
+    This is to tell Django where our static files will be coming from in production.
+9. Next we need to create a file to tell Django that we want to use S3 to store our static files whenever someone runs collectstatic and also that we want any uploaded product images to go there also.
 10. In the root directory of your project create a file called 'custom_storages.py'. Inside this file you will need to import your settings as well as the s3boto3 storage class. So at the top of the file insert the code:  
 
         from django.conf import settings
@@ -262,7 +262,7 @@ Now that we have created a S3 bucket with its user group attached, we need to co
         class MediaStorage(S3Boto3Storage):
                 location = settings.MEDIAFILES_LOCATION
 
-    The STATICFILES_LOCATION and MEDIAFILES_LOCATION have yet to be defined, so lets do that now.
+    The STATICFILES_LOCATION and MEDIAFILES_LOCATION have yet to be defined, so let's do that now.
 12. Back in the settings.py file, underneath the bucket config settings but still inside the if statement, add these lines:  
 
         STATICFILES_STORAGE = 'custom_storages.StaticStorage'
@@ -270,12 +270,12 @@ Now that we have created a S3 bucket with its user group attached, we need to co
         DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
         MEDIAFILES_LOCATION = 'media'
 
-13. Next, you will also need to override and explicitly set the URLs for static and media files using your custom domain and new locations. To do this add these two lines inside the same if statement:  
+13. Next, you will also need to override and explicitly set the URLs for static and media files using your custom domain and new locations. To do this, add these two lines inside the same if statement:  
 
         STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
         MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-14. If you now save, add, commit and push your changes, you should see that your S3 bucket now has a static folder with all your static files inside. Next, we need to handle the Media files but first, inside the if statement add the following code. This helps to speed things up by letting the browser know that its ok to cache static files for a long time:    
+14. If you now save, add, commit and push your changes, you should see that your S3 bucket now has a static folder with all your static files inside. Next, we need to handle the Media files but first, inside the if statement add the following code. This helps to speed things up by letting the browser know that it's ok to cache static files for a long time:
 
         AWS_S3_OBJECT_PARAMETERS = {
                 'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
@@ -284,7 +284,7 @@ Now that we have created a S3 bucket with its user group attached, we need to co
 
 ## Caching, Media Files & Stripe
 
-1. Back in S3, go to your bucket and click 'Create folder'. Name the folder 'media' and click 'Save'. 
+1. Back in S3, go to your bucket and click 'Create folder'. Name the folder 'media' and click 'Save'.
 2. Inside the new media folder you just created, click 'Upload', 'Add files', and then select all the images that you are using on your site.
 3. Then under 'Permissions' select the option 'Grant public-read access' and click upload. You may need to also check an acknowledgment warning checkbox too. 
 4. Once that is finished you're all set. All your static files and media files should be automatically linked from django to your S3 bucket.
@@ -293,20 +293,20 @@ Now that we have created a S3 bucket with its user group attached, we need to co
 
 6. Now, we will set up a webhook, sign into your stripe account and click 'Developers' located in the top right of the navbar.
 7. Then in the side-nav under the Developers title, click on 'Webhooks', then 'Add endpoint'.
-8. On the next page you will need to input the link to your heroku app followed by /checkout/wh/. It should look something like this:  
+8. On the next page you will need to input the link to your Heroku app followed by /checkout/wh/. It should look something like this:  
 
         https://your-app-name.herokuapp.com/checkout/wh/
 
 9. Then click '+ Select events' and check the 'Select all events' checkbox at the top before clicking 'Add events' at the bottom. Once this is done finish the form by clicking 'Add endpoint'.
-10. Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
-6. Head over to your app in heroku and navigate to the config vars section under settings. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
+10. Your webhook is now created, and you should see that it has generated a secret key. You will need this to add to your Heroku config vars.
+6. Head over to your app in Heroku and navigate to the config vars section under settings. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
 7. Add these values under these keys:  
 
         STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
         STRIPE_SECRET_KEY = 'insert your secret key'
         STRIPE_WH_SECRET = 'insert your webhooks secret key'
 
-8. Finally, back in your setting.py file in django, insert the following near the bottom of the file:  
+8. Finally, back in your setting.py file in Django, insert the following near the bottom of the file:  
 
         STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
         STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
