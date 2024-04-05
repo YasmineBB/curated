@@ -58,42 +58,12 @@
                     </small>
                 </div>
                 {% endif %}
-
-                <!--NEED TO FIX -->
-                <!-- <div>
-                    <div class="row">
-                        {% for product in artists %}
-                        <div class="col">
-
-                            <p class="text-black">hello</p>
-                            <p>hello<a href="{% url 'product_detail' artist.product.id %}">{{ product.artist.id }}</a>
-                            </p>
-
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div> -->
-
                 <a href="{% url 'artists' %}" class="btn btn-black btn-outline-black rounded-pill mt-5">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
                     <span class="text-uppercase pr-2">Back to All Artists</span>
                 </a>
-
-                <!-- <div>
-                    <div class="row">
-                        <div class="col">
-                            {% if artist.product.id %}
-                            <p>hello</p>
-                            <p>hello<a
-                                    href="{% url 'products' artist.product.id %}{{ artist.product.id }}">{{ product.artist }}</a>
-                            </p>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div> -->
-
             </div>
             </form>
         </div>
