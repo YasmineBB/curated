@@ -4,7 +4,6 @@ from django.contrib.auth.decorators import login_required
 from products.models import Artist, Product
 from .forms import ArtistForm
 
-# Create your views here.
 
 def all_artists(request):
     """ A view to display all artists """
@@ -32,15 +31,10 @@ def artist_detail(request, artist_id):
 
 @login_required
 def add_artist(request):
-    """ Add an artist to the database """
+    """ A view to add an artist to the database """
     if not request.user.is_superuser and request.user.is_anonymous:
         messages.error(request, 'Ooops! Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    # else:
-    #     if request.user.is_anonymous:
-    #         messages.error(request, 'Ooops! Sorry, only store owners can do that.')
-    #     return redirect(reverse('home'))
-
     if request.method == 'POST':
         form = ArtistForm(request.POST, request.FILES)
         if form.is_valid():
@@ -62,7 +56,7 @@ def add_artist(request):
 
 @login_required
 def edit_artist(request, artist_id):
-    """ Make changes to an artist in the database """
+    """ A view to make changes to an artist in the database """
     if not request.user.is_superuser:
         messages.error(request, 'Ooops! Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -91,7 +85,7 @@ def edit_artist(request, artist_id):
 
 @login_required
 def delete_artist(request, artist_id):
-    """ Delete an artist from the database """
+    """ A view to delete an artist from the database """
     if not request.user.is_superuser:
         messages.error(request, 'Ooops! Sorry, only store owners can do that.')
         return redirect(reverse('home'))
