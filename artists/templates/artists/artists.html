@@ -46,7 +46,7 @@
                                 </a>
                                 {% else %}
                                 <a href="{% url 'artist_detail' artist.id %}">
-                                    <img class="text-center image" src="{{ MEDIA_URL }}image_coming_soon.jpg"
+                                    <img class="text-center artist-image" src="{{ MEDIA_URL }}image_coming_soon.jpg"
                                         alt="{{ artist.name }}">
                                 </a>
                                 {% endif %}
