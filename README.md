@@ -112,7 +112,7 @@ I have created user stories for all users of the site which are:
 - Site User
 - Site Admin
 
-##### User Registration and Profile
+##### EPIC - User Registration and Profile
 
 As a Site User:
 
@@ -121,7 +121,7 @@ As a Site User:
 - I want to be able to reset my password so that I can recover and access my account if I forget the password.
 - I can view my profile so that I can save my shipping details and see my order history.
 
-##### Product Viewing and Navigation
+##### EPIC - Product Viewing and Navigation
 
 As a Site User:
 - I want to be able to view the details of a product so that I can decide whether I want to make a purchase
@@ -136,7 +136,7 @@ As a Site Admin:
 - I want to be able to make updates to products on the site so that any changes are reflected on the site.
 - I want to be able to delete products on the site so that any changes are reflected on the site.
 
-##### Shopping Basket
+##### EPIC - Shopping Basket
 
 As a Site User:
 
@@ -144,14 +144,14 @@ As a Site User:
 - I want to be able to add items to my basket so that I can make a purchase.
 - I want to be able to delete items from my basket so that I can decide on my final purchase.
 
-##### Purchasing
+##### EPIC - Purchasing
 
 As a Site User:
 
 - I want to be able to make a purchase on the site so that I can buy and enjoy the items I had in my basket.
 - I want to receive an email confirmation so that I can make sure my purchase was successful.
 
-##### Artist Profile
+##### EPIC - Artist Profile
 
 As a Site User:
 
@@ -163,7 +163,7 @@ As a Site Admin:
 - I want to be able to edit artist profiles on the database so that artists can have their most up-to-date information on the site.
 - I want to be able to delete artists from the database so that only the artists whose work is listed appears on the site.
 
-##### Features/Testimonials
+##### EPIC - Features/Testimonials
 
 As a Site User:
 
@@ -173,7 +173,7 @@ As a Site Admin:
 
 - I want to be able to add a testimonial so that users can view them and are encouraged to use the platform and make purchases.
 
-##### Contact
+##### EPIC - Contact
 
 As a Site User:
 
@@ -308,6 +308,10 @@ The links to socials only take the user to each sites' homepage for the purpose 
 
 I had an issue when testing user sign up on the site. After entering all the information and clicking the Sign-Up button, the page was stuck on loading and wouldn't take the user to the intended next step, which was sending the confirmation link and displaying the page explaining so. The user was, however, added to the database, after checking in the Django admin. When signing up using the same information, assuming it hadn't been successful, the user was alerted that a user with that information already existed in the database. After spending time troubleshooting, I contacted tutor Support who assisted me and discovered the fix was that Heroku wasn't using the correct version of Python, and the fix was to create a runtime.txt file and that solved the issue.
 
+### Toast admin
+
+If admin has an item in their basket and they use crud functionality, the messages show their basket contents with each message alert.
+
 ## Technologies Used
 
 ### Languages Used
@@ -352,7 +356,7 @@ django-storages - Used for storage backends.
 
 Stripe has been used to implement the payment processing system in the project.
 
-In developer mode, endpoints have been set up to allow the sending of Webhooks in developer mode and the deployed site.
+Endpoints have been set up to allow the sending of Webhooks in developer mode and the deployed site.
 
 When testing payments I have used the testing cards that Stripe has listed on its website.
 
@@ -362,78 +366,7 @@ When testing payments I have used the testing cards that Stripe has listed on it
 
 ## Deployment
 
-### Deploying to Heroku UPDATE!!!
-
-To deploy the site from the GitHub repository to Heroku, the following steps were taken:
-
-1. Go to the [Heroku](https://id.heroku.com/login) website and log in or sign up if you don't have an account already.
-2. Create the Heroku App:
-   - Click the 'New' button on the Heroku dashboard.
-   - Click 'Create New App':
-3. Give the app a unique name:
-   - I gave this project the name curated
-4. Select the region:
-   - In my case I selected Europe.
-5. Add the database:
-   - Click on the Resources tab
-   - In the 'Add-ons' box search for 'Heroku Postgres' and click it to add it to the project.
-   - Select 'Hobby Dev - free' from the 'plan name' dropdown and click 'Submit Order Form'.
-6. Prepare the environment:
-   - Click on the Settings tab.
-   - Click 'Reveal Config Vars' to display the DATABASE_URL.
-   - Copy the url next to DATABASE_URL.
-   - Return to the GitPod workspace.
-   - Create a file called env.py in the main directory.
-   - In the env.py file, set the following environment variables:
-     - Set the DATABASE_URL by pasting in the url copied from Heroku.
-     - Set the SECRET_KEY to your chosen value.
-   - Add the SECRET_KEY value to Config Vars in Heroku.
-7. Set up settings.py:
-   - At the top of the file, add the following:
-     - ```import os```
-     - ```import dj_database_url```
-     - ```if os.path.isfile('env.py'):import env```
-   - In the SECRET_KEY section, remove the insecure key and add in the environment variable:
-     - ```SECRET_KEY = os.environ.get('SECRET_KEY')```
-   - Set up the Postgres database:
-     - Delete the value from the DATABASES section and replace it with the following:
-     - ```DATABASES = { 'default': dj_database_url.parse(os.environ.get('DATABASE_URL) }```
-   - Add Cloudinary libraries into INSTALLED_APPS section:
-     - ```INSTALLED_APPS = [ 'cloudinary_storage', 'django.contrib.staticfiles', 'cloudinary' ]```
-   - From the Cloudinary dashboard, copy the API Environment Variable by selecting 'copy to clipboard'.
-   - In the env.py file, set the CLOUDINARY_URL to the value copied from the clipboard. (Note: Remember to remove the CLOUDINARY_URL= part from the beginning of the copied value.)
-   - In your Heroku dashboard, add CLOUDINARY_URL to the Config Vars and paste the value copied from the clipboard.
-   - At the end of the settings.py file add the following:
-     - ```STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'```
-     - ```STATICFILES_DIRS = [os.path.join.(BASE_DIR, 'static')]```
-     - ```STATIC_ROOT = os.path..join(BASE_DIR, 'staticfiles')```
-     - ```MEDIA_URL = '/media/'```
-     - ```DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'```
-   - Let Django know where templates will be stored by adding the following to the top of the file, under BASE_DIR:
-     - ```TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')```
-   - In the TEMPLATES setting, change the DIRS key to the following:
-      - ```'DIRS': [TEMPLATES_DIR]',```
-   - Add Heroku host name into ALLOWED_HOSTS:
-      - ```ALLOWED_HOSTS = ['appname.herokuapp.com', 'localhost']```
-   - Create the following three folders in the main directory:
-     - media
-     - static
-     - templates
-   - Create a file named 'Procfile' in the main directory and enter the following in the file:
-     - ```web: gunicorn appname.wsgi```
-8. Commit and deploy to Heroku:
-   - Make an initial commit and push to the GitHub repository:
-     - ```git add .```
-     - ```git commit -m 'Initial deployment'```
-     - ```git push```
-   - Return to your Heroku dashboard.
-   - Click on the Deploy tab.
-   - Select GitHub for deployment method. (note: Connect your GitHub account if it isn't already connected.)
-   - In the Connect to GitHub section, search for your repository.
-   - Click connect.
-   - Scroll down to Manual Deploy.
-   - Click 'Deploy Branch'.
-   - Once the app has been deployed successfully, you can click 'Open App' to view. You should see a screen with the message 'The install worked successfully! Congratulations!'.
+Full steps taken to deploy the site can be found [here](./deployment.md).
 
 ### Forking the Repository
 
