@@ -338,9 +338,6 @@ Languages used in this project include:
 #### Libraries & Packages
 
 - Font Awesome - Used for the icons used across the site.
-- Favicon - Used to create the favicon.
-- Balsamiq - Used to create the wireframes.
-- DrawSQL - Used to create the database schema.
 - Google Developer Tools - Used for testing for example responsiveness and troubleshooting.
 - jQuery - JavaScript library to simplify tasks and event handling.
 - pillow - Python library to deal with images.
@@ -351,6 +348,13 @@ Languages used in this project include:
 - django-crispy-forms - Used to render forms on the site.
 django-storages - Used for storage backends.
 - psycopg2 - Used to allow connection with a postgres database.
+
+#### Programs
+
+- [Favicon](https://favicon.io/favicon-generator/) - Used to create the favicon.
+- [Balsamiq](https://balsamiq.com/) - Used to create the wireframes.
+- [DrawSQL](https://drawsql.app/) - Used to create the database schema.
+- [Tiny PNG](https://tinypng.com/) - Used to compress the images uploaded to the site.
 
 ### Stripe
 
