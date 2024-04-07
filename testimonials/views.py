@@ -19,7 +19,7 @@ def testimonials(request):
 @login_required
 def add_testimonial(request):
     """ Add a testimonial/feature to the database """
-    if not request.user.is_superuser and request.user.is_anonymous:
+    if not request.user.is_superuser:
         messages.error(request, 'Ooops! Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 

@@ -32,7 +32,7 @@ def artist_detail(request, artist_id):
 @login_required
 def add_artist(request):
     """ A view to add an artist to the database """
-    if not request.user.is_superuser and request.user.is_anonymous:
+    if not request.user.is_superuser:
         messages.error(request, 'Ooops! Sorry, only store owners can do that.')
         return redirect(reverse('home'))
     if request.method == 'POST':
