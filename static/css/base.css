@@ -41,7 +41,59 @@ body {
     background-color: #D39822;
 }
 
-/*Buttons*/
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.dropdown-menu:hover {
+    color: #2A5DDF;
+}
+
+.nav-link:hover {
+    color: #D39822 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+.delivery-banner {
+    background-color: #2A5DDF;
+}
+
+.checkout-heading {
+    color: #2A5DDF;
+    font-family: 'syncopate';
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.remove-item {
+    cursor: pointer;
+}
+
+#auth-card {
+    opacity: 0.8;
+}
+
+/* Buttons */
 
 .view-all-button {
     background: black;
@@ -57,7 +109,6 @@ body {
 .btn-outline-black {
     background: white;
     color: black !important;
-    /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -115,43 +166,6 @@ body {
     opacity: 0.7;
 }
 
-
-
-.text-black {
-    color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.dropdown-menu:hover {
-    color: #2A5DDF;
-}
-
-.nav-link:hover {
-    color: #D39822 !important;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
-}
-
-.delivery-banner {
-    background-color: #2A5DDF;
-}
-
-.checkout-heading {
-    color: #2A5DDF;
-    font-family: 'syncopate';
-}
-
 /* Artists */
 
 .container {
@@ -198,29 +212,6 @@ body {
     font-family: 'syncopate';
     color: #000;
     text-decoration: none;
-}
-
-/* .card-img-top-all {
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-} */
-
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.btt-link,
-.remove-item {
-    cursor: pointer;
-}
-
-#auth-card {
-    opacity: 0.8;
 }
 
 /* Footer */
@@ -342,13 +333,13 @@ ul>li {
         max-width: 80%;
     } */
 
-    .artist-heading {
+    /* .artist-heading {
         margin-top: 5rem;
-    }
+    } */
 
 }
 
-/* fixed top navbar only on medium and up */
+/* fixed top navbar on medium and up screens */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -371,6 +362,7 @@ ul>li {
     }
 }
 
+/* Add margins on larger screens */
 @media (min-width: 992px) {
 
     .product-detail-cont {
@@ -388,45 +380,6 @@ ul>li {
     #auth-card {
         margin-top: 7rem !important;
     }
-
-    /* .container {
-        margin-top: 7rem !important;
-    } */
-}
-
-/* pad the top a bit when navbar is collapsed on mobile */
-/* @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-} */
-
-
-/* @media only screen and (max-width: 900px) {
-    .header-container {
-        padding-top: 100px;
-    }
-} */
-
-
-/* @media only screen and (max-width: 600px) {
-    .header-container {
-        padding-top: 100px;
-        padding-right: 60px;
-    }
-} */
-
-
-@media only screen and (min-width: 450px) {
-    /* .container {
-        padding-top: 50px;
-        padding-right: 50px;
-    /* }
-    */
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -478,12 +431,9 @@ ul>li {
     .footer-text {
         font-size: 15px;
     }
-
-    /* body {
-        height: calc(100vh - 116px);
-    } */
 }
 
+/* Make headings and nav links smaller on smallest breakpoint */
 @media only screen and (max-width: 350px) {
     .container {
         margin-top: 5rem !important;
