@@ -124,6 +124,7 @@ As a Site User:
 ##### EPIC - Product Viewing and Navigation
 
 As a Site User:
+
 - I want to be able to view the details of a product so that I can decide whether I want to make a purchase
 - I want to be able to search keywords so that I can quickly find what I am looking for.
 - I want to be able to sort and filter my search so that I can quickly find what I am looking for
@@ -171,15 +172,32 @@ As a Site User:
 
 As a Site Admin:
 
-- I want to be able to add a testimonial so that users can view them and are encouraged to use the platform and make purchases.
+- I want to be able to add a feature/testimonial so that users can view them and are encouraged to use the platform and make purchases.
+- I want to be able to edit a feature/testimonial so that any mistakes can be rectified or images changed.
+- I want to be able to delete a feature/testimonial in case it no longer fits the purpose of the site.
 
 ##### EPIC - Contact
 
 As a Site User:
 
-- I want to be able to submit a contact form so that I can communicate with Curated.
+- I want to be able to submit a contact form so that I can communicate with curated.
 
 #### Database Schema
+
+An Entity Relational Diagram was created for this project and shows the relationship between the models/databases.
+
+![ERD](./documentation/readme/database-schema.png)
+
+There are eight models in this project:
+
+- User
+- UserProfile
+- Order
+- Products
+- Category
+- Artist
+- Contact
+- Testimonial
 
 ### Skeleton Plane
 
@@ -191,11 +209,17 @@ As a Site User:
 
 #### Colour Scheme
 
-I have chosen to use an overall muted colour scheme with a bold blue feature colour. The reason for this is so that the artworks are the main focus for the user, and the site provides a clean base for the works. The name of the site is a bold blue, and most of the text on the site is in black, to contrast against the white background. When an item in the navigation bar is hovered over, it's highlighted in a golden yellow colour to make it clear to users the page they will be selecting.
+There is an overall muted colour scheme for the site with a bold blue feature colour and a complementary mustard yellow. The reason for this is so that the artworks are the main focus for the user, and the site provides a clean base for the works. The site header of the site is a bold blue, and most of the text on the site is in black, to contrast against the white background. Some headings are in blue, some in mustard yellow. When an item in the navigation bar is hovered over, it's highlighted in mustard yellow to make it clear to users the page they will be selecting.
 
 Below is the colour scheme which was created in [Coolers](https://coolors.co/000000-2a5ddf-d39822-ffffff).
 
 ![Coolers](/documentation/readme/coolers.png)
+
+During testing, and wanting to ensure the site is accessible, another shade of yellow was added. This is explained in the testing file.
+
+So the final colour scheme looks like this. The change is barely visible, but I wanted to make sure the site was as accessible as possible whilst also maintaining the overall style and feel of the site.
+
+![Coolers-updated](./documentation/readme/curated-updated.png)
 
 #### Font
 
@@ -245,11 +269,34 @@ Here is an example of the use of labelling and milestones on one of my issues:
 
 ### Current Features
 
+#### Homepage
+
+![Hompage](./documentation/readme/homepage.png)
+
+The homepage has a 
+
 #### Navigation
 
-The navigation bar includes a search bar where users can search for terms that are included in the product name, category, description as well as the artist name.
 
-Also included is a profile link where users can log in and out, and a shopping bag icon that displays the contents if the user has added any items.
+
+The navigation bar contains the site's header, curated, which redirects the user back to the homepage from any page on the site. Navigation links include:
+
+- A dropdown link on Products where users can view all products, products by price, category or artist.
+- Ceramics - which takes the user to a page that displays all the pieces in the category Ceramics.
+- Paintings - which takes the user to a page that displays all the pieces in the category Paintings.
+- Artists - which takes the user to the page that displays all artists.
+- Featured - which takes the user to the page that features artists work in the homes of their consumers.
+
+It also includes a search bar where users can search for terms that are included in the product name, category, description as well as the artist name.
+
+There is a My Profile link where users can either register, log in, log out. If the user is a superuser or admin, there are links to:
+
+- Product Management
+- Artist Management
+- Feature Management
+
+There is also a shopping cart icon that displays the value of the contents if the user has added any items or 0 if empty. If the basket contains any items it is highlighted to
+reflect this to the user.
 
 Below that are navigation links to the products, categories and artists.
 
