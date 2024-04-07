@@ -101,9 +101,10 @@ body {
     padding: 5rem;
 }
 
-/* Contact */
+/* Overlays */
 
-.overlay-contact-success {
+.overlay-contact-success,
+.overlay-error {
     height: 100%;
     width: 100%;
     top: 0;
@@ -113,6 +114,7 @@ body {
     z-index: -1;
     opacity: 0.7;
 }
+
 
 
 .text-black {
@@ -237,6 +239,10 @@ body {
 .footer-text {
     font-family: 'kanit';
     font-weight: 100;
+}
+
+.footer-control {
+    min-height: 85%;
 }
 
 .fa-brands {
