@@ -38,6 +38,7 @@ select option[value=""] {
 .order-heading {
     color: #2A5DDF;
     font-family: 'Syncopate';
+    font-weight: 600;
 }
 
 #loading-overlay {
@@ -57,4 +58,11 @@ select option[value=""] {
     justify-content: center;
     margin: auto;
     height: 50%;
+}
+
+.order-form-field {
+    top: 4px;
+    width: 100%;
+    left: 2%%;
+    position: relative;
 }
