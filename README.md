@@ -537,8 +537,31 @@ Most of the content on the site has been written by myself with some content for
 
 All product and artist images used on the site were taken from:
 
-- [Unsplash](https://unsplash.com/photos/multicolored-abstract-painting--zASKXkwkIY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
-- [Freepik](https://www.freepik.com/free-ai-image/elegant-modern-vase-design_47992970.htm#query=largevase&position=8&from_view=search&track=ais_ai_generated&uuid=56c5256d-d10d-4c5c-8604-e9c6e1b0cb9b)
+- [Freepik](https://www.freepik.com/)
+- [Unsplash](https://unsplash.com/)
+
+#### Homepage Image
+
+- [Homepage](https://unsplash.com/photos/brown-clay-vase-on-white-wooden-shelf-O4sAutEMPNM)
+
+#### Artist Images
+
+- [Artist-1](https://unsplash.com/photos/woman-in-gray-long-sleeve-shirt-writing-on-white-paper-o15lOC7SJKs)
+- [Artist-2](https://unsplash.com/photos/man-in-white-crew-neck-shirt-7v70tbUD7GE)
+- [Artist-3](https://unsplash.com/photos/a-woman-is-making-a-vase-out-of-clay-KedwQjtLCYU)
+- [Artist-4](https://unsplash.com/photos/cph_MChcDWY)
+
+#### Product Images
+
+- [Painting-1](https://unsplash.com/photos/a-painting-on-a-wall-with-a-lot-of-paint-splattered-on-it-7vxAgEu4JlU)
+- [Painting-2](https://unsplash.com/photos/QbTwalepFn0)
+- [Painting-3](https://unsplash.com/photos/yellow-blue-and-green-abstract-painting-D2dwVE-sGjU)
+- [Painting-4](https://unsplash.com/photos/multicolored-abstract-painting--zASKXkwkIY)
+- [Painting-5](https://unsplash.com/photos/multicolored-graffiti-yFy7sS3pVZk)
+- [Ceramics-1](https://unsplash.com/photos/white-and-brown-ceramic-vase-aS5bxWhR7J0)
+- [Ceramics-2](https://www.freepik.com/free-ai-image/elegant-modern-vase-design_47992970.htm#query=largevase&position=8&from_view=search&track=ais_ai_generated&uuid=56c5256d-d10d-4c5c-8604-e9c6e1b0cb9b)
+- [Ceramics-3](https://www.freepik.com/free-ai-image/elegant-modern-vase-design_47992953.htm#query=largevase&position=17&from_view=search&track=ais_ai_generated&uuid=797759c2-3a8d-4227-8e83-70e82a0fef7f)
+- [Ceramics-4](https://unsplash.com/photos/green-and-brown-plant-in-clear-glass-vase-HGzqLrytONM)
 
 ### Acknowledgements
 
