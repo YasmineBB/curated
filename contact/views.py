@@ -55,4 +55,3 @@ def enquiries(request):
     }
 
     return render(request, 'contact/enquiries.html', context)
-
