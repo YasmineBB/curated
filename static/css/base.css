@@ -337,10 +337,10 @@ ul>li {
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
+@media (max-width: 1200px) {
+    /* .container {
         max-width: 80%;
-    }
+    } */
 
     .artist-heading {
         margin-top: 5rem;
@@ -430,7 +430,7 @@ ul>li {
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 
     .container {
         margin-top: 3rem !important;
