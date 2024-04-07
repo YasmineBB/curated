@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /accounts/
+Disallow: /basket/
+Disallow: /checkout/
+Disallow: /profile/
+Sitemap: https://curated-1a2337d3b0f9.herokuapp.com/sitemap.xml
