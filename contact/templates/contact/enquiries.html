@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col text-center mt-5">
+            <h2 class="logo-font display-5 mt-5">All customer contact enquiries
+            </h2>
+            <hr class="w-75 mb-1">
+        </div>
+    </div>
+    <div class="col-12 mt-5">
+        {% for enquiry in enquiries %}
+        <div class="mt-4 mx-3">
+            <h6 class="text-black logo-font"><strong>From: </strong>{{ enquiry.contact_name }}</h6>
+            <p class="text-black logo-font">
+                <strong>Email: </strong>{{ enquiry.contact_email }}
+                {% if enquiry.contact_subject %}
+                <p class="text-black logo-font"><strong>Subject: </strong>{{ enquiry.contact_subject }}</p>
+                {% endif %}
+                <p class="text-black logo-font"><strong>Message: </strong>{{ enquiry.contact_message }}</p>
+                <hr class="w-100 mb-4">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
