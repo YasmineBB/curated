@@ -57,16 +57,6 @@ body {
     color: #D39822 !important;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
-}
-
 .delivery-banner {
     background-color: #2A5DDF;
 }
@@ -145,7 +135,6 @@ body {
 .about-text {
     line-height: 1.5;
     font-size: 15px;
-    /* font-family: 'syncopate'; */
 }
 
 .about-section {
@@ -153,6 +142,16 @@ body {
 }
 
 /* Overlays */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
 
 .overlay-contact-success,
 .overlay-error {
@@ -230,6 +229,7 @@ body {
 .footer-text {
     font-family: 'kanit';
     font-weight: 100;
+    font-size: 17px;
 }
 
 .footer-control {
@@ -275,7 +275,6 @@ ul>li {
     font-family: 'syncopate';
     font-weight: 100;
 }
-
 
 /* Product Form */
 
@@ -326,18 +325,6 @@ ul>li {
 }
 
 /* Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (max-width: 1200px) {
-    /* .container {
-        max-width: 80%;
-    } */
-
-    /* .artist-heading {
-        margin-top: 5rem;
-    } */
-
-}
 
 /* fixed top navbar on medium and up screens */
 @media (min-width: 992px) {
