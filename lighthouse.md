@@ -7,10 +7,14 @@ As part of the testing of the site, all pages were run through Google Lighthouse
 After running Google Lighthouse testing on all pages on the site, some main issues were as follows:
 
 - Performance - low scores
-  - A lot of the issues that were presented with performance scoring came down to issues that I couldn't fix here, for example 'Site uses third party cookies'. These are from Mailchimp and Stripe which I have no control over.
+  - A lot of the issues that were presented with performance scoring came down to issues that I couldn't fix here, for example 'Site uses third party cookies' and 'Render blocking resources. These are from Mailchimp, AWS and Stripe, for example, which I can't do much about.
+  - I compressed all images on the site as well as converted them to wepb.
+  - The performance scores are still very low and after some searching online, it could be that the server is causing this issue, as they would also vary each time I tested on the same page without changing anything.
+  - At the time of testing I was not able to use another device that had Google Chrome installed to be able to check this but plan to do so in the future.
 
 - Accessibility - low scores
   - Some pages on the site have headings in the colour #D39822, which is one of the main colours in the sites colour scheme and contributes to the overall style of the site. After checking the contrast checker on WEBAIM to see if slightly darker shade would make it more accessible and finding the shade #BA881C shade passed WCAG AA with large text. As this colour is applied headings, the colour was changed and this increased the accessibility score.
+
   ![Lighthouse-issue-header](./documentation/readme//lighthouse_testing/lighthouse-issue-header.png)
 
 ### FIX - Best Practices: Links do not have descriptive text
@@ -31,67 +35,162 @@ Here are the results of testing all the pages on the site with Google Lighthouse
 
 ### Homepage
 
+![Lighthouse-home-mobile](./documentation/readme/lighthouse_testing/lighthouse-home-mobile.png)
+
 ### Products Page
 
 ### Product Detail Page
+
+![Lighthouse-product-detail-mobile](./documentation/readme/lighthouse_testing/lighthouse-product-detail-mobile.png)
 
 ### Shopping Basket Page
 
 ### Checkout Page
 
+![Lighthouse-checkout-mobile](./documentation/readme/lighthouse_testing/lighthouse-checkout-mobile.png)
+
 ### Checkout Success Page
+
+![Lighthouse-checkout-success-mobile](./documentation/readme/lighthouse_testing/lighthouse-checkout-success-mobile.png)
 
 ### Add a Product to the Database Page
 
+![Lighthouse-add-product-mobile](./documentation/readme/lighthouse_testing/lighthouse-add-product-mobile.png)
+
 ### Edit Product Page
+
+![Lighthouse-edit-product-mobile](./documentation/readme/lighthouse_testing/lighthouse-edit-product-mobile.png)
+
+- Some SEO issues here are regarding the image to attach which I could not fix within the purposes of the project but will take a look at in the future.
 
 ### Artists Page
 
 ### Artist Detail Page
 
+![Lighthouse-artist-detail-mobile](./documentation/readme/lighthouse_testing/lighthouse-artist-detail-mobile.png)
+
 ### Add Artist to the Database Page
+
+![Lighthouse-add-artist-mobile](./documentation/readme/lighthouse_testing/lighthouse-add-artist-mobile.png)
 
 ### Edit Artist Profile Page
 
 ### Contact Page
 
+![Lighthouse-contact-mobile](./documentation/readme/lighthouse_testing/lighthouse-contact-mobile.png)
+
 ### Contact Success Page
+
+- Lighthouse only generated for the contact page.
+
+### Features/Testimonials Page
+
+### Add Features/Testimonial Page
+
+![Lighthouse-add-feature/mobile](./documentation/readme/lighthouse_testing/lighthouse-add-feature-mobile.png)
+
+### Edit Feature/Testimonial Page
+
+![Lighthouse-edit-feature-mobile](./documentation/readme/lighthouse_testing/lighthouse-edit-feature-mobile.png)
 
 ### About Page
 
+![Lighthouse-about-mobile](./documentation/readme/lighthouse_testing/lighthouse-about-mobile.png)
+
 ### Privacy Policy
+
+![Lighthouse-privacy-mobile](./documentation/readme/lighthouse_testing/lighthouse-privacy-mobile.png)
+
+### Log In Page
+
+![Lighthouse-login-mobile](./documentation/readme/lighthouse_testing/lighthouse-login-mobile.png)
+
+### Sign Out Page
+
+![Lighthouse-signout-mobile](./documentation/readme/lighthouse_testing/lighthouse-logout-mobile.png)
+
+### Sign Up Page
+
+![Lighthouse-signup-mobile](./documentation/readme/lighthouse_testing/lighthouse-signup-mobile.png)
 
 ## Desktop
 
-### Homepage
+### Homepage Desktop
 
-### Products Page
+![Lighthouse-home-desktop](./documentation/readme/lighthouse_testing/lighthouse-home-desktop.png)
 
-### Product Detail Page
+### Products Page Desktop
 
-### Shopping Basket Page
+### Product Detail Page Desktop
 
-### Checkout Page
+![Lighthouse-product-detail-desktop](./documentation/readme/lighthouse_testing/lighthouse-product-detail-desktop.png)
 
-### Checkout Success Page
+### Shopping Basket Page Desktop
 
-### Add a Product to the Database Page
+### Checkout Page Desktop
 
-### Edit Product Page
+![Lighthouse-checkout-desktop](./documentation/readme/lighthouse_testing/lighthouse-checkout-desktop.png)
 
-### Artists Page
+### Checkout Success Page Desktop
 
-### Artist Detail Page
+![Lighthouse-checkout-success-desktop](./documentation/readme/lighthouse_testing/lighthouse-checkout-success-desktop.png)
 
-### Add Artist to the Database Page
+### Add a Product to the Database Page Desktop
 
-### Edit Artist Profile Page
+![Lighthouse-add-product-desktop](./documentation/readme/lighthouse_testing/lighthouse-add-product-desktop.png)
 
-### Contact Page
+### Edit Product Page Desktop
 
-### Contact Success Page
+![Lighthouse-edit-product-desktop](./documentation/readme/lighthouse_testing/lighthouse-edit-product-desktop.png)
 
-### About Page
+- Some SEO issues here are regarding the image to attach which I could not fix within the purposes of the project but will take a look at in the future.
 
-### Privacy Policy
+### Artists Page Desktop
 
+### Artist Detail Page Desktop
+
+![Lighthouse-artist-detail-desktop](./documentation/readme/lighthouse_testing/lighthouse-artist-detail-desktop.png)
+
+### Add Artist to the Database Page Desktop
+
+![Lighthouse-add-artist-desktop](./documentation/readme/lighthouse_testing/lighthouse-add-artist-desktop.png)
+
+### Edit Artist Profile Page Desktop
+
+### Contact Page Desktop
+
+![Lighthouse-privacy-desktop](./documentation/readme/lighthouse_testing/lighthouse-privacy-desktop.png)
+
+### Contact Success Page Desktop
+
+- Lighthouse only generated for the contact page
+
+### Features/Testimonials Page Desktop
+
+### Add Features/Testimonial Page Desktop
+
+![Lighthouse-add-feature-desktop](./documentation/readme/lighthouse_testing/lighthouse-add-feature-desktop.png)
+
+### Edit Feature/Testimonial Page Desktop
+
+![Lighthouse-edit-feature-desktop](./documentation/readme/lighthouse_testing/lighthouse-edit-feature-desktop.png)
+
+### About Page Desktop
+
+![Lighthouse-about-desktop](./documentation/readme/lighthouse_testing/ighthouse-about-desktop.png)
+
+### Privacy Policy Desktop
+
+![Lighthouse-privacy-desktop](./documentation/readme/lighthouse_testing/lighthouse-privacy-desktop.png)
+
+### Log In Page Desktop
+
+![Lighthouse-login-desktop](./documentation/readme/lighthouse_testing/lighthouse-login-desktop.png)
+
+### Sign Out Page Desktop
+
+![Lighthouse-signout-desktop](./documentation/readme/lighthouse_testing/lighthouse-logout-desktop.png)
+
+### Sign Up Page Desktop
+
+![Lighthouse-signup-desktop](./documentation/readme/lighthouse_testing/lighthouse-signup-desktop.png)

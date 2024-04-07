@@ -201,6 +201,19 @@ When a user clicks on a product on the all products page, they are taken to a pr
 
 ![Contact-success](./documentation/readme/contact-success.png)
 
+### Device and Browser Testing
+
+The site was tested on the following devices:
+
+- MacBook Air (main device)
+- Lenovo c24-25 monitor
+- iPhone 11
+
+The site was tested on the following browsers:
+
+- Google Chrome
+- Microsoft Edge
+
 ## Code Validation
 
 ### W3C Markup Validator
