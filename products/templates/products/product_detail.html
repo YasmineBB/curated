@@ -50,7 +50,6 @@
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
-                                <!-- <p class="mt-3"><strong>Quantity:</strong></p> -->
                                 <div class="form-group w-50">
                                     <div class="input-group">
                                         <input class="form-control qty_input" type="number" name="quantity" value="1"
@@ -81,11 +80,11 @@
                                 value="Add to Basket">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </form>
                 </div>
-                </form>
+
             </div>
         </div>
     </div>
-</div>
 </div>
 {% endblock %}
