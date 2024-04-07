@@ -320,7 +320,8 @@ ul>li {
     font-size: 1.4em;
 }
 
-.mailchimp-text {
+.mailchimp-text,
+.response {
     color: #000;
 }
 
