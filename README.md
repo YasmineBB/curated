@@ -1,5 +1,7 @@
 # Curated
 
+![Homepage](./documentation/readme/homepage.png)
+
 A link to the deployed site can be found [here](https://curated-1a2337d3b0f9.herokuapp.com/)
 
 ## Table of Contents
@@ -12,30 +14,43 @@ This project was created for my fifth and final project for my Diploma in Full S
 
 ## Business Model
 
-Curated is a Business to Consumer e-commerce site (B2C) and its target audience are people who want to browse and buy unique, one off art pieces by independent artists to display in their homes.
-
-They will be people who enjoy and appreciate art, the work that goes into the pieces and the story behind them.
-
-According to [Artsy](https://www.artsy.net/article/artsy-editorial-drives-art-buyers), the top two reasons for buying unique art pieces were *“to decorate their homes and to provide a source of inspiration in their daily lives.”*
-
-In interviews, *“collectors indicated that a work’s aesthetic appeal is frequently the gateway to a deeper exploration of the artist and their career.”*
-
-Curated platforms the artists as well as the art, giving potential buyers the opportunity to explore and understand the artist and their work. This will help to build more of a connection between the artist and the user, or potential buyer, which will help to encourage more purchases on the site.
+Curated, a B2C e-commerce site that takes single payments, platforms the artists as well as the art, giving potential buyers the opportunity to explore and understand the artist and their work. This will help to build more of a connection between the artist and the user, or potential buyer, which will help to encourage more purchases on the site.
 
 The site is designed in a way that the user can navigate easily and smoothly across the site.
+
+Having an online platform of a curated selection of art pieces extends the reach of one art gallery, and the opportunities from online traffic can be endless. A physical gallery or store is limited to the footfall rate of that area whereas online, people from all around the world are potential customers at all times.
+
+As a B2C company, it is vital to reach out and elicit an emotional response from customers, and build a relationship. The web marketing methodologies are huge in doing so, and social media presence is an important factor in building and maintaining this connection.
+
+Without the costs that come with a physical location, such as a gallery or space that sells art, there is more space for higher margins for both curated, as well as the artist.
+
+With the popularity of smartphones and people being able to browse and shop on the go, it’s important that curated capitalises on this opportunity, especially as B2C customers are more likely to make impulse purchases. Curated is a mobile first app that makes it east for customers to browse unique art pieces at home, work or on the go.
+
+As an online intermediary, curated uses its platform to bring artists and customers together.
+
+The artists will rely on curated to platform their work and attract sales, and web marketing will play a huge role in making this happen.
+
+Having an authentication system and allowing the customer to be able to save their shipping information also makes it easier and faster for future payments to be made.
 
 ### SEO and Web Marketing
 
 #### SEO
 
-- Descriptive meta tags including description, keywords as well as a title tag were added in the base.html file, extending across all pages. Meta tags are important for SEO as they help search engines understand what the web pages are about and how it appears in search results. They are also important in terms of accessibility, being used by screen readers to describe the web pages to users.
-- REL ATTR
-- SITEMAP.XML
-- ROBOTS.TXT
+Implementing Search Engine Optimisation practices is important because it helps improve the ranking of a website in search engine listings. This is highly important especially for an online business. On top of this, it's important to make the site as accessible as possible for screen readers.
+
+Some example implemented in this project include:
+
+- Descriptive meta tags including description, keywords as well as a title tag were added in the base.html file, extending across all pages. 
+  - Meta tags are important for SEO as they help search engines understand what the web pages are about and how it appears in search results. They are also important in terms of accessibility, being used by screen readers to describe the web pages to users.
+- There is meaningful alt text used on main images on the site, for example the product images have the product description as their alt text and the artist images have the artist bio as their alt text.
+- Clear and concise headings are used.
+
+- There is a sitemap.xml that lists the sites essential pages and allows search engines to crawl them.
+- There is a robots. txt file that restricts crawlers from accessing certain pages.
 
 #### Web Marketing
 
-I created a mock-up of a Facebook business page from the template provided by Code Institute, as well as a mock-up of an Instagram business page. These are important in helping the business to reach a wider audience, and would be used beyond the purpose of this project.
+A mock-up of a Facebook business page was made from the template provided by Code Institute, as well as a mock-up of an Instagram business page. These are important in helping the business to reach a wider audience, and would be used beyond the purpose of this project.
 
 - Facebook Page
 
@@ -45,19 +60,31 @@ I created a mock-up of a Facebook business page from the template provided by Co
 
 ![Instagram-page](/documentation/readme/instagram-mockup.png)
 
-Future implementation of web marketing strategies for Curated would include building community in the form of blog posts or ‘insights’ of art pieces bought by customers in their new homes. Customers would be invited to share photos of their pieces, tagging Curated, on social media, with the chance to be featured in a longer blog post.
+Implementation of web marketing strategies for Curated include building community in the form of features of art pieces bought by customers in their new homes. Customers are invited to share photos of their pieces, and to tag Curated, on social media. They are encouraged to get in touch if they want to be featured on the site.
 
-In addition to this would be the potential for artists whose work is platformed on the site, to show a preview into their process, or a behind the scenes look in the form of short videos or a Q&A like format. This would attract and engage potential customers by bringing them into the artists world, invoking an emotional response and forming the start of a relationship that would hopefully turn into sales which would benefit both the artist and Curated.
+Future implementations and expansions on this include the potential for artists whose work is platformed on the site, to be featured and to show a preview into their process, or a behind the scenes look in the form of short videos or a Q&A like format. This would attract and engage potential customers by bringing them into the artists world, invoking an emotional response and forming the start of a relationship that would hopefully turn into sales which would benefit both the artist and Curated.
 
 This would also improve the chances of other potential artists wanting to be involved in being platformed on the site.
 
 These strategies would be tied closely with organic social media marketing, with content being used across several platforms, as well as email marketing which would complement each other nicely.
+
+#### Email Marketing
+
+In the footer of the site, users can subscribe to receive a newsletter from curated, using [Mailchimp](https://mailchimp.com/). This functionality works in user sign up and in future implementations, a newsletter campaign will be implemented.
 
 ## User Experience
 
 ### Strategy Plane
 
 #### Project Goals
+
+Curated is a Business to Consumer e-commerce site (B2C). It's target audience are people who want to browse and buy unique, one off art pieces by independent artists to display in their homes.
+
+They will be people who enjoy and appreciate art, the work that goes into the pieces and the story behind them.
+
+According to [Artsy](https://www.artsy.net/article/artsy-editorial-drives-art-buyers), the top two reasons for buying unique art pieces were *“to decorate their homes and to provide a source of inspiration in their daily lives.”*
+
+In interviews, *“collectors indicated that a work’s aesthetic appeal is frequently the gateway to a deeper exploration of the artist and their career.”*
 
 ### Scope Plane
 
@@ -69,7 +96,7 @@ I created the following table of opportunities for the project to determine the 
 | ---------| ----------- | -------------- | ------------- | ------- | ------------- |
 | User | Register for an account | 5 | 5 | MVP | ✅ |
 | User | Log In | 5 | 5 | MVP | ✅ |
-| User | Password recovery | 5 | 5 | MVP | 
+| User | Password recovery | 5 | 5 | MVP | ✅ |
 | User/Guest | Social media sign up | 2 | 4 ||
 | User | Save/update personal & billing details | 5 | 5 | MVP | ✅ |
 | | | | | |
@@ -100,10 +127,13 @@ I created the following table of opportunities for the project to determine the 
 | Admin | Delete artist profile | 5 | 5 | MVP | ✅ |
 | | | | | |
 | Admin | Add feature/testimonial | 5 | 5 | MVP | ✅ |
+| Admin | Update/edit a feature/testimonial | 4 | 5 |
+| Admin | Delete a feature/testimonial | 4 | 5 |
+| Admin | View list of customer enquiries | 4 | 5 |
 
 ### Structure Plane
 
-#### User Stories
+#### Current User Stories
 
 I created user stories in a Google sheets document in my planning stage which helped me to organise tasks. Each user story had an issue created, and this documentation can be found in my projects board and is explained in the [Agile Development](#Agile-Development) section.
 
@@ -174,13 +204,23 @@ As a Site Admin:
 
 - I want to be able to add a feature/testimonial so that users can view them and are encouraged to use the platform and make purchases.
 - I want to be able to edit a feature/testimonial so that any mistakes can be rectified or images changed.
-- I want to be able to delete a feature/testimonial in case it no longer fits the purpose of the site.
+- I want to be able to delete a feature/testimonial in case it no longer fits the purpose of the site goals.
 
 ##### EPIC - Contact
 
 As a Site User:
 
 - I want to be able to submit a contact form so that I can communicate with curated.
+
+As a Site Admin:
+
+- I want to be able to view a list of customer enquiries so that I can see what consumers are wanting to know.
+
+#### User Stories for Future Implementation
+
+- As a Site User I want to be able to add products to a wishlist so that I can save them for later.
+- As a Site Admin I want to be able to mark an item as sold once it has been purchased so that users can still view an artists work.
+- As a Site Admin I want to be able to set up a system for stock management so that I can manage the items that have been sold.
 
 #### Database Schema
 
@@ -193,10 +233,10 @@ There are eight models in this project:
 - User
 - UserProfile
 - Order
-- Products
+- Product
 - Category
 - Artist
-- Contact
+- ContactForm
 - Testimonial
 
 ### Skeleton Plane
@@ -211,11 +251,11 @@ There are eight models in this project:
 
 There is an overall muted colour scheme for the site with a bold blue feature colour and a complementary mustard yellow. The reason for this is so that the artworks are the main focus for the user, and the site provides a clean base for the works. The site header of the site is a bold blue, and most of the text on the site is in black, to contrast against the white background. Some headings are in blue, some in mustard yellow. When an item in the navigation bar is hovered over, it's highlighted in mustard yellow to make it clear to users the page they will be selecting.
 
-Below is the colour scheme which was created in [Coolers](https://coolors.co/000000-2a5ddf-d39822-ffffff).
+Below is the initial colour scheme which was created in [Coolers](https://coolors.co/000000-2a5ddf-d39822-ffffff).
 
 ![Coolers](/documentation/readme/coolers.png)
 
-During testing, and wanting to ensure the site is accessible, another shade of yellow was added. This is explained in the testing file.
+During testing, and wanting to ensure the site is accessible, another shade of yellow was added. This is explained in the [Testing](./testing.md) file.
 
 So the final colour scheme looks like this. The change is barely visible, but I wanted to make sure the site was as accessible as possible whilst also maintaining the overall style and feel of the site.
 
@@ -224,8 +264,6 @@ So the final colour scheme looks like this. The change is barely visible, but I 
 #### Font
 
 I used [Font Joy](https://fontjoy.com/) to generate font pairings so that I could see the font choices together and if they worked well. I sourced the fonts from [Google Fonts](https://fonts.google.com/selection).
-
-![Font-Joy](/documentation/readme/fontjoy.png)
 
 ## Agile Development
 
@@ -241,6 +279,10 @@ This is my projects board around midway through my project:
 
 ![GitHub-projects-board-mid](/documentation/readme/projects-board-mid.png)
 
+This is my projects board at the end of the project:
+
+![GitHub-projects-board-end](./documentation/readme/projects-board-end.png)
+
 I had 7 Epics, and split the user stories across these epics.
 
 - User Registration and Profile
@@ -248,7 +290,7 @@ I had 7 Epics, and split the user stories across these epics.
 - Shopping Basket
 - Purchasing
 - Artist Profile
-- Testimonials
+- Testimonials/Features
 - Contact
 
 I used the MoSCoW method for prioritisation, using the following labels:
@@ -276,8 +318,6 @@ Here is an example of the use of labelling and milestones on one of my issues:
 The homepage has a 
 
 #### Navigation
-
-
 
 The navigation bar contains the site's header, curated, which redirects the user back to the homepage from any page on the site. Navigation links include:
 
@@ -345,19 +385,50 @@ When a user selects an artist, they are taken to the artist detail page which gi
 
 The links to socials only take the user to each sites' homepage for the purpose of this project, but if this site was developed in the future, of course this would be accurate.
 
+#### Custom Error Pages
+
+#### Defensive Programming
+
+Defensive programming has been used across the site to prevent non-authorised users from accessing certain pages and features. For admin related features, functionalities to check if a user is a superuser have been implemented. If a non admin user tries to access pages they are unauthorised to, they receive an error toast alert which feedback to the user that they aren't authorised to access those pages.
+
+#### Toasts
+
+Messaging is used for a number of tasks across the site using toasts. For example:
+
+- Logging in and out
+- Adding an item to the basket
+- Making a purchase
+- Admin tasks such as adding an item or artist to the database.
+
+This is important as there is constant feedback for the user which adds to a pleasant experience without confusion.
+
 ### Future Features
+
+Future features to implement in this site include:
+
+- Adding a wishlist that users can add items to.
+- Stock management system to manage the stock when items are sold.
+- Sending newsletters to users who subscribe.
+- Implement social account login.
 
 ### Accessibility
 
+To ensure the site is as accessible as possible to all users, I have made sure to use descriptive alt attributes on images and made sure that there is sufficient colour contrast across the site. More information on this regarding testing in Google Lighthouse can be found in [Testing](./testing.md).
+
+
 ## Issues & Bugs
 
-### Bug #1 - Sign Up
+### Sign Up
 
 I had an issue when testing user sign up on the site. After entering all the information and clicking the Sign-Up button, the page was stuck on loading and wouldn't take the user to the intended next step, which was sending the confirmation link and displaying the page explaining so. The user was, however, added to the database, after checking in the Django admin. When signing up using the same information, assuming it hadn't been successful, the user was alerted that a user with that information already existed in the database. After spending time troubleshooting, I contacted tutor Support who assisted me and discovered the fix was that Heroku wasn't using the correct version of Python, and the fix was to create a runtime.txt file and that solved the issue.
 
-### Toast admin
+### Stripe
 
-If admin has an item in their basket and they use crud functionality, the messages show their basket contents with each message alert.
+I had a few issues with Stripe, including webhooks not sending as well as when a user completed the checkout process, they were taken to the confirmation page and received a confirmation email, however no grand total was displayed. The total was showing after placing an order in development but not in production. After consulting tutor support and spending hours troubleshooting, checking secret keys which all matched up. In the end I deleted the endpoint, created a new one and then updated the STRIPE_WH_SECRET in the Heroku config vars, and this seemed to solve the problem.
+
+### Crispy Forms
+
+All the form on the site were applying the crispy form filter accurately except the checkout page which kept throwing a BoundField error. In the end the form was styled with CSS targeting each field.
 
 ## Technologies Used
 
@@ -458,11 +529,9 @@ Further reading and troubleshooting on cloning a repository from GitHub here
 
 I followed along with the Code Institute walkthrough project, Boutique Ado, which has been greatly helpful, and a lot of the code in this project has been used and adapted from that.
 
-Content on the site has been written by myself.
-
 ### Content
 
-Content for some of the artist profiles and product descriptions were used and adapted from [Print Club London](https://printclublondon.com/).
+Most of the content on the site has been written by myself with some content for a few of the artist profiles were used and adapted from [Print Club London](https://printclublondon.com/).
 
 ### Media
 
