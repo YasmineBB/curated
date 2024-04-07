@@ -34,7 +34,7 @@
                             <div class="container">
                                 {% if artist.image %}
                                 <img class="text-center artist-image" src="{{ artist.image.url }}"
-                                    alt="{{ artist.name }}">
+                                    alt="{{ artist.name }} {{ artist.bio }}">
                                 <div class="artist-img-middle">
                                     <p class="artist-bio mt-3 text-black">{{ artist.bio|slice:'85' }} ...
                                     </p>
