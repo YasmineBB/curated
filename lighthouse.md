@@ -1,6 +1,6 @@
 # Google Lighthouse Testing
 
-As part of the testing of the site, all pages were run through Google Lighthouse.
+As part of the testing of the site, all pages were run through Google Lighthouse. Overall, the Accessibility and SEO scored were high, but there were some issues with performance scores.
 
 ## Issues and Fixes
 
@@ -17,6 +17,7 @@ After running Google Lighthouse testing on all pages on the site, some main issu
 
   ![Lighthouse-issue-header](./documentation/readme//lighthouse_testing/lighthouse-issue-header.png)
 
+
 ### FIX - Best Practices: Links do not have descriptive text
 
 One issue that came up regarding the lack of descriptive text in the footer link to the About page. There is a preview of the about page content with a link to the About page with the text 'Read More'. I have changed this link to 'Read more about us' to be more in line with best practices.
@@ -31,6 +32,10 @@ I updated the aria label of the dropdown menu for admin authenticated users to '
 
 Here are the results of testing all the pages on the site with Google Lighthouse in both Mobile and Desktop after the fixes.
 
+### FIX Alt text
+
+I added alt text to the 'Read More' link on the artist's page once their image is hovered over, improving the accessibility score on the artists page.
+
 ## Mobile
 
 ### Homepage
@@ -39,11 +44,15 @@ Here are the results of testing all the pages on the site with Google Lighthouse
 
 ### Products Page
 
+![Lighthouse-products-mobile](./documentation/readme/lighthouse_testing/lighthouse-products-mobile.png)
+
 ### Product Detail Page
 
 ![Lighthouse-product-detail-mobile](./documentation/readme/lighthouse_testing/lighthouse-product-detail-mobile.png)
 
 ### Shopping Basket Page
+
+![Lighthouse-basket-mobile](./documentation/readme/lighthouse_testing/lighthouse-basket-mobile.png)
 
 ### Checkout Page
 
@@ -75,6 +84,8 @@ Here are the results of testing all the pages on the site with Google Lighthouse
 
 ### Edit Artist Profile Page
 
+![Lighthouse-edit-artist-mobile](./documentation/readme/lighthouse_testing/lighthouse-edit-artist-mobile.png)
+
 ### Contact Page
 
 ![Lighthouse-contact-mobile](./documentation/readme/lighthouse_testing/lighthouse-contact-mobile.png)
@@ -84,6 +95,8 @@ Here are the results of testing all the pages on the site with Google Lighthouse
 - Lighthouse only generated for the contact page.
 
 ### Features/Testimonials Page
+
+![Lighthouse-featured-mobile](./documentation/readme/lighthouse_testing/lighthouse-featured-mobile.png)
 
 ### Add Features/Testimonial Page
 
@@ -121,11 +134,15 @@ Here are the results of testing all the pages on the site with Google Lighthouse
 
 ### Products Page Desktop
 
+![Lighthouse-products-desktop](./documentation/readme/lighthouse_testing/lighthouse-products-desktop.png)
+
 ### Product Detail Page Desktop
 
 ![Lighthouse-product-detail-desktop](./documentation/readme/lighthouse_testing/lighthouse-product-detail-desktop.png)
 
 ### Shopping Basket Page Desktop
+
+![Lighthouse-basket-desktop](./documentation/readme/lighthouse_testing/lighthouse-basket-desktop.png)
 
 ### Checkout Page Desktop
 
@@ -157,6 +174,8 @@ Here are the results of testing all the pages on the site with Google Lighthouse
 
 ### Edit Artist Profile Page Desktop
 
+![Lighthouse-edit-artist-desktop](./documentation/readme/lighthouse_testing/lighthouse-edit-artist-desktop.png)
+
 ### Contact Page Desktop
 
 ![Lighthouse-privacy-desktop](./documentation/readme/lighthouse_testing/lighthouse-privacy-desktop.png)
@@ -166,6 +185,8 @@ Here are the results of testing all the pages on the site with Google Lighthouse
 - Lighthouse only generated for the contact page
 
 ### Features/Testimonials Page Desktop
+
+![Lighthouse-featured-desktop](./documentation/readme/lighthouse_testing/lighthouse-featured-desktop.png)
 
 ### Add Features/Testimonial Page Desktop
 

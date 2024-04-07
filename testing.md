@@ -224,7 +224,11 @@ It was brought to my attention that the footer was not sticking to the bottom of
 
 ## Code Validation
 
-### W3C Markup Validator
+### W3C Markup CSS Validator
+
+W3C CSS validator passed with no errors found.
+
+![W3C-pass](./documentation/readme/w3c-pass.png)
 
 ### Jigsaw Validator
 
