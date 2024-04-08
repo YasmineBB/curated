@@ -16,8 +16,8 @@
 <div class="container">
     <div class="row mt-5">
         <div class="col text-center mt-5">
-            <h2 class="logo-font display-5 mt-5">All customer contact enquiries
-            </h2>
+            <h1 class="logo-font display-5 mt-5">Customer contact enquiries
+            </h1>
             <hr class="w-75 mb-1">
         </div>
     </div>
@@ -31,7 +31,7 @@
             <p class="text-black logo-font"><strong>Subject: </strong>{{ enquiry.contact_subject }}</p>
             {% endif %}
             <p class="text-black logo-font"><strong>Message: </strong>{{ enquiry.contact_message }}</p>
-            <p class="text-black logo-font"><strong>Date: </strong>{{ enquiry.date }}</p>
+            <p class="text-black small logo-font"><strong>Date: </strong>{{ enquiry.date }}</p>
             <hr class="w-100 mb-4">
         </div>
         {% endfor %}
