@@ -40,9 +40,8 @@ A link to the deployed site can be found [here](https://curated-1a2337d3b0f9.her
   - [Agile Development](#agile-development)
   - [Features](#features)
     - [Current Features](#current-features)
-      - [Homepage](#homepage)
       - [Navigation](#navigation)
-      - [Home](#home)
+      - [Homepage](#homepage)
       - [Products Page](#products-page)
       - [Product Detail Page](#product-detail-page)
       - [Shopping Basket Page](#shopping-basket-page)
@@ -50,9 +49,22 @@ A link to the deployed site can be found [here](https://curated-1a2337d3b0f9.her
       - [Checkout Success page](#checkout-success-page)
       - [Artists Page](#artists-page)
       - [Artist Detail Page](#artist-detail-page)
+      - [Features/Testimonials Page](#featurestestimonials-page)
+      - [Footer](#footer)
+      - [Contact Page](#contact-page)
+      - [About Page](#about-page)
+      - [Privacy Policy](#privacy-policy)
       - [Custom Error Pages](#custom-error-pages)
       - [Defensive Programming](#defensive-programming)
       - [Toasts](#toasts)
+    - [Admin Features](#admin-features)
+      - [Add A Product](#add-a-product)
+      - [Edit and Delete A Product](#edit-and-delete-a-product)
+      - [Add An Artist](#add-an-artist)
+      - [Edit or Delete An Artist](#edit-or-delete-an-artist)
+      - [Add A Feature](#add-a-feature)
+      - [Edit or Delete A Feature](#edit-or-delete-a-feature)
+      - [View Customer Enquiries](#view-customer-enquiries)
     - [Future Features](#future-features)
     - [Accessibility](#accessibility)
   - [Issues \& Bugs](#issues--bugs)
@@ -387,13 +399,9 @@ Here is an example of the use of labelling and milestones on one of my issues:
 
 ### Current Features
 
-#### Homepage
-
-![Hompage](./documentation/readme/homepage.png)
-
-The homepage has a 
-
 #### Navigation
+
+![Navbar](./documentation/readme/nav-bar.png)
 
 The navigation bar contains the site's header, curated, which redirects the user back to the homepage from any page on the site. Navigation links include:
 
@@ -410,6 +418,7 @@ There is a My Profile link where users can either register, log in, log out. If 
 - Product Management
 - Artist Management
 - Feature Management
+- Customer Enquiries
 
 There is also a shopping cart icon that displays the value of the contents if the user has added any items or 0 if empty. If the basket contains any items it is highlighted to
 reflect this to the user.
@@ -428,7 +437,7 @@ Under the Ceramics and Paintings options, the user can select to view all from t
 
 Under the Artists option, the user can select to view all artists.
 
-#### Home
+#### Homepage
 
 ![Homepage](./documentation/readme/homepage.png)
 
@@ -438,7 +447,7 @@ The homepage has a background image of ceramic vases, representing what users mi
 
 ![Products](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODh2a2YzM2N4bmhtdGN4NmF0Z3V0d2pqbTAyOWFsYm0zZW85anJ4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xGON9j9RPlgbeLtZBU/giphy.gif)
 
-The Products page displays all the pieces that are available to purchase. They are listed with the following:
+The Product's page displays all the pieces that are available to purchase. They are listed with the following:
 
 - Product Image
 - Name
@@ -469,6 +478,8 @@ In the checkout page the user can enter their details and card information and f
 
 ![Checkout-success](./documentation/readme/checkout-success-page.png)
 
+Once the order has been completed, the user is presented with a page thanking the user for their order, and displays an order summary, with a success toast message. There is a call-to-action button encouraging the user to continue browsing more artwork.
+
 #### Artists Page
 
 ![Artists](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnkwZ2EyMTJ4OWkyZjBiOW9nd3dpcndzdjFic2tkMHltZDVtMmgyMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KESRNnO2EkzhDX0ElR/giphy.gif)
@@ -477,9 +488,48 @@ The Artist's page displays a selection of all the artists who have their work li
 
 #### Artist Detail Page
 
+![Artist-detail](./documentation/readme/artist-detail-page.png)
+
 When a user selects an artist, they are taken to the artist detail page which gives the full set of information, including the artists social media links, if they have them.
 
 The links to socials only take the user to each sites' homepage for the purpose of this project, but if this site was developed in the future, of course this would be accurate.
+
+#### Features/Testimonials Page
+
+![Featured](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmp6NHl1Mm80dGQ2bHoxMjZqc3gyc3RkcnM4NDgxdXJmNDZ2Nm5xYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4dzYsqCiMspEfjFWpo/giphy.gif)
+
+The Features page (testimonial is the name of the model), contains 'features' of customers purchases in their home with their name, location and testimonial about their experience.
+
+#### Footer
+
+![Footer](./documentation/readme/footer.png)
+
+The footer is at the bottom of every page and contain:
+
+- A preview with link to an About page
+- A link to the contact us page
+- A link to the Privacy Policy
+- links to social media
+  - They only take the user to the generic homepage of each site but in future implementations there would be real social media profiles for the site.
+- A newsletter sign-up section where users can subscribe. This is powered by Mailchimp.
+
+#### Contact Page
+
+![Contact](./documentation/readme/contact.png)
+
+The Contact page provides a form for users to submit with their name, address, optional subject and a message. For example, on the About pages, artists are encouraged to get in touch as well as on the featured page, consumers are encouraged to get in touch if they want to be featured.
+
+#### About Page
+
+![About](./documentation/readme/about.png)
+
+The About page provides the company mission and a call for artists who want to be featured on their site to get in touch.
+
+#### Privacy Policy
+
+![Privacy](./documentation/readme/privacy-policy.png)
+
+The Privacy Policy page outlines the privacy policy to let users how and why curated collects their information, how the data is used, why, and if it's shared with others. This was created using [Terms Feed](https://www.termsfeed.com/privacy-policy-generator/)
 
 #### Custom Error Pages
 
@@ -508,6 +558,63 @@ This is important as there is constant feedback for the user which adds to a ple
 
 ![Toast-basket](./documentation/readme/toast-basket.png)
 
+### Admin Features
+
+When an admin or superuser is logged in, they are able to access the admin features to add, edit and delete items from the database.
+
+#### Add A Product
+
+![Add-product](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHE3MHl0c3llYWpzNDQwZWx6aGhyZmY5dWYyNnp0eTAzY3VnYTVldiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vqozrWrXD2DbFAoKgs/giphy.gif)
+
+When an admin or superuser is logged in, they are able to add a product to the database by clicking my Profile and then Product Management.
+
+#### Edit and Delete A Product
+
+![Edit-or-delete](./documentation/readme/edit-or-delete.png)
+
+From both the products page and the product detail page, the admin user is able to edit and delete a product from the database.
+
+![Edit-product-detail](./documentation/readme/product-detail-edit.png)
+
+Clicking Edit takes them to the page where they can make any changes and click save or cancel to go back.
+
+![Edit-product](./documentation/readme/edit-product.png)
+
+#### Add An Artist
+
+Adding an artist to the database works the same way as adding a product, from the My Profile link, the admin user can select Artist Management to carry out these tasks.
+
+![Add-artist](./documentation/readme/add-artist.png)
+
+#### Edit or Delete An Artist
+
+Editing and deleting an artist from the database can be accessed from the artist detail page, where the admin user can click edit and will be taken to a page to make changes.
+
+![Edit-artist](./documentation/readme/edit-artist-page.png)
+
+#### Add A Feature
+
+![Add-feature](./documentation/readme/add-feature.png)
+
+From My Profile, an admin user can select Feature Management and is taken to a page where they can add a feature to the site.
+
+#### Edit or Delete A Feature
+
+Under each feature, the admin user will see a section under the feature with the option to edit or delete the feature.
+
+![Edit-feature-box](./documentation/readme/edit-feature-box.png)
+
+When clicking edit, they are taken to a page to make any changes.
+
+![Edit-feature](./documentation/readme/edit-feature.png)
+
+
+#### View Customer Enquiries
+
+From My Profile, the admin user can select Customer enquiries to view a list of all the enquiries submitted in the contact form.
+
+![Customer-enquiries](./documentation/readme/customer-enquiries.png)
+
 ### Future Features
 
 Future features to implement in this site include:
@@ -516,11 +623,11 @@ Future features to implement in this site include:
 - Stock management system to manage the stock when items are sold.
 - Sending newsletters to users who subscribe.
 - Implement social account login.
+- Setting up a system where admin can manage the customer enquiries from the front end.
 
 ### Accessibility
 
 To ensure the site is as accessible as possible to all users, I have made sure to use descriptive alt attributes on images and made sure that there is sufficient colour contrast across the site. More information on this regarding testing in Google Lighthouse can be found in [Testing](./testing.md).
-
 
 ## Issues & Bugs
 
