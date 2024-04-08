@@ -250,7 +250,15 @@ CSS validator passed with no errors found.
 
 ### JSHint JavaScript Validation
 
+All JavaScript files passed with no errors.
+
+Stripe_elements.js file
+
 ![JSHint](./documentation/readme/jshint.png)
+
+Countryfield.js file
+
+![JSHint-2](./documentation/readme/jshint-2.png)
 
 ### Python Validation
 
