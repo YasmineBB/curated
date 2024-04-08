@@ -83,6 +83,11 @@ body {
     opacity: 0.8;
 }
 
+.success-container,
+.basket-container {
+    height: 100vh;
+}
+
 /* Buttons */
 
 .view-all-button {
