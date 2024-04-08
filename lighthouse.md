@@ -34,7 +34,7 @@ Here are the results of testing all the pages on the site with Google Lighthouse
 
 ### FIX Alt text
 
-I added alt text to the 'Read More' link on the artist's page once their image is hovered over, improving the accessibility score on the artists page.
+I added alt text to the 'Read More' link on the artist's page once their image is hovered over, as this was flagged in the Lighthouse scoring for the Artist page. However, this was removed after being flagged as an error in the HTML validator testing.
 
 ## Mobile
 

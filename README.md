@@ -482,6 +482,11 @@ Endpoints have been set up to allow the sending of Webhooks in developer mode an
 
 When testing payments I have used the testing cards that Stripe has listed on its website.
 
+| **Payment Type** | **Card Number** | **Expiry** | **CVC** | **ZIP** |
+| ---------| ----------- | -------------- | ------------- | ------------- |
+| Payment success | 4242 4242 4242 4242 | any future date | any 3 digits| any 5 digits |
+| Payment fail | 4000 0000 0000 0069 | any future date | any 3 digits | any 5 digits |
+
 ## Testing
 
 [Testing](./testing.md) can be found here.

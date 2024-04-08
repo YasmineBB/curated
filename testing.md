@@ -16,9 +16,13 @@ This section will lay out all the testing I have done for this project.
 
 ##### As a Site User I want to be able to log in and out so that I can keep my information secure
 
-- The navigation bar which is available on all pages has an icon for 'My Account' from where the user can click 'Log In' and is able to log in. When logged in the user can click on the same icon and can click 'Log Out', is taken to a confirmation that they want to log out and can click 'Sign Out'.
+- The navigation bar which is available on all pages has an icon for 'My Account' from where the user can click 'Log In' and is able to log in.
 
 ![Log-in](./documentation/readme/log-in.png)
+
+When logged in the user can click on the same icon and can click 'Log Out', is taken to a confirmation that they want to log out and can click 'Sign Out'.
+
+![Log-out](./documentation/readme/log-out.png)
 
 ##### As a Site User I want to be able to reset my password so that I can recover and access my account if I forget the password
 
@@ -30,7 +34,7 @@ This section will lay out all the testing I have done for this project.
 
 - Once the user is logged in, they can select 'My Profile' where they will see their default delivery and order history if they have made any orders or these fields will be blank if not.
 
-![My-profile](./documentation/readme/password-reset.png)
+![My-profile](./documentation/readme/my-profile.png)
 
 #### EPIC - Product Viewing and Navigation
 
@@ -50,7 +54,7 @@ When a user clicks on a product on the all products page, they are taken to a pr
 
 - There is a sort by feature that allows the user to sort by price, artist, name or category.
 
-![Sort-by](./documentation/readme/sort.png)
+![Sort-by](./documentation/readme/sorting.png)
 
 ##### As a Site User I want to be able to easily navigate from one page to another so that I can have a pleasant shopping experience
 
@@ -67,7 +71,7 @@ When a user clicks on a product on the all products page, they are taken to a pr
 
 ##### As a Site User I want to be able to easily view unique pieces so that I can decide whether I want to add to my basket
 
-- From the homepage the user can click the 'View All' button or select from the navigation bar and is taken to a page that displays all the products on the site.
+- From the homepage the user can click the 'View All' button or select from the navigation bar and is taken to a page that displays all the products on the site. From there they can find out more about each product by clicking on it.
 
 ![products-page](./documentation/readme/products-page.png)
 
@@ -116,6 +120,8 @@ When a user clicks on a product on the all products page, they are taken to a pr
 ##### As a Site User I want to be able to delete items from my basket so that I can decide on my final purchase
 
 - From their basket, the user can see a button to delete a product from their basket and receives a message upon deleting.
+
+![Basket](./documentation/readme/basket.png)
 
 ![Remove-from-basket](./documentation/readme/remove-from-basket.png)
 
