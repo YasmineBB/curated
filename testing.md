@@ -224,7 +224,7 @@ The site was tested on the following browsers:
 
 Google Developer Tools was used throughout the development of this project especially when testing responsiveness. The site is responsive down to the smallest recommended screen size of 320px. I have also tested the site on my 17" MacBook Air as well as my monitor which is 24".
 
-It was brought to my attention that the footer was not sticking to the bottom of some pages on larger screen sizes. I tried to troubleshoot this but couldn't really test it with the screens I had available. I am aware of this and will look to solve this in future.
+It was brought to my attention that the footer was not sticking to the bottom of some pages on larger screen sizes. I have added a max viewport height on the pages that don't have much content such as the shopping basket, if empty, and the contact success page. I tried to troubleshoot this more but couldn't really test it with the screens I had available, although I am aware of this and will look to solve this in the future.
 
 ![Responsive](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExempiZWI0b3NsajlnMWU4ZXplNm5qam03cG1kbzZ4MDFwNHNuaXh3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/66Usxv4F871Rjf5fCL/giphy.gif)
 
