@@ -6,6 +6,82 @@ A link to the deployed site can be found [here](https://curated-1a2337d3b0f9.her
 
 ## Table of Contents
 
+<!-- TOC -->
+
+- [Curated](#curated)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Business Model](#business-model)
+    - [SEO and Web Marketing](#seo-and-web-marketing)
+      - [SEO](#seo)
+      - [Web Marketing](#web-marketing)
+      - [Email Marketing](#email-marketing)
+  - [User Experience](#user-experience)
+    - [Strategy Plane](#strategy-plane)
+      - [Project Goals](#project-goals)
+    - [Scope Plane](#scope-plane)
+      - [Feature Planning](#feature-planning)
+    - [Structure Plane](#structure-plane)
+      - [Current User Stories](#current-user-stories)
+        - [EPIC - User Registration and Profile](#epic---user-registration-and-profile)
+        - [EPIC - Product Viewing and Navigation](#epic---product-viewing-and-navigation)
+        - [EPIC - Shopping Basket](#epic---shopping-basket)
+        - [EPIC - Purchasing](#epic---purchasing)
+        - [EPIC - Artist Profile](#epic---artist-profile)
+        - [EPIC - Features/Testimonials](#epic---featurestestimonials)
+        - [EPIC - Contact](#epic---contact)
+      - [User Stories for Future Implementation](#user-stories-for-future-implementation)
+      - [Database Schema](#database-schema)
+    - [Skeleton Plane](#skeleton-plane)
+      - [Wireframes](#wireframes)
+    - [Surface Plane](#surface-plane)
+      - [Colour Scheme](#colour-scheme)
+      - [Font](#font)
+  - [Agile Development](#agile-development)
+  - [Features](#features)
+    - [Current Features](#current-features)
+      - [Homepage](#homepage)
+      - [Navigation](#navigation)
+      - [Home](#home)
+      - [Products Page](#products-page)
+      - [Product Detail Page](#product-detail-page)
+      - [Shopping Basket Page](#shopping-basket-page)
+      - [Checkout Page](#checkout-page)
+      - [Checkout Success page](#checkout-success-page)
+      - [Artists Page](#artists-page)
+      - [Artist Detail Page](#artist-detail-page)
+      - [Custom Error Pages](#custom-error-pages)
+      - [Defensive Programming](#defensive-programming)
+      - [Toasts](#toasts)
+    - [Future Features](#future-features)
+    - [Accessibility](#accessibility)
+  - [Issues \& Bugs](#issues--bugs)
+    - [Sign Up](#sign-up)
+    - [Stripe](#stripe)
+    - [Crispy Forms](#crispy-forms)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Database Used](#database-used)
+    - [Frameworks \& Libraries Used](#frameworks--libraries-used)
+      - [Frameworks](#frameworks)
+      - [Libraries \& Packages](#libraries--packages)
+      - [Programs](#programs)
+    - [Stripe](#stripe-1)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+    - [Forking the Repository](#forking-the-repository)
+    - [Cloning the Repository](#cloning-the-repository)
+  - [Credits](#credits)
+    - [Code](#code)
+    - [Content](#content)
+    - [Media](#media)
+      - [Homepage Image](#homepage-image)
+      - [Artist Images](#artist-images)
+      - [Product Images](#product-images)
+    - [Acknowledgements](#acknowledgements)
+
+<!-- /TOC -->
+
 ## Introduction
 
 Curated is a full stack e-commerce website built using HTML, CSS, JavaScript, Python and Django and uses Stripe as the payment processor.
@@ -352,11 +428,17 @@ Under the Ceramics and Paintings options, the user can select to view all from t
 
 Under the Artists option, the user can select to view all artists.
 
-#### Homepage
+#### Home
+
+![Homepage](./documentation/readme/homepage.png)
+
+The homepage has a background image of ceramic vases, representing what users might see on the site, with a call to action to View All Products.
 
 #### Products Page
 
-The Products' page displays all the pieces that are available to purchase. They are listed with the following:
+![Products](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODh2a2YzM2N4bmhtdGN4NmF0Z3V0d2pqbTAyOWFsYm0zZW85anJ4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xGON9j9RPlgbeLtZBU/giphy.gif)
+
+The Products page displays all the pieces that are available to purchase. They are listed with the following:
 
 - Product Image
 - Name
@@ -367,15 +449,29 @@ The Products' page displays all the pieces that are available to purchase. They 
 
 #### Product Detail Page
 
+![Product-detail](./documentation/readme/product-detail.png)
+
 Once a product is selected, the user is taken to the product detail page which lists all the same information, as well as the option of adding the item to the basket. As the pieces are one off, there is only one quantity of each item. If a user already has the product in their basket, and they try to add it again, they receive a message alert stating 'there is only one of these, and you have it in your basket. They are also unable to adjust the quantity box.
 
 #### Shopping Basket Page
+
+![Basket](./documentation/readme/shopping-basket.png)
 
 In the shopping basket page, the user is presented with all the items in their basket. Here, they are able to delete any items if they wish, and are able to then proceed to checkout, or continue shopping.
 
 #### Checkout Page
 
+![Checkout](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGhzbW93aTJtd2JpdWU4cWR5MDgydzVlNjk4ZHlhdjJ3aGRlY3M2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/su3ijmRUG4sEj88Og5/giphy.gif)
+
+In the checkout page the user can enter their details and card information and from here they can either click to Adjust Bag or Complete Order.
+
+#### Checkout Success page
+
+![Checkout-success](./documentation/readme/checkout-success-page.png)
+
 #### Artists Page
+
+![Artists](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnkwZ2EyMTJ4OWkyZjBiOW9nd3dpcndzdjFic2tkMHltZDVtMmgyMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KESRNnO2EkzhDX0ElR/giphy.gif)
 
 The Artist's page displays a selection of all the artists who have their work listed on the site. The artist is represented by their photo and name, and when hovered over, the user can see a preview of the artists' bio with a link to read more.
 
@@ -387,9 +483,17 @@ The links to socials only take the user to each sites' homepage for the purpose 
 
 #### Custom Error Pages
 
+There are custom error pages for HTTP 404 Not Found and HTTP Error 500.
+
+Here is the message received when coming across a page not found error.
+
+![Error-404](./documentation/readme/error-404.png)
+
 #### Defensive Programming
 
 Defensive programming has been used across the site to prevent non-authorised users from accessing certain pages and features. For admin related features, functionalities to check if a user is a superuser have been implemented. If a non admin user tries to access pages they are unauthorised to, they receive an error toast alert which feedback to the user that they aren't authorised to access those pages.
+
+![Toast-error](./documentation/readme/toast-error.png)
 
 #### Toasts
 
@@ -401,6 +505,8 @@ Messaging is used for a number of tasks across the site using toasts. For exampl
 - Admin tasks such as adding an item or artist to the database.
 
 This is important as there is constant feedback for the user which adds to a pleasant experience without confusion.
+
+![Toast-basket](./documentation/readme/toast-basket.png)
 
 ### Future Features
 
@@ -478,8 +584,6 @@ django-storages - Used for storage backends.
 
 Stripe has been used to implement the payment processing system in the project.
 
-Endpoints have been set up to allow the sending of Webhooks in developer mode and the deployed site.
-
 When testing payments I have used the testing cards that Stripe has listed on its website.
 
 | **Payment Type** | **Card Number** | **Expiry** | **CVC** | **ZIP** |
@@ -489,7 +593,7 @@ When testing payments I have used the testing cards that Stripe has listed on it
 
 ## Testing
 
-[Testing](./testing.md) can be found here.
+All testing carried out can be found [here](./testing.md).
 
 ## Deployment
 
@@ -570,4 +674,4 @@ All product and artist images used on the site were taken from:
 
 ### Acknowledgements
 
-I would like to give a huge thanks to my Code Institute mentor Richard Wells who has been of great support during this project. I would also like to thank the Code Institute Mentors who have assisted me in solving problems and bugs along the way.
+I would like to give a huge thanks to my Code Institute mentor Richard Wells who has been a huge great support during this project! I would also like to thank the Code Institute tutors who have assisted me in solving problems and bugs along the way.
