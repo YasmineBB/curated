@@ -10,3 +10,6 @@ class ContactForm(models.Model):
 
     def __str__(self):
         return self.contact_email
+
+    class Meta:
+        ordering = ['-date']
