@@ -222,7 +222,7 @@ The site was tested on the following browsers:
 
 ### Responsiveness
 
-Google Developer Tools was used throughout the development of this project especially when testing responsiveness. The site is responsive down to the smallest recommended screen size of 320px. I have also tested the site on my 17" MacBook Air as well as my monitor which is 24".
+Google Developer Tools was used throughout the development of this project especially when testing responsiveness. Using the developer tools, the site is responsive on all screen sizes, with the navbar collapsing on smaller devices. The site is responsive down to the smallest recommended screen size of 320px. I have also tested the site on my 17" MacBook Air as well as my monitor which is 24".
 
 It was brought to my attention that the footer was not sticking to the bottom of some pages on larger screen sizes. I have added a max viewport height on the pages that don't have much content such as the shopping basket, if empty, and the contact success page. I tried to troubleshoot this more but couldn't really test it with the screens I had available, although I am aware of this and will look to solve this in the future.
 
