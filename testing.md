@@ -230,13 +230,27 @@ It was brought to my attention that the footer was not sticking to the bottom of
 
 ## Code Validation
 
-### W3C Markup CSS Validator
+### W3C Markup HTML Validator
 
-W3C CSS validator passed with no errors found.
+I copy and pasted the source code from each page into the W3C validator.
+
+The only page that came up with errors was from the source code of the Add Product page. I couldn't find these errors in the HTML files at all. I also use an HTML validator extension which showed no errors on the same page. It seems to be part of the form, but this error isn't present on any of the other forms for adding a feature or artist.
+
+![Validator-error](./documentation/readme/validator-error.png)
+
+Apart from this there are no errors on any of the other pages, only warnings about using type='text' with JavaScript script tags.
+
+![Validator-warning](./documentation/readme/validator-warning.png)
+
+### Jigsaw Validator
+
+CSS validator passed with no errors found.
 
 ![W3C-pass](./documentation/readme/w3c-pass.png)
 
-### Jigsaw Validator
+### JSHint JavaScript Validation
+
+![JSHint](./documentation/readme/jshint.png)
 
 ### Python Validation
 
