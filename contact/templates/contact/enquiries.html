@@ -26,13 +26,13 @@
         <div class="mt-4 mx-3">
             <h6 class="text-black logo-font"><strong>From: </strong>{{ enquiry.contact_name }}</h6>
             <p class="text-black logo-font">
-                <strong>Email: </strong>{{ enquiry.contact_email }}
-                {% if enquiry.contact_subject %}
-                <p class="text-black logo-font"><strong>Subject: </strong>{{ enquiry.contact_subject }}</p>
-                {% endif %}
-                <p class="text-black logo-font"><strong>Message: </strong>{{ enquiry.contact_message }}</p>
-                <p class="text-black logo-font"><strong>Date: </strong>{{ enquiry.date }}</p>
-                <hr class="w-100 mb-4">
+                <strong>Email: </strong>{{ enquiry.contact_email }}</p>
+            {% if enquiry.contact_subject %}
+            <p class="text-black logo-font"><strong>Subject: </strong>{{ enquiry.contact_subject }}</p>
+            {% endif %}
+            <p class="text-black logo-font"><strong>Message: </strong>{{ enquiry.contact_message }}</p>
+            <p class="text-black logo-font"><strong>Date: </strong>{{ enquiry.date }}</p>
+            <hr class="w-100 mb-4">
         </div>
         {% endfor %}
     </div>

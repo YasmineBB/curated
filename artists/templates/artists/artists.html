@@ -38,12 +38,11 @@
                                 <div class="artist-img-middle">
                                     <p class="artist-bio mt-3 text-black">{{ artist.bio|slice:'85' }} ...
                                     </p>
-                                    <a href="{% url 'artist_detail' artist.id %}" alt="Read more about the artist">
-                                        <small><button type="button" class="btn small rounded-pill">Read
-                                                More <i class="fa-solid fa-arrow-right"></i></button></small>
-                                    </a>
+                                    <a href="{% url 'artist_detail' artist.id %}"
+                                        class="text-decoration-none text-black">
+                                        <small>Read
+                                            More <i class="fa-solid fa-arrow-right"></i></small></a>
                                 </div>
-                                </a>
                                 {% else %}
                                 <a href="{% url 'artist_detail' artist.id %}">
                                     <img class="text-center artist-image" src="{{ MEDIA_URL }}image_coming_soon.jpg"
