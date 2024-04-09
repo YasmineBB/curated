@@ -207,7 +207,25 @@ When a user clicks on a product on the all products page, they are taken to a pr
 
 ![Contact-success](./documentation/readme/contact-success.png)
 
-### Device and Browser Testing
+### Data Management
+
+When testing adding, editing and deleting products, artists and features to and from the database, I have been checking that they have been appearing both on the site where they are supposed to, but also in the Django admin, and they have. All additions and updates are reflected correctly both on the site and the admin.
+
+### Responsiveness
+
+Google Developer Tools was used throughout the development of this project especially when testing responsiveness. Using the developer tools, the site is responsive on all screen sizes, with the navigation bar collapsing on smaller devices. The site is responsive down to the smallest recommended screen size of 320px.
+
+![Devtools-320px](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2UydTFsMTR2NzJjeGQ3djk2aWR0Z2xsZHE2cW9ibXd4a3pqNzZieCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hE7A61yPnsT0jeSvup/giphy.gif)
+
+I have also tested the site on my 17" MacBook Air, which I've been using to build this project, as well as my monitor which is 24".
+
+It was brought to my attention that the footer was not sticking to the bottom of some pages on larger screen sizes. I have added a max viewport height on the pages that don't have much content such as the shopping basket, if empty, and the contact success page. I tried to troubleshoot this more but couldn't really test it with the screens I had available, although I am aware of this and will look to solve this in the future.
+
+![Responsive](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExempiZWI0b3NsajlnMWU4ZXplNm5qam03cG1kbzZ4MDFwNHNuaXh3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/66Usxv4F871Rjf5fCL/giphy.gif)
+
+#### Device and Browser Testing
+
+##### Devices
 
 The site was tested on the following devices:
 
@@ -215,18 +233,35 @@ The site was tested on the following devices:
 - Lenovo c24-25 monitor
 - iPhone 11
 
-The site was tested on the following browsers:
+##### Browsers
+
+The site was tested on the following browsers, with everything working as it should:
 
 - Google Chrome
 - Microsoft Edge
 
-### Responsiveness
+I also used the free time limited version of [Browserling](https://www.browserling.com/) for cross browser testing and checked the pages from a Windows 10 system on:
 
-Google Developer Tools was used throughout the development of this project especially when testing responsiveness. Using the developer tools, the site is responsive on all screen sizes, with the navbar collapsing on smaller devices. The site is responsive down to the smallest recommended screen size of 320px. I have also tested the site on my 17" MacBook Air as well as my monitor which is 24".
+- Opera
+- Firefox
 
-It was brought to my attention that the footer was not sticking to the bottom of some pages on larger screen sizes. I have added a max viewport height on the pages that don't have much content such as the shopping basket, if empty, and the contact success page. I tried to troubleshoot this more but couldn't really test it with the screens I had available, although I am aware of this and will look to solve this in the future.
+#### Opera - Windows 10
 
-![Responsive](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExempiZWI0b3NsajlnMWU4ZXplNm5qam03cG1kbzZ4MDFwNHNuaXh3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/66Usxv4F871Rjf5fCL/giphy.gif)
+![Opera](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWNsbXI0c3JoNTVpajI0NXZucjdwcjNoMHZnbm5tbHhmNHc0ZXU2ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3pMbDejdiLWd1CKzVj/giphy.gif)
+
+#### Firefox - Windows 10
+
+![Firefox](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW95c2x1ejBqejdrM2pkZjFyZHR6azh5Yjdpa2RhOHRjODcyZXc3YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LLENBFeBW2nxaZlSoH/giphy.gif)
+
+However, I realised that although the site works well on Safari on an iPhone 11, the images on the artists page do not display on safari in desktop. 
+
+![Safari-desktop](./documentation/readme/safari-desktop.png)
+
+All other images display as they should. I am not sure why this is, all images are converted to wepb and compressed to reduce loading speed. And the same images display on safari on a mobile device.
+
+![Safari-mobile](./documentation/readme/safari-mobile.PNG)
+
+I am aware of this issue, and although I cannot solve this for this project due to time restraints, I will do so in the future.
 
 ## Code Validation
 
