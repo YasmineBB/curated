@@ -67,11 +67,13 @@ I added alt text to the 'Read More' link on the artist's page once their image i
 
 ### Artists Page
 
-
+![Lighthouse-mobile-artist](./documentation/readme/lighthouse_testing/lighthouse-mobile-artists.png)
 
 ### Artist Detail Page
 
 ![Lighthouse-artist-detail-mobile](./documentation/readme/lighthouse_testing/lighthouse-artist-detail-mobile.png)
+
+- SEO issues regard to links to read more on artist hover.
 
 ### Add Artist to the Database Page
 
