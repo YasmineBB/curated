@@ -253,7 +253,7 @@ I also used the free time limited version of [Browserling](https://www.browserli
 
 ![Firefox](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW95c2x1ejBqejdrM2pkZjFyZHR6azh5Yjdpa2RhOHRjODcyZXc3YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LLENBFeBW2nxaZlSoH/giphy.gif)
 
-However, I realised that although the site works well on Safari on an iPhone 11, the images on the artists page do not display on safari in desktop. 
+However, I realised that although the site works well on Safari on an iPhone 11, the images on the artists page do not display on safari in desktop.
 
 ![Safari-desktop](./documentation/readme/safari-desktop.png)
 
