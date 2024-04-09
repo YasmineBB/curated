@@ -262,6 +262,11 @@ Countryfield.js file
 
 ### Python Validation
 
+I used both the Code Institute Python Linter and the command python3 -m flake8 to check for errors in all the python code. In the end, the only errors remaining after going through all the code, were from vscode, migrations and the env.py file.
+
+![Flake8-1](./documentation/readme/flake8-1.png)
+![Flake8-2](./documentation/readme/flake8-2.png)
+
 ## Lighthouse Testing
 
 Results for Google Lighthouse testing can be found [here](./lighthouse.md).
