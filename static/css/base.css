@@ -83,8 +83,7 @@ body {
     opacity: 0.8;
 }
 
-.success-container,
-.basket-container {
+.success-container {
     height: 100vh;
 }
 
@@ -379,7 +378,7 @@ ul>li {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* Pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 768px) {
 
     .container {
