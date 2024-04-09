@@ -117,6 +117,14 @@ When a user clicks on a product on the all products page, they are taken to a pr
 
 ![Add-to-basket](./documentation/readme/add-to-basket.png)
 
+If the user tries to adjust the quantity box they receive the following message:
+
+![Value-one](./documentation/readme/value-one.png)
+
+If the user decided to type remove the quantity and add the item with the quantity box empty, they will get a server error message.
+
+![Server-error-quantity](./documentation/readme/server-error-empty-value.png)
+
 ##### As a Site User I want to be able to delete items from my basket so that I can decide on my final purchase
 
 - From their basket, the user can see a button to delete a product from their basket and receives a message upon deleting.
@@ -266,6 +274,8 @@ I am aware of this issue, and although I cannot solve this for this project due 
 Another issue I found on Safari is the page headings are getting cut off.
 
 They are fine on other browsers and to ensure maximum cross browser compatibility, I added a slight margin on larger screen sizes. However, these changes didn't seem to reflect in the safari browser, although they did in Chrome. Again, going forward beyond the purposes of this project and with more time, I will look into why this is happening.
+
+I have done my best with testing and have tried to test as many browsers and devices as I can, and using Google Developer tools, however there seem to be some issues, and I have highlighted what I have come across. This includes the issues I have discussed in the Issues and Bugs section of the README.
 
 ## Code Validation
 
