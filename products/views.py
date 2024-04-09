@@ -129,7 +129,7 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, f'Success! You have updated'
+            messages.success(request, f'Success! You have updated '
                              f'{product.name} by {product.artist}.')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
