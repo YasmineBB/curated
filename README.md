@@ -71,6 +71,8 @@ A link to the deployed site can be found [here](https://curated-1a2337d3b0f9.her
     - [Sign Up](#sign-up)
     - [Stripe](#stripe)
     - [Crispy Forms](#crispy-forms)
+    - [Toast when basket has an item](#toast-when-basket-has-an-item)
+    - [Basket on smaller screen sizes](#basket-on-smaller-screen-sizes)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Database Used](#database-used)
@@ -648,6 +650,14 @@ I had a few issues with Stripe, including webhooks not sending as well as when a
 ### Crispy Forms
 
 All the form on the site were applying the crispy form filter accurately except the checkout page which kept throwing a BoundField error. In the end the form was styled with CSS targeting each field.
+
+### Toast when basket has an item
+
+I realised when a user has something in their basket, the toast messages they receive include their basket. I didn't have time to fix this but am aware of it.
+
+### Basket on smaller screen sizes
+
+There was an issue late on with smaller screen sizes in the basket page where the basket contents overflows into the footer. This likely came down to the vh height I had set on the basket container to fix the issue of the footer not sticking to the bottom on larger screens but is fixed.
 
 ## Technologies Used
 
