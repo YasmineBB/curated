@@ -44,10 +44,16 @@
                                             More <i class="fa-solid fa-arrow-right"></i></small></a>
                                 </div>
                                 {% else %}
-                                <a href="{% url 'artist_detail' artist.id %}">
-                                    <img class="text-center artist-image" src="{{ MEDIA_URL }}image_coming_soon.jpg"
-                                        alt="{{ artist.name }}">
-                                </a>
+                                <img class="text-center artist-image" src="{{ MEDIA_URL }}image_coming_soon.jpg"
+                                    alt="{{ artist.name }}">
+                                <div class="artist-img-middle">
+                                    <p class="artist-bio mt-3 text-black">{{ artist.bio|slice:'85' }} ...
+                                    </p>
+                                    <a href="{% url 'artist_detail' artist.id %}"
+                                        class="text-decoration-none text-black">
+                                        <small>Read
+                                            More <i class="fa-solid fa-arrow-right"></i></small></a>
+                                </div>
                                 {% endif %}
                                 <a class="text-decoration-none" href="{% url 'artist_detail' artist.id %}">
                                     <p class="artist-text font-weight-bold lead mt-3">
