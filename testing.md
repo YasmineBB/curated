@@ -265,7 +265,7 @@ I am aware of this issue, and although I cannot solve this for this project due 
 
 Another issue I found on Safari is the page headings are getting cut off.
 
-They are fine on other browsers however, to ensure maximum cross browser compatibility, I added a slight margin on larger screen sizes.
+They are fine on other browsers and to ensure maximum cross browser compatibility, I added a slight margin on larger screen sizes. However, these changes didn't seem to reflect in the safari browser, although they did in Chrome. Again, going forward beyond the purposes of this project and with more time, I will look into why this is happening.
 
 ## Code Validation
 
