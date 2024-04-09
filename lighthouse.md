@@ -24,11 +24,6 @@ One issue that came up regarding the lack of descriptive text in the footer link
 
 ![Lighthouse-issue-footer](./documentation/readme/lighthouse_testing/lighthouse-issue-footer.png)
 
-### FIX - Accessibility: ARIA IDs are unique
-
-I updated the aria label of the dropdown menu for admin authenticated users to 'admin-user-options' to avoid a clash with the id in the My Account link.
-
-![Lighthouse-issue-aria](./documentation/readme/lighthouse_testing/lighthouse-issue-aria.png)
 
 Here are the results of testing all the pages on the site with Google Lighthouse in both Mobile and Desktop after the fixes.
 
