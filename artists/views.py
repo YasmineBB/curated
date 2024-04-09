@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from products.models import Artist, Product
+from products.models import Artist
 from .forms import ArtistForm
 
 
@@ -39,13 +39,15 @@ def add_artist(request):
         form = ArtistForm(request.POST, request.FILES)
         if form.is_valid():
             artist = form.save()
-            messages.success(request, f'Success! You added {artist.name} to the database.')
+            messages.success(request, f'Success! You added {artist.name} to '
+                             'the database.')
             return redirect(reverse('artists'))
         else:
-            messages.error(request, 'Failed to add artist. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add artist. Please ensure the'
+                                    ' form is valid.')
     else:
         form = ArtistForm()
-        
+
     template = 'artists/add_artist.html'
     context = {
         'form': form,
@@ -66,10 +68,12 @@ def edit_artist(request, artist_id):
         form = ArtistForm(request.POST, request.FILES, instance=artist)
         if form.is_valid():
             form.save()
-            messages.success(request, f'Success! You have updated the profile of {artist.name}.')
+            messages.success(request, 'Success! You have updated the'
+                             f' profile of {artist.name}.')
             return redirect(reverse('artist_detail', args=[artist.id]))
         else:
-            messages.error(request, 'Failed to update artist. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update artist. Please ensure'
+                                    ' the form is valid.')
     else:
         form = ArtistForm(instance=artist)
         messages.info(request, f'You are editing the profile of {artist.name}')
@@ -92,5 +96,7 @@ def delete_artist(request, artist_id):
 
     artist = get_object_or_404(Artist, pk=artist_id)
     artist.delete()
-    messages.success(request, f'You deleted {artist.name} from the database! If this was a mistake, you can go to the Artist Management tab and add them again!')
+    messages.success(request, f'You deleted {artist.name} from the database!'
+                     ' If this was a mistake, you can go to the'
+                     ' Artist Management tab and add them again!')
     return redirect(reverse('artists'))
