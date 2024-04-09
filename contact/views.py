@@ -32,7 +32,7 @@ def contact(request):
             except UserProfile.DoesNotExist:
                 get_in_touch_form = GetInTouchForm()
         else:
-            get_in_touch_form= GetInTouchForm()
+            get_in_touch_form = GetInTouchForm()
 
     template = 'contact/contact.html'
     context = {
@@ -41,12 +41,13 @@ def contact(request):
 
     return render(request, template, context)
 
+
 @login_required
 def enquiries(request):
     """ A view to display contact enquiries """
     if not request.user.is_superuser:
         messages.error(request, 'Ooops! Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+        return redirect(('home'))
 
     enquiries = ContactForm.objects.all()
 
