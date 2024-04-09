@@ -10,7 +10,8 @@ from .forms import ProductForm
 
 
 def all_products(request):
-    """ A view to display all products, including sorting and search queries """
+    """ A view to display all products,
+    including sorting and search queries """
 
     products = Product.objects.all()
     query = None
@@ -40,7 +41,7 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-        
+
         if 'artist' in request.GET:
             artists = request.GET['artist'].split(',')
             products = products.filter(artist__name__in=artists)
@@ -49,10 +50,19 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any"
+                                        " search criteria!")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(category__name__icontains=query) | Q(artist__name__icontains=query)
+
+            queries = Q(
+                name__icontains=query
+                ) | Q(
+                    description__icontains=query
+                    ) | Q(
+                        category__name__icontains=query
+                        ) | Q(
+                            artist__name__icontains=query
+                            )
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -90,13 +100,15 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, f'Success! You added {product.name} to the database!')
+            messages.success(request, f'Success! You added {product.name} to'
+                             ' the database!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure'
+                           ' the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -117,10 +129,12 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, f'Success! You have updated {product.name} by {product.artist}.')
+            messages.success(request, f'Success! You have updated'
+                             f'{product.name} by {product.artist}.')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product.'
+                           ' Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -143,5 +157,6 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, f'You deleted {product.name} by {product.artist} from the database!')
+    messages.success(request, f'You deleted {product.name} by'
+                     f' {product.artist} from the database!')
     return redirect(reverse('products'))
