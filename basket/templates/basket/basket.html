@@ -47,9 +47,6 @@
                     <div class="col-12 mb-2 mt-3">
                         {% include "basket/delete_button.html" %}
                     </div>
-                    <div class="col-12 mt-3">
-                        {% include "basket/checkout_buttons.html" %}
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col">
@@ -57,6 +54,9 @@
                     </div>
                 </div>
                 {% endfor %}
+                <div class="col-12 mt-3">
+                    {% include "basket/checkout_buttons.html" %}
+                </div>
                 <div class="btt-button shadow-sm rounded-0 border border-black">
                     <a class="btt-link d-flex h-100" aria-label="Back to top">
                         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
@@ -74,7 +74,6 @@
                             <th scope="col">Subtotal</th>
                         </tr>
                     </thead>
-
                     {% for item in basket_items %}
                     <tr>
                         <td class="p-3 w-25">
