@@ -22,7 +22,6 @@
     <div class="row">
         <div class="col">
             {% if basket_items %}
-
             <div class="d-block d-md-none">
                 <div class="row">
                     <div class="col">
@@ -44,7 +43,6 @@
                     </div>
                     <div class="col-12 mb-2">
                         <p class="my-0 text-black font-weight-bold">Price Each: £{{ item.product.price }}</p>
-
                     </div>
                     <div class="col-12 mb-2 mt-3">
                         {% include "basket/delete_button.html" %}
@@ -59,15 +57,12 @@
                     </div>
                 </div>
                 {% endfor %}
-
                 <div class="btt-button shadow-sm rounded-0 border border-black">
                     <a class="btt-link d-flex h-100" aria-label="Back to top">
                         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
                     </a>
                 </div>
             </div>
-
-
             <div class="table-responsive rounded d-none d-md-block">
                 <table class="table table-sm table-borderless">
                     <thead class="text-black lead">
