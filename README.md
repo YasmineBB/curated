@@ -106,17 +106,17 @@ Curated, a B2C e-commerce site that takes single payments, platforms the artists
 
 The site is designed in a way that the user can navigate easily and smoothly across the site.
 
-Having an online platform of a curated selection of art pieces extends the reach of one art gallery, and the opportunities from online traffic can be endless. A physical gallery or store is limited to the footfall rate of that area whereas online, people from all around the world are potential customers at all times.
+Having an online platform of a Curated selection of art pieces extends the reach of one art gallery, and the opportunities from online traffic can be endless. A physical gallery or store is limited to the footfall rate of that area whereas online, people from all around the world are potential customers at all times.
 
 As a B2C company, it is vital to reach out and elicit an emotional response from customers, and build a relationship. The web marketing methodologies are huge in doing so, and social media presence is an important factor in building and maintaining this connection.
 
-Without the costs that come with a physical location, such as a gallery or space that sells art, there is more space for higher margins for both curated, as well as the artist.
+Without the costs that come with a physical location, such as a gallery or space that sells art, there is more space for higher margins for both Curated, as well as the artist.
 
-With the popularity of smartphones and people being able to browse and shop on the go, it’s important that curated capitalises on this opportunity, especially as B2C customers are more likely to make impulse purchases. Curated is a mobile first app that makes it east for customers to browse unique art pieces at home, work or on the go.
+With the popularity of smartphones and people being able to browse and shop on the go, it’s important that Curated capitalises on this opportunity, especially as B2C customers are more likely to make impulse purchases. Curated is a mobile first app that makes it east for customers to browse unique art pieces at home, work or on the go.
 
-As an online intermediary, curated uses its platform to bring artists and customers together.
+As an online intermediary, Curated uses its platform to bring artists and customers together.
 
-The artists will rely on curated to platform their work and attract sales, and web marketing will play a huge role in making this happen.
+The artists will rely on Curated to platform their work and attract sales, and web marketing will play a huge role in making this happen.
 
 Having an authentication system and allowing the customer to be able to save their shipping information also makes it easier and faster for future payments to be made.
 
@@ -128,7 +128,7 @@ Implementing Search Engine Optimisation practices is important because it helps 
 
 Some example implemented in this project include:
 
-- Descriptive meta tags including description, keywords as well as a title tag were added in the base.html file, extending across all pages. 
+- Descriptive meta tags including description, keywords as well as a title tag were added in the base.html file, extending across all pages.
   - Meta tags are important for SEO as they help search engines understand what the web pages are about and how it appears in search results. They are also important in terms of accessibility, being used by screen readers to describe the web pages to users.
 - There is meaningful alt text used on main images on the site, for example the product images have the product description as their alt text and the artist images have the artist bio as their alt text.
 - Clear and concise headings are used.
@@ -158,7 +158,7 @@ These strategies would be tied closely with organic social media marketing, with
 
 #### Email Marketing
 
-In the footer of the site, users can subscribe to receive a newsletter from curated, using [Mailchimp](https://mailchimp.com/). This functionality works in user sign up and in future implementations, a newsletter campaign will be implemented.
+In the footer of the site, users can subscribe to receive a newsletter from Curated, using [Mailchimp](https://mailchimp.com/). This functionality works in user sign up and in future implementations, a newsletter campaign will be implemented.
 
 ## User Experience
 
@@ -298,7 +298,7 @@ As a Site Admin:
 
 As a Site User:
 
-- I want to be able to submit a contact form so that I can communicate with curated.
+- I want to be able to submit a contact form so that I can communicate with Curated.
 
 As a Site Admin:
 
@@ -403,7 +403,7 @@ Here is an example of the use of labelling and milestones on one of my issues:
 
 ![Navbar](./documentation/readme/nav-bar.png)
 
-The navigation bar contains the site's header, curated, which redirects the user back to the homepage from any page on the site. Navigation links include:
+The navigation bar contains the site's header, Curated, which redirects the user back to the homepage from any page on the site. Navigation links include:
 
 - A dropdown link on Products where users can view all products, products by price, category or artist.
 - Ceramics - which takes the user to a page that displays all the pieces in the category Ceramics.
@@ -490,15 +490,22 @@ The Artist's page displays a selection of all the artists who have their work li
 
 ![Artist-detail](./documentation/readme/artist-detail-page.png)
 
-When a user selects an artist, they are taken to the artist detail page which gives the full set of information, including the artists social media links, if they have them.
+When a user selects an artist, they are taken to the artist detail page which gives the full set of information about the artist, including:
 
-The links to socials only take the user to each sites' homepage for the purpose of this project, but if this site was developed in the future, of course this would be accurate.
+- Name
+- Location
+- Bio
+- Social media tags if they have them
+
+It's important for consumers to find out more about the artists whose work they buy, and helps build a relationship and keep users interested. They are likely to return to the site and make purchases of artists whose work and story they connect to.
 
 #### Features/Testimonials Page
 
 ![Featured](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmp6NHl1Mm80dGQ2bHoxMjZqc3gyc3RkcnM4NDgxdXJmNDZ2Nm5xYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4dzYsqCiMspEfjFWpo/giphy.gif)
 
-The Features page (testimonial is the name of the model), contains 'features' of customers purchases in their home with their name, location and testimonial about their experience.
+The Features page, contains 'features' of customers purchases in their home with their name, location and a testimonial about their experience. It's for consumers on the site, those who have or haven't purchased anything yet, to see what the art work could look like in their own home. If a customer has already bought something, they are encouraged to get in touch for a chance to be featured.
+
+As everything is carefully curated on the site, so are the features, particularly because the pieces are a one off purchase. So these features function sort of like a review of the whole experience, not just the product.
 
 #### Footer
 
@@ -517,7 +524,7 @@ The footer is at the bottom of every page and contain:
 
 ![Contact](./documentation/readme/contact.png)
 
-The Contact page provides a form for users to submit with their name, address, optional subject and a message. For example, on the About pages, artists are encouraged to get in touch as well as on the featured page, consumers are encouraged to get in touch if they want to be featured.
+The Contact page provides a form for users to submit with their name, address, optional subject and a message. For example, on the About pages, artists are encouraged to get in touch as well as on the featured page, consumers are encouraged to get in touch if they want to be featured on Curated
 
 #### About Page
 
@@ -529,7 +536,7 @@ The About page provides the company mission and a call for artists who want to b
 
 ![Privacy](./documentation/readme/privacy-policy.png)
 
-The Privacy Policy page outlines the privacy policy to let users how and why curated collects their information, how the data is used, why, and if it's shared with others. This was created using [Terms Feed](https://www.termsfeed.com/privacy-policy-generator/)
+The Privacy Policy page outlines the privacy policy to let users how and why Curated collects their information, how the data is used, why, and if it's shared with others. This was created using [Terms Feed](https://www.termsfeed.com/privacy-policy-generator/)
 
 #### Custom Error Pages
 
@@ -582,13 +589,13 @@ Clicking Edit takes them to the page where they can make any changes and click s
 
 #### Add An Artist
 
-Adding an artist to the database works the same way as adding a product, from the My Profile link, the admin user can select Artist Management to carry out these tasks.
+ To have their products displayed on the site, the artists must first have a profile. From the My Profile link, the admin user can select Artist Management, to add an artist with all their information.
 
 ![Add-artist](./documentation/readme/add-artist.png)
 
 #### Edit or Delete An Artist
 
-Editing and deleting an artist from the database can be accessed from the artist detail page, where the admin user can click edit and will be taken to a page to make changes.
+Editing and deleting an artist from the database can be accessed from the artist detail page, where the admin user can click edit and will be taken to a page to make changes. For example, the artist may want to update their photo or add to their bio.
 
 ![Edit-artist](./documentation/readme/edit-artist-page.png)
 
@@ -607,7 +614,6 @@ Under each feature, the admin user will see a section under the feature with the
 When clicking edit, they are taken to a page to make any changes.
 
 ![Edit-feature](./documentation/readme/edit-feature.png)
-
 
 #### View Customer Enquiries
 

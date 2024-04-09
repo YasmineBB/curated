@@ -263,6 +263,10 @@ All other images display as they should. I am not sure why this is, all images a
 
 I am aware of this issue, and although I cannot solve this for this project due to time restraints, I will do so in the future.
 
+Another issue I found on Safari is the page headings are getting cut off.
+
+They are fine on other browsers however, to ensure maximum cross browser compatibility, I added a slight margin on larger screen sizes.
+
 ## Code Validation
 
 ### W3C Markup HTML Validator

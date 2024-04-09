@@ -17,13 +17,11 @@ After running Google Lighthouse testing on all pages on the site, some main issu
 
   ![Lighthouse-issue-header](./documentation/readme//lighthouse_testing/lighthouse-issue-header.png)
 
-
 ### FIX - Best Practices: Links do not have descriptive text
 
 One issue that came up regarding the lack of descriptive text in the footer link to the About page. There is a preview of the about page content with a link to the About page with the text 'Read More'. I have changed this link to 'Read more about us' to be more in line with best practices.
 
 ![Lighthouse-issue-footer](./documentation/readme/lighthouse_testing/lighthouse-issue-footer.png)
-
 
 Here are the results of testing all the pages on the site with Google Lighthouse in both Mobile and Desktop after the fixes.
 
@@ -68,6 +66,8 @@ I added alt text to the 'Read More' link on the artist's page once their image i
 - Some SEO issues here are regarding the image to attach which I could not fix within the purposes of the project but will take a look at in the future.
 
 ### Artists Page
+
+
 
 ### Artist Detail Page
 
@@ -158,6 +158,10 @@ I added alt text to the 'Read More' link on the artist's page once their image i
 - Some SEO issues here are regarding the image to attach which I could not fix within the purposes of the project but will take a look at in the future.
 
 ### Artists Page Desktop
+
+![Lighthouse-artists-desktop](./documentation/readme/lighthouse_testing/lighthouse-artists-desktop.png)
+
+- The low SEO scoring comes down to the 'Read More' issue explained at the top.
 
 ### Artist Detail Page Desktop
 
