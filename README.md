@@ -114,7 +114,7 @@ As a B2C company, it is vital to reach out and elicit an emotional response from
 
 Without the costs that come with a physical location, such as a gallery or space that sells art, there is more space for higher margins for both Curated, as well as the artist.
 
-With the popularity of smartphones and people being able to browse and shop on the go, it’s important that Curated capitalises on this opportunity, especially as B2C customers are more likely to make impulse purchases. Curated is a mobile first app that makes it east for customers to browse unique art pieces at home, work or on the go.
+With the popularity of smartphones and people being able to browse and shop on the go, it’s important that Curated capitalises on this opportunity, especially as B2C customers are more likely to make impulse purchases. Curated is a mobile first app that makes it easy for customers to browse unique art pieces at home, work or on the go.
 
 As an online intermediary, Curated uses its platform to bring artists and customers together.
 
@@ -128,11 +128,11 @@ Having an authentication system and allowing the customer to be able to save the
 
 Implementing Search Engine Optimisation practices is important because it helps improve the ranking of a website in search engine listings. This is highly important especially for an online business. On top of this, it's important to make the site as accessible as possible for screen readers.
 
-Some example implemented in this project include:
+Some SEO examples implemented in this project include:
 
 - Descriptive meta tags including description, keywords as well as a title tag were added in the base.html file, extending across all pages.
   - Meta tags are important for SEO as they help search engines understand what the web pages are about and how it appears in search results. They are also important in terms of accessibility, being used by screen readers to describe the web pages to users.
-- There is meaningful alt text used on main images on the site, for example the product images have the product description as their alt text and the artist images have the artist bio as their alt text.
+- There is meaningful alt text used on the main images on the site, for example the product images have the product description as their alt text and the artist images have the artist bio as their alt text.
 - Clear and concise headings are used.
 
 - There is a sitemap.xml that lists the sites essential pages and allows search engines to crawl them.
@@ -217,15 +217,15 @@ I created the following table of opportunities for the project to determine the 
 | Admin | Delete artist profile | 5 | 5 | MVP | ✅ |
 | | | | | |
 | Admin | Add feature/testimonial | 5 | 5 | MVP | ✅ |
-| Admin | Update/edit a feature/testimonial | 4 | 5 |
-| Admin | Delete a feature/testimonial | 4 | 5 |
-| Admin | View list of customer enquiries | 4 | 5 |
+| Admin | Update/edit a feature/testimonial | 4 | 5 | ✅ |
+| Admin | Delete a feature/testimonial | 4 | 5 | ✅ |
+| Admin | View list of customer enquiries | 4 | 5 | ✅ |
 
 ### Structure Plane
 
 #### Current User Stories
 
-I created user stories in a Google sheets document in my planning stage which helped me to organise tasks. Each user story had an issue created, and this documentation can be found in my projects board and is explained in the [Agile Development](#Agile-Development) section.
+I created user stories in a Google sheets document in my planning stage which helped me to organise tasks. For each user story, an issue was created with tasks and acceptance criteria, and this documentation can be found in my projects board and is explained in the [Agile Development](#Agile-Development) section.
 
 I have created user stories for all users of the site which are:
 
@@ -435,9 +435,9 @@ Under Products, the user can select to sort by:
 
 Or they can select to view All Products.
 
-Under the Ceramics and Paintings options, the user can select to view all from those two categories.
+The user can select Ceramics or Paintings, and will be taken to view all from those categories.
 
-Under the Artists option, the user can select to view all artists.
+The user can select Artist to view all the artists.
 
 #### Homepage
 
@@ -462,7 +462,7 @@ The Product's page displays all the pieces that are available to purchase. They 
 
 ![Product-detail](./documentation/readme/product-detail.png)
 
-Once a product is selected, the user is taken to the product detail page which lists all the same information, as well as the option of adding the item to the basket. As the pieces are one off, there is only one quantity of each item. If a user already has the product in their basket, and they try to add it again, they receive a message alert stating 'there is only one of these, and you have it in your basket. They are also unable to adjust the quantity box.
+Once a product is selected, the user is taken to the product detail page which lists all the same information, as well as the option of adding the item to the basket. As the pieces are one off, there is only one quantity of each item. If a user already has the product in their basket, and they try to add it again, they receive a message alert stating 'there is only one of these, and you have it in your basket. They are also unable to adjust the quantity box. for 
 
 #### Shopping Basket Page
 
@@ -513,12 +513,12 @@ As everything is carefully curated on the site, so are the features, particularl
 
 ![Footer](./documentation/readme/footer.png)
 
-The footer is at the bottom of every page and contain:
+The footer is at the bottom of every page and contains:
 
 - A preview with link to an About page
-- A link to the contact us page
+- A link to the Contact Us page
 - A link to the Privacy Policy
-- links to social media
+- Links to social media
   - They only take the user to the generic homepage of each site but in future implementations there would be real social media profiles for the site.
 - A newsletter sign-up section where users can subscribe. This is powered by Mailchimp.
 
@@ -547,6 +547,10 @@ There are custom error pages for HTTP 404 Not Found and HTTP Error 500.
 Here is the message received when coming across a page not found error.
 
 ![Error-404](./documentation/readme/error-404.png)
+
+Here is the server error message.
+
+![Error-500](./documentation/readme/500-error.png)
 
 #### Defensive Programming
 
@@ -641,7 +645,7 @@ To ensure the site is as accessible as possible to all users, I have made sure t
 
 ### Sign Up
 
-I had an issue when testing user sign up on the site. After entering all the information and clicking the Sign-Up button, the page was stuck on loading and wouldn't take the user to the intended next step, which was sending the confirmation link and displaying the page explaining so. The user was, however, added to the database, after checking in the Django admin. When signing up using the same information, assuming it hadn't been successful, the user was alerted that a user with that information already existed in the database. After spending time troubleshooting, I contacted tutor Support who assisted me and discovered the fix was that Heroku wasn't using the correct version of Python, and the fix was to create a runtime.txt file and that solved the issue.
+I had an issue when testing user sign up on the site. After entering all the information and clicking the Sign-Up button, the page was stuck on loading and wouldn't take the user to the intended next step, which was sending the confirmation link and displaying the page explaining so. The user was, however, added to the database, after checking in the Django admin. When signing up using the same information, assuming it hadn't been successful, the user was alerted that a user with that information already existed in the database. After spending time troubleshooting, I contacted tutor Support who assisted me and discovered the fix was that Heroku wasn't using the correct version of Python, and the fix was to create a runtime.txt file and that solved the issue. I am also aware that the emails that users get sent come from the email I have set up with the Gmail SMPP server, and not the curated email address, because I had so many issues setting this up, I have decided to leave it as is for now but will look more into this beyond the purposes of this project.
 
 ### Stripe
 
@@ -649,7 +653,7 @@ I had a few issues with Stripe, including webhooks not sending as well as when a
 
 ### Crispy Forms
 
-All the form on the site were applying the crispy form filter accurately except the checkout page which kept throwing a BoundField error. In the end the form was styled with CSS targeting each field.
+All the forms on the site were applying the crispy form filter accurately except the checkout page which kept throwing a BoundField error. I couldn't manage to solve this so in the end the form was styled with CSS targeting each field.
 
 ### Toast when basket has an item
 
@@ -657,7 +661,15 @@ I realised when a user has something in their basket, the toast messages they re
 
 ### Basket on smaller screen sizes
 
-There was an issue late on with smaller screen sizes in the basket page where the basket contents overflows into the footer. This likely came down to the vh height I had set on the basket container to fix the issue of the footer not sticking to the bottom on larger screens but is fixed.
+There was an issue late on with smaller screen sizes in the basket page where the basket contents overflows into the footer. This likely came down to the vh height I had set on the basket container to fix the issue of the footer not sticking to the bottom on larger screen. I have tested this, on my iPhone 11, and it is displaying as it should on a Google Chrome and Safari browser in incognito mode but not out of incognito mode. I'm unsure why this and being a last minute issue, I am aware of it and plan to look further into this in the future.
+
+Incognito mode
+
+![Basket-incognito](./documentation/readme/basket-incognito.jpg)
+
+Non incognito mode
+
+![Basket-non-incognito](./documentation/readme/basket-non-incognito.jpg)
 
 ## Technologies Used
 
@@ -753,8 +765,6 @@ How to run this project within a local IDE, such as VSCode:
 ```git clone https://github.com/USERNAME/REPOSITORY```
 8. Press Enter. Your local clone will be created.
 
-Further reading and troubleshooting on cloning a repository from GitHub here
-
 ## Credits
 
 ### Code
@@ -797,4 +807,4 @@ All product and artist images used on the site were taken from:
 
 ### Acknowledgements
 
-I would like to give a huge thanks to my Code Institute mentor Richard Wells who has been a huge great support during this project! I would also like to thank the Code Institute tutors who have assisted me in solving problems and bugs along the way.
+I would like to give a huge thanks to my Code Institute mentor Richard Wells who has been a huge great support during this project! I would also like to thank the Code Institute tutors who have been lifesavers in assisting me in solving the many problems and bugs along the way.

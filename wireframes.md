@@ -70,7 +70,7 @@
 
 ### Homepage Mobile
 
-![home](/documentation/wireframes/mobile-home.png)
+![home](/documentation/wireframes/mobile-homepage.png)
 
 ### Login Mobile
 
@@ -82,7 +82,7 @@
 
 ### Products Page Mobile
 
-![products](/documentation/wireframes/mobile-products-page.png)
+![products](/documentation/wireframes/mobile-products.png)
 
 ### Product Detail Page Mobile
 
@@ -114,7 +114,7 @@
 
 ### Artists Page Mobile
 
-![artists-page](/documentation/wireframes/mobile-artists-page.png)
+![artists-page](/documentation/wireframes/mobile-artists-view.png)
 
 ### Artist Profile Mobile
 
