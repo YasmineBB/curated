@@ -14,7 +14,7 @@ import os
 import dj_database_url
 from pathlib import Path
 if os.path.isfile('env.py'):
-    import env
+    import env # noqa
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,9 +29,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEBUG' in os.environ
+DEBUG = True
 
-
-ALLOWED_HOSTS = ['curated-1a2337d3b0f9.herokuapp.com', '8000-yasminebb-curated-vqag6c5ylki.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['curated-1a2337d3b0f9.herokuapp.com',
+                 '8000-yasminebb-curated-vqag6c5ylki.ws-eu110.gitpod.io']
 
 
 # Application definition
@@ -142,18 +143,31 @@ else:
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
+
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'UserAttributeSimilarityValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'MinimumLengthValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'CommonPasswordValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'NumericPasswordValidator'
+        ),
     },
 ]
 
