@@ -47,7 +47,7 @@ def enquiries(request):
     """ A view to display contact enquiries """
     if not request.user.is_superuser:
         messages.error(request, 'Ooops! Sorry, only store owners can do that.')
-        return redirect(('home'))
+        return redirect('home')
 
     enquiries = ContactForm.objects.all()
 
