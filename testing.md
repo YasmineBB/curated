@@ -97,6 +97,10 @@ When a user clicks on a product on the all products page, they are taken to a pr
 
 ![Edit-product](./documentation/readme/edit-product.png)
 
+For all admin tasks, if a non admin user attempts to access the pages to add or edit a products (or artist or feature) they receive a message toast saying only store owners can do that.
+
+![Admin-only](./documentation/readme/oops-error-edit.png)
+
 ##### As a Site Admin I want to be able to delete products on the site so that any changes are reflected on the site
 
 - Following the same steps as above, the superuser can select 'Delete' if they wish to delete a product from the database.

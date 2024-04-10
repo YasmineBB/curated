@@ -217,9 +217,9 @@ I created the following table of opportunities for the project to determine the 
 | Admin | Delete artist profile | 5 | 5 | MVP | ✅ |
 | | | | | |
 | Admin | Add feature/testimonial | 5 | 5 | MVP | ✅ |
-| Admin | Update/edit a feature/testimonial | 4 | 5 | ✅ |
-| Admin | Delete a feature/testimonial | 4 | 5 | ✅ |
-| Admin | View list of customer enquiries | 4 | 5 | ✅ |
+| Admin | Update/edit a feature/testimonial | 4 | 5 || ✅ |
+| Admin | Delete a feature/testimonial | 4 | 5 | |✅ |
+| Admin | View list of customer enquiries | 4 | 5 | | ✅ |
 
 ### Structure Plane
 
